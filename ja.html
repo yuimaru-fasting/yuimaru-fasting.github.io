@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) Google アナリティクス -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NFXXL9ZWC0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NFXXL9ZWC0');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ゆいまーるファスティング｜ひとりで頑張らない、みんなでファスティング</title>
+<meta property="og:title" content="ゆいまーるファスティング｜ひとりで頑張らない、みんなでファスティング">
+<meta property="og:description" content="ひとりで頑張らなくていい。沖縄の薬剤師が、仲間と支え合いながら、正しく安全なファスティングをサポートします。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yuimaru-fasting.github.io/ja.html">
+<meta property="og:site_name" content="ゆいまーるファスティング">
+<meta name="description" content="ひとりで頑張らなくていい。沖縄の薬剤師が、仲間と支え合いながら、正しく安全なファスティングをサポートします。">
+<link rel="alternate" hreflang="en" href="https://yuimaru-fasting.github.io/">
+<link rel="alternate" hreflang="ja" href="https://yuimaru-fasting.github.io/ja.html">
+<link rel="alternate" hreflang="x-default" href="https://yuimaru-fasting.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --umi:#0b4f6c;      /* 深い海 */
+    --umi-deep:#062f40;
+    --sango:#d9483b;    /* 紅型の朱・覚悟の色 */
+    --kiiro:#f2b632;    /* 紅型の黄 */
+    --suna:#f5faf4;     /* 白砂（若葉色がかった） */
+    --sora:#e6f5ef;     /* やわらかい空 */
+    --sumi:#2a2a2a;
+    --hai:#6b7280;
+    --line:#e7dfd0;
+    --kusa:#3f8f5a;     /* 薬草の緑 */
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:100px}
+  body{font-family:"Zen Maru Gothic",sans-serif;color:var(--sumi);background:var(--ki);line-height:1.9;font-size:16px}
+  h1,h2,h3,.mincho{font-family:"Zen Maru Gothic",sans-serif}
+  a{color:var(--umi)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+  /* ミンサー柄の帯（五つと四つの絣＝いつ（五）の世（四）までも） */
+  .minsa{height:14px;background:
+    repeating-linear-gradient(90deg,
+      var(--umi) 0 40px,
+      var(--suna) 40px 44px,
+      var(--kiiro) 44px 48px, var(--suna) 48px 50px,
+      var(--kiiro) 50px 54px, var(--suna) 54px 56px,
+      var(--kiiro) 56px 60px, var(--suna) 60px 62px,
+      var(--kiiro) 62px 66px, var(--suna) 66px 68px,
+      var(--kiiro) 68px 72px, var(--suna) 72px 76px,
+      var(--umi) 76px 116px,
+      var(--suna) 116px 120px,
+      var(--sango) 120px 124px, var(--suna) 124px 126px,
+      var(--sango) 126px 130px, var(--suna) 130px 132px,
+      var(--sango) 132px 136px, var(--suna) 136px 138px,
+      var(--sango) 138px 142px, var(--suna) 142px 146px)}
+
+  /* ナビ */
+  nav{position:sticky;top:0;z-index:10;background:rgba(251,253,250,.95);backdrop-filter:blur(8px);box-shadow:0 2px 12px rgba(11,79,108,.08);border-bottom:1px solid #dcebe2}
+  nav .nav-top{display:flex;align-items:center;justify-content:space-between;gap:12px;height:52px}
+  nav .logo{color:var(--umi-deep);font-family:"Zen Maru Gothic",sans-serif;font-weight:800;text-decoration:none;letter-spacing:.05em;white-space:nowrap}
+  nav .nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+  nav .lang-switch{flex-shrink:0;color:var(--umi-deep);font-weight:700;font-size:12.5px;line-height:1;padding:8px 12px;border:1.5px solid #cfe3d8;border-radius:999px;text-decoration:none;white-space:nowrap;background:#fff}
+  nav .lang-switch:hover{background:#e3f3ea}
+  @media(max-width:420px){nav .lang-switch{padding:7px 9px;font-size:11.5px}}
+  nav .nav-cta{flex-shrink:0;background:var(--sango);color:#fff;font-weight:700;font-size:13px;line-height:1;padding:9px 16px;border-radius:999px;text-decoration:none;white-space:nowrap}
+  nav .nav-cta:hover{background:#c23d31}
+  .nav-menu{position:relative;border-top:1px solid #e3efe7}
+  .nav-menu::after{content:"";position:absolute;top:0;right:0;bottom:0;width:32px;background:linear-gradient(90deg,rgba(251,253,250,0),rgba(251,253,250,.98));pointer-events:none}
+  @media(min-width:900px){.nav-menu::after{display:none}}
+  .nav-menu ul{display:flex;gap:4px;list-style:none;max-width:1200px;margin:0 auto;padding:7px 14px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  @media(min-width:900px){.nav-menu ul{flex-wrap:wrap;justify-content:center;overflow:visible}.nav-menu li:first-child,.nav-menu li:last-child{margin:0}}
+  .nav-menu ul::-webkit-scrollbar{display:none}
+  .nav-menu li{flex-shrink:0}
+  .nav-menu li:first-child{margin-left:auto}
+  .nav-menu li:last-child{margin-right:auto}
+  .nav-menu a{display:block;color:#2d4a52;text-decoration:none;font-size:13.5px;line-height:1;padding:8px 12px;border-radius:999px;white-space:nowrap;transition:background .2s,color .2s}
+  .nav-menu a:hover{background:#e3f3ea;color:var(--umi-deep)}
+  .nav-menu a.active{background:var(--kusa);color:#fff;font-weight:700}
+  @media(max-width:420px){nav .logo{font-size:15px}nav .nav-cta{padding:8px 12px;font-size:12px}}
+
+  /* ヒーロー */
+  /* 沖縄の薬草（ゴーヤー棚・月桃・ウコン・長命草・フーチバー・グァバ・桑） */
+  .hero{background:var(--ki);color:var(--sumi);position:relative;overflow:hidden}
+  .hero .wrap{z-index:2}
+  /* サイトに載せている薬草の花（丸い写真） */
+  .hero-flowers{display:grid;grid-template-columns:repeat(2,120px);column-gap:18px;row-gap:6px;margin:0;padding:0;list-style:none}
+  .hero-flowers li{text-align:center;font-size:13px;font-weight:700;line-height:1.4;color:var(--sumi)}
+  .hero-flowers li:nth-child(even){transform:translateY(64px)}
+  .hero-flowers img{display:block;width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 0 0 1px #e6e6e6,0 4px 12px rgba(0,0,0,.08);margin:0 auto 4px}
+  @media(min-width:1200px){.hero-flowers{position:absolute;right:calc((100vw - 100%) / -2 + 28px);top:50%;transform:translateY(-58%)}}
+  @media(max-width:720px){.hero-flowers{grid-template-columns:repeat(4,1fr) !important;max-width:520px !important}}
+  @media(max-width:1199px){.hero-flowers{order:5;grid-template-columns:repeat(7,1fr);column-gap:10px;row-gap:12px;width:100%;max-width:820px}.hero-flowers li:nth-child(even){transform:none}.hero-flowers img{width:100%;height:auto;aspect-ratio:1;border-width:3px}.hero-flowers li{font-size:11.5px}}
+  /* キャッチコピーと説明文（白い背景） */
+  .hero h1{color:var(--umi-deep)}
+  .hero h1 rt{color:#4a3d0c}
+  .hero p.lead{color:var(--sumi)}
+  .hero h1 span{display:inline-block}
+  .hero h1 rt{font-size:.32em;letter-spacing:.08em;font-weight:700}
+  .hero p.lead{word-break:auto-phrase}
+  .hero .wrap{padding:50px 20px 70px;position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+  .hero-text{min-width:0;max-width:100%}
+  .hero-photo{order:-1;display:block;width:140px;aspect-ratio:1;object-fit:cover;border-radius:50%;box-shadow:0 0 0 4px #fff}
+  @media(max-width:720px){.hero .wrap{padding-top:40px}.hero-photo{width:120px}}
+  .hero .eyebrow{display:inline-block;background:#fff;color:#0d3b4f;font-weight:800;border-radius:999px;padding:5px 18px;font-size:clamp(14px,1.8vw,16px);letter-spacing:.08em;margin-bottom:22px}
+  .hero h1{font-size:clamp(34px,6vw,58px);line-height:1.3;letter-spacing:.04em;margin-bottom:18px}
+  .hero h1 .aka{color:var(--sango)}
+  .hero p.lead{font-size:clamp(15px,2.2vw,18px);max-width:640px}
+  .hero .kanji{position:absolute;right:-10px;bottom:-60px;font-family:"Zen Maru Gothic",sans-serif;font-weight:800;font-size:clamp(160px,28vw,300px);color:rgba(255,255,255,.07);line-height:1;writing-mode:vertical-rl;pointer-events:none}
+  .btn{display:inline-block;margin-top:30px;background:var(--sango);color:#fff;text-decoration:none;padding:12px 28px;border-radius:999px;font-weight:700;letter-spacing:.05em;transition:transform .2s}
+  .btn:hover{transform:translateY(-2px)}
+
+  section{padding:80px 0}
+  .sec-head{text-align:center;margin-bottom:44px}
+  .sec-head .en{display:block;color:var(--kusa);font-size:13px;letter-spacing:.25em;font-weight:700}
+  .sec-head .en::before{content:"";display:block;width:40px;height:24px;margin:0 auto 4px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 24'%3E%3Cpath d='M20 22 C8 20 4 10 10 3 C16 6 19 13 20 22Z' fill='%2372c470' stroke='%230b2a22' stroke-width='1.5'/%3E%3Cpath d='M20 22 C32 20 36 10 30 3 C24 6 21 13 20 22Z' fill='%233f8f5a' stroke='%230b2a22' stroke-width='1.5'/%3E%3C/svg%3E") center/contain no-repeat}
+  .sec-head h2{font-size:clamp(26px,4vw,34px);color:var(--umi-deep);margin-top:4px}
+  .sec-head p{color:var(--hai);margin-top:8px;font-size:15px}
+
+  /* 宣言 */
+  .sengen{background:#fff;border-left:6px solid var(--sango);padding:36px 32px;border-radius:4px;box-shadow:0 8px 30px rgba(11,79,108,.08)}
+  .sengen h3{font-size:clamp(22px,3.4vw,30px);color:var(--umi-deep);margin-bottom:12px}
+  .sengen .kikkake{background:var(--suna);border-radius:10px;padding:16px 20px;margin-bottom:18px}
+  .sengen .kikkake b{color:var(--sango)}
+  .sub-head{text-align:center;margin:48px 0 24px}
+  .sub-head .en{display:block;color:var(--aka,#d9483b);font-size:13px;letter-spacing:.25em;font-weight:700}
+  .sub-head h3{font-size:clamp(22px,3.4vw,28px);color:#0d4a30;margin-top:2px}
+  .sub-head p{color:#4a3d0c;margin-top:6px;font-size:15px}
+  .sengen .sign{text-align:right;margin-top:14px;font-family:"Zen Maru Gothic",sans-serif;color:var(--hai)}
+
+  /* 記録 */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:26px}
+  @media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+  .stat .label{font-size:13px;color:var(--hai)}
+  .stat .num{font-family:"Zen Maru Gothic",sans-serif;font-size:28px;font-weight:800;color:var(--umi-deep)}
+  .stat .num small{font-size:14px;margin-left:2px}
+  .stat.hl .num{color:var(--sango)}
+  .progress{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:26px}
+  .progress .bar{height:14px;background:#eee6d6;border-radius:999px;overflow:hidden;margin-top:8px}
+  .progress .fill{height:100%;width:0;background:linear-gradient(90deg,var(--umi),var(--sango));border-radius:999px;transition:width 1.2s ease}
+  .progress .meta{display:flex;justify-content:space-between;font-size:14px}
+  .chart-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+  .chart-box svg{width:100%;height:auto;display:block}
+  .note{font-size:13px;color:var(--hai);margin-top:10px}
+
+  /* カード */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{background:#fff;border-radius:14px;padding:26px 22px;border-top:4px solid var(--umi)}
+  .card h3{font-size:20px;color:var(--umi-deep);margin-bottom:8px}
+  .card .tag{display:inline-block;font-size:12px;background:var(--suna);border:1px solid var(--line);border-radius:999px;padding:0 10px;margin-bottom:10px;color:var(--hai)}
+  .card:nth-child(2){border-top-color:var(--sango)}
+  .card:nth-child(3){border-top-color:var(--kiiro)}
+
+  /* ステップ */
+  .steps{counter-reset:s;display:grid;gap:16px}
+  .step{display:grid;grid-template-columns:70px 1fr;gap:18px;background:#fff;border-radius:14px;padding:22px}
+  .step::before{counter-increment:s;content:counter(s);font-family:"Zen Maru Gothic",sans-serif;font-weight:800;font-size:30px;width:60px;height:60px;border-radius:50%;background:var(--umi);color:#fff;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:19px;color:var(--umi-deep)}
+  .step ul{padding-left:1.2em;margin-top:6px}
+  .course-cycle{margin-top:16px;background:#fff;color:var(--umi-deep);border:3px solid var(--ki);border-radius:14px;padding:14px 18px;text-align:center;font-size:17px}
+  .course-cycle b{color:var(--sango)}
+
+  /* 医療情報 */
+  .med-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:820px){.med-grid{grid-template-columns:1fr}}
+  .med{background:#fff;border:1px solid #cfe6dc;border-radius:14px;padding:24px;box-shadow:0 6px 20px rgba(11,79,108,.06)}
+  .med h3{color:var(--sango);font-size:19px;margin-bottom:8px}
+  .med ul{padding-left:1.2em}
+  .med-list{max-width:760px;margin:0 auto}
+  .med-check{max-width:none;margin-bottom:22px;background:var(--sora);border-left:6px solid var(--sango);box-shadow:none}
+  .med-list li{margin-bottom:10px}
+  .med-list b{color:var(--sango)}
+
+  /* 研究コーナー（方眼ノート風カード） */
+  .lab-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:820px){.lab-grid{grid-template-columns:1fr}}
+  .lab{background-color:#fbfdfe;background-image:linear-gradient(rgba(11,79,108,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(11,79,108,.07) 1px,transparent 1px);background-size:18px 18px;border:1px solid #cfe0e7;border-radius:6px;padding:28px 24px 22px;box-shadow:0 6px 20px rgba(11,79,108,.06)}
+  .lab .no{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.15em;color:var(--umi);background:#fff;border:1px solid var(--umi);border-radius:3px;padding:0 8px;margin-bottom:10px}
+  .lab h3{color:var(--umi-deep);font-size:20px;margin-bottom:10px}
+  .lab ul{padding-left:1.2em}
+  .lab li{margin-bottom:6px}
+  .lab .src{margin-top:12px;padding-top:10px;border-top:1px dashed #b9cdd6;font-size:12.5px;color:var(--hai)}
+  .lab .src a{color:var(--umi)}
+  /* わたしの体験 */
+  .story{max-width:820px;margin:0 auto;background:#fff;border-left:6px solid var(--sango);border-radius:4px;padding:34px 30px;box-shadow:0 8px 30px rgba(11,79,108,.08)}
+  .story p{margin-bottom:14px}
+  .story .note{margin-top:24px;padding:20px 22px;background:var(--suna);border-radius:10px}
+  .story .note h3{color:var(--umi-deep);font-size:18px;margin-bottom:8px}
+  .story .note ul{padding-left:1.2em}
+  .story .note li{margin-bottom:6px}
+  .story .src{margin-top:10px;font-size:12.5px;color:var(--hai)}
+  .story .src a{color:var(--umi)}
+  .alert{margin-top:22px;background:var(--sango);color:#fff;border-radius:12px;padding:18px 22px;font-weight:500}
+
+  /* noteの記事 */
+  .note-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:820px){.note-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.note-grid{grid-template-columns:1fr}}
+  .note-card{display:block;background:#fff;border-radius:14px;overflow:hidden;text-decoration:none;color:var(--sumi);border-bottom:4px solid var(--kiiro);box-shadow:0 6px 20px rgba(11,79,108,.06);transition:transform .2s}
+  .note-card:hover{transform:translateY(-3px)}
+  .note-card img{width:100%;aspect-ratio:1.91/1;object-fit:cover;display:block;background:var(--line)}
+  .note-card .body{padding:14px 16px 16px}
+  .note-card .date{font-size:12.5px;color:var(--hai)}
+  .note-card h3{font-size:16px;line-height:1.6;color:var(--umi-deep);margin-top:2px}
+  .note-empty{text-align:center;background:#fff;border-radius:14px;padding:30px 20px;color:var(--hai)}
+
+
+  /* プラン比較 */
+  .plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;text-align:left}
+  @media(max-width:720px){.plans{grid-template-columns:1fr}}
+  .plan{position:relative;background:#fff;border:2px solid #cfe6dc;border-radius:16px;padding:22px 20px 20px;display:flex;flex-direction:column}
+  .plan-kakugo{border:3px solid var(--sango);box-shadow:0 8px 24px rgba(217,72,59,.18)}
+  .plan-badge{position:absolute;top:-13px;right:16px;background:var(--sango);color:#fff;font-weight:700;font-size:12px;padding:2px 12px;border-radius:999px}
+  .plan-for{font-size:13px;color:var(--hai);margin:0 !important}
+  .plan h4{font-family:"Zen Maru Gothic",sans-serif;font-size:22px;color:var(--umi-deep);margin-top:2px}
+  .plan-kakugo h4{color:var(--sango)}
+  .plan .price{font-size:14px;color:var(--sumi);margin:2px 0 8px !important}
+  .plan .price b{font-family:"Zen Maru Gothic",sans-serif;font-size:30px;margin:0 2px}
+  .plan ul{padding-left:1.2em;margin-bottom:6px}
+  .plan li{margin-bottom:4px;font-size:15px}
+  .plan-li-note{display:block;font-size:12.5px;color:var(--hai);margin-top:2px}
+  .plans .plan .plan-btn{margin-top:auto;align-self:center;font-size:15px}
+  .plan:not(.plan-kakugo) .plan-btn{background:var(--midori,#17744a)}
+  .plan-note{margin-top:18px !important;font-size:14px}
+  /* ゆいまーるプラン */
+  .yuimaaru{margin-top:28px;background:url(hero-herbs.svg?v=3) right bottom/auto 100% no-repeat,linear-gradient(160deg,#dff2ea 0%,#f3faea 100%);border:2px solid #bfe0cc;color:var(--umi-deep);border-radius:18px;padding:34px 28px;text-align:center;position:relative;overflow:hidden}
+  .yuimaaru .tag{display:inline-block;background:var(--kiiro);color:var(--umi-deep);font-weight:700;font-size:12px;letter-spacing:.1em;padding:1px 12px;border-radius:999px}
+  .yuimaaru h3{font-size:clamp(22px,3.4vw,28px);margin:10px 0 8px;color:var(--umi-deep)}
+  .yuimaaru p{color:#24414a;max-width:620px;margin:0 auto;position:relative}
+  .yuimaaru::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(243,250,240,.94) 0%,rgba(243,250,240,.92) 65%,rgba(243,250,240,.4) 100%);pointer-events:none}
+  .yuimaaru > *{position:relative}
+  .yuimaaru .btn{margin-top:20px;background:var(--sango);color:#fff}
+  .yuimaaru .small{font-size:12.5px;color:var(--hai);margin-top:12px}
+
+  /* 講座 */
+  .course{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:820px){.course{grid-template-columns:1fr}}
+  .course .card{border-top-color:var(--sango);display:flex;flex-direction:column}
+  .card-link{margin-top:auto;padding-top:14px;align-self:flex-start;color:var(--sango);font-weight:700;text-decoration:none;border-bottom:2px solid var(--kiiro)}
+  .card-link:hover{color:var(--umi)}
+  .course-lead{margin-top:22px;text-align:center;font-weight:700;color:#fff}
+  .soon{display:inline-block;background:var(--kiiro);color:var(--umi-deep);font-weight:700;font-size:12px;padding:0 10px;border-radius:999px;margin-left:6px;vertical-align:middle}
+
+  /* プロフィール */
+  .profile{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:center;background:#fff;border-radius:18px;padding:34px}
+  @media(max-width:720px){.profile{grid-template-columns:1fr;text-align:center}}
+  .avatar{width:180px;height:180px;border-radius:50%;margin:0 auto;background:radial-gradient(circle at 30% 30%,#1f7a8c,var(--umi-deep));display:flex;align-items:center;justify-content:center;color:#fff;font-family:"Zen Maru Gothic",sans-serif;font-size:60px;font-weight:800;border:6px solid var(--suna);box-shadow:0 0 0 3px var(--kiiro)}
+  .avatar{overflow:hidden}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .profile h3{font-size:26px;color:var(--umi-deep)}
+  .profile .role{color:var(--sango);font-weight:700;margin-bottom:8px}
+  .profile ul{list-style:none;margin-top:10px}
+  .profile li::before{content:"◆ ";color:var(--kiiro)}
+
+  /* 沖縄の薬草（キャラクター図鑑） */
+  .herb-intro{max-width:760px;margin:0 auto 34px;text-align:center}
+  .herb-intro b{color:var(--kusa)}
+  .herb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:900px){.herb-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.herb-grid{grid-template-columns:1fr}}
+  .herb-card{background:#fff;border-radius:18px;padding:20px 20px 22px;border-bottom:4px solid var(--kusa);box-shadow:0 6px 20px rgba(11,79,108,.06);display:flex;flex-direction:column}
+  .chara{background:var(--suna);border-radius:14px;padding:12px 10px 12px;display:flex;flex-direction:column;align-items:center;margin-bottom:14px}
+  .chara svg{width:120px;height:120px;display:block}
+  .herb-card:hover .chara svg{animation:boing .7s ease}
+  @keyframes boing{0%,100%{transform:translateY(0) rotate(0)}30%{transform:translateY(-10px) rotate(-4deg)}60%{transform:translateY(0) rotate(3deg)}}
+  @media(prefers-reduced-motion:reduce){.herb-card:hover .chara svg{animation:none}}
+  .say{position:relative;background:#fff;border:2px solid var(--line);border-radius:12px;padding:4px 12px;font-size:13.5px;line-height:1.6;text-align:center;margin-top:8px}
+  .say::before{content:"";position:absolute;top:-9px;left:50%;margin-left:-8px;border:8px solid transparent;border-top:0;border-bottom-color:var(--line)}
+  .herb-card h3{font-size:21px;color:var(--umi-deep);line-height:1.4}
+  .herb-name{font-size:13px;color:var(--hai)}
+  .herb-card dl{flex:1}
+  .herb-card dt{margin-top:10px;font-size:13.5px;font-weight:700;color:var(--kusa)}
+  .herb-card dd{font-size:14.5px;line-height:1.8}
+  .memo{margin-top:14px;background:#fdf1ef;border-left:4px solid var(--sango);border-radius:6px;padding:10px 12px;font-size:14px;line-height:1.75}
+  .memo b{display:block;color:var(--sango);font-size:13px}
+  .herb-tips{margin-top:28px;background:#fff;border:2px dashed var(--kusa);border-radius:14px;padding:24px 26px}
+  .herb-tips h3{color:var(--umi-deep);font-size:19px;margin-bottom:8px}
+  .herb-tips ul{padding-left:1.2em}
+  .herb-tips li{margin-bottom:6px}
+  .herb-tips .src{margin-top:10px;font-size:12.5px;color:var(--hai)}
+
+
+  /* 肥満改善と医療費削減 */
+  .cost-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+  @media(max-width:820px){.cost-stats{grid-template-columns:1fr 1fr}}
+  .cost-stat{background:#fff;border-radius:14px;padding:18px 12px;text-align:center;border-bottom:4px solid var(--ki)}
+  .cost-stat .num{font-family:"Zen Maru Gothic",sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,42px);line-height:1.2;color:var(--aka)}
+  .cost-stat .num small{font-size:.45em;margin-left:2px}
+  .cost-stat .label{font-size:13px;color:#3d4a4f;line-height:1.6;margin-top:4px}
+  .cost-msg{margin-top:22px;background:#fff;border-radius:14px;border-left:6px solid var(--ki);padding:24px 26px}
+  .cost-msg h3{color:var(--midori-deep);font-size:19px;margin-bottom:8px}
+  .cost-msg ul{padding-left:1.2em}
+  .cost-msg li{margin-bottom:6px}
+  .cost-src{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.85);text-align:center}
+  .cost-src a{color:#fff}
+
+  /* 薬草図鑑をコンパクトに */
+  .herb-grid{grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:900px){.herb-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:640px){.herb-grid{grid-template-columns:1fr 1fr;gap:10px}}
+  .herb-card{padding:12px 12px 10px;border-radius:14px}
+  .chara{padding:8px 6px;margin-bottom:8px}
+  .chara svg{width:78px;height:78px}
+  .say{font-size:11.5px;padding:3px 8px;margin-top:6px}
+  .herb-card h3{font-size:17px;text-align:center}
+  .herb-name{font-size:11.5px;text-align:center}
+  .herb-more{margin-top:6px}
+  .herb-more summary,.herb-tips summary{cursor:pointer;list-style:none;font-weight:700;color:var(--kusa)}
+  .herb-more summary::-webkit-details-marker,.herb-tips summary::-webkit-details-marker{display:none}
+  .herb-more summary{font-size:13px;text-align:center;border-top:1px dashed var(--line);padding-top:6px}
+  .herb-more summary::after,.herb-tips summary::after{content:" ＋"}
+  .herb-more[open] summary::after,.herb-tips[open] summary::after{content:" −"}
+  .herb-more dd{font-size:13.5px;line-height:1.75}
+  .herb-more .memo{font-size:13px;margin-top:10px}
+  .m-tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;border-radius:4px;padding:0 6px;margin:4px 6px 0 0;line-height:1.7}
+  .m-eff{background:var(--kusa)}
+  .m-care{background:var(--sango)}
+  .herb-tips{margin-top:20px;padding:16px 22px}
+  .herb-tips summary h3{display:inline;font-size:17px}
+  .herb-tips[open] summary{margin-bottom:8px}
+  .herb-intro{margin-bottom:22px}
+
+  footer{background:var(--ki);border-top:1px solid rgba(0,0,0,.1);color:#4a3d0c;font-size:13px;padding:34px 0;text-align:center}
+  footer .disc{max-width:720px;margin:0 auto 14px;text-align:left;line-height:1.8}
+  footer strong{color:var(--sumi)}
+  /* ===== 背景は濃い黄色で統一 ===== */
+  :root{--ki:#f3c12f;--midori:#17744a;--midori-deep:#0d4a30;--aka:#d9483b}
+  .bg-ki,.bg-midori,.bg-aka,.bg-shiro{background:var(--ki)}
+  section{border-top:1px solid rgba(0,0,0,.1)}
+  .research{position:relative;overflow:hidden}
+  .research > .wrap{position:relative;z-index:1}
+  .sec-head .en{color:var(--aka)}
+  .sec-head h2{color:var(--midori-deep)}
+  .sec-head p,.sub-head p,.course-lead{color:#4a3d0c;font-weight:500}
+  .course-lead{color:var(--sumi)}
+  /* 黄色の上で白いカードが浮いて見えるように */
+  .card,.step,.profile,.cost-stat,.cost-msg,.note-empty{box-shadow:0 6px 18px rgba(90,60,0,.12)}
+  .cost-src{color:#4a3d0c}
+  .cost-src a{color:#4a3d0c}
+  section > .wrap > .note,section > .wrap > .note a{color:#4a3d0c}
+
+  /* プロフィールをコンパクトに */
+  .profile{grid-template-columns:150px 1fr;gap:24px;padding:24px 26px}
+  .profile .avatar{width:140px;height:140px}
+  .profile h3{font-size:23px}
+  .profile .role{margin-bottom:4px}
+  .profile ul.prof-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .profile ul.prof-tags li{background:#fdf3d6;border:1px solid #f0d78a;border-radius:999px;padding:1px 12px;font-size:13px}
+  .profile ul.prof-tags li::before{content:none}
+  .sengen{padding:26px 26px}
+  .sengen h3{font-size:clamp(20px,3vw,24px)}
+  .sengen p{margin-top:8px}
+  @media(max-width:720px){.profile{grid-template-columns:1fr}.profile ul.prof-tags{justify-content:center}}
+
+  /* 記録の見える化をコンパクトに */
+  .sub-head{margin:28px 0 10px}
+  .stats{gap:8px;margin-bottom:10px}
+  .stat{padding:8px 6px;border-radius:10px}
+  .stat .label{font-size:12px;line-height:1.5}
+  .stat .num{font-size:24px;line-height:1.3}
+  .progress{padding:8px 14px;margin-bottom:8px}
+  .progress .bar{height:10px;margin-top:4px}
+  .chart-box{padding:10px}
+  .chart-box svg{max-height:200px}
+  .chart-box .note{margin-top:4px}
+  @media(max-width:720px){.stats{grid-template-columns:repeat(4,1fr);gap:6px}.stat .num{font-size:17px}.stat .label{font-size:11px}}
+
+  /* まずは今夜から＋島の断食ごよみ */
+  .ippo{background:#fff;border-radius:16px;padding:28px 26px;box-shadow:0 6px 18px rgba(90,60,0,.12);border-top:6px solid var(--aka)}
+  .ippo h3{font-size:clamp(20px,3vw,24px);color:var(--midori-deep);text-align:center}
+  .ippo-time{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px 0 14px}
+  .ippo-time .t{text-align:center;background:var(--suna);border-radius:12px;padding:10px 16px;min-width:120px}
+  .ippo-time .t b{display:block;font-family:"Zen Maru Gothic",sans-serif;font-size:26px;color:var(--umi-deep)}
+  .ippo-time .t span{font-size:13px;color:#4a4a4a}
+  .ippo-time .mid{font-family:"Zen Maru Gothic",sans-serif;font-weight:800;color:var(--aka);font-size:18px;text-align:center;line-height:1.3}
+  .ippo-time .mid small{display:block;font-size:12px;color:#4a4a4a;font-weight:500}
+  @media(max-width:520px){.ippo{padding:24px 16px}.ippo-time{gap:6px;flex-wrap:nowrap}.ippo-time .t{min-width:0;padding:8px 10px}.ippo-time .t b{font-size:22px}.ippo-time .mid{font-size:15px}}
+  .ippo-tips{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px;list-style:none;padding:0}
+  @media(max-width:820px){.ippo-tips{grid-template-columns:1fr}}
+  .ippo-tips li{background:var(--suna);border-radius:10px;padding:12px 14px;font-size:15px}
+  .ippo-tips li b{display:block;color:var(--midori-deep)}
+  .ippo-note{font-size:13px;color:#4a4a4a;margin-top:14px;text-align:center}
+  .goyomi .sub-head{margin:44px 0 20px}
+  .goyomi-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media(max-width:720px){.goyomi-cards{grid-template-columns:1fr}}
+  .goyomi-cards .card{border-top-color:var(--midori)}
+  .goyomi-cards .card:nth-child(2){border-top-color:var(--aka)}
+  .goyomi-cards .card:nth-child(3){border-top-color:var(--umi)}
+  .goyomi-cards .card:nth-child(4){border-top-color:var(--kiiro)}
+  .goyomi-cards .card h3{font-size:19px}
+  .goyomi-cards .card a{font-weight:700;font-size:14px}
+  /* よくある質問 */
+  .faq{display:grid;gap:12px;max-width:820px;margin:0 auto}
+  .faq details{background:#fff;border-radius:14px;padding:16px 20px;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+  .faq summary{cursor:pointer;list-style:none;font-weight:700;color:var(--midori-deep);font-size:17px;display:flex;gap:10px;align-items:flex-start}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::before{content:"Q";flex:none;width:28px;height:28px;border-radius:50%;background:var(--midori);color:#fff;font-family:"Zen Maru Gothic",sans-serif;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .faq summary::after{content:"＋";margin-left:auto;color:var(--aka);flex:none}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{display:flex;gap:10px;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+  .faq .a::before{content:"A";flex:none;width:28px;height:28px;border-radius:50%;background:var(--aka);color:#fff;font-family:"Zen Maru Gothic",sans-serif;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .faq .a p{margin:0}
+  .faq .a p + p{margin-top:6px}
+  /* ===== 動き ===== */
+  @media(prefers-reduced-motion:no-preference){
+    /* トップ：見出しが一つずつ浮かび上がる */
+    .hero h1 > span,.hero .eyebrow,.hero .lead,.hero-actions{opacity:0;animation:fadeUp .8s ease forwards}
+    .hero .eyebrow{animation-delay:.1s}
+    .hero h1 > span:nth-of-type(1){animation-delay:.3s}
+    .hero h1 > span:nth-of-type(2){animation-delay:.55s}
+    .hero h1 > span:nth-of-type(3){animation-delay:.9s}
+    .hero h1 > span:nth-of-type(4){animation-delay:1.15s}
+    .hero .lead{animation-delay:1.4s}
+    .hero-actions{animation-delay:1.6s}
+    .hero-photo{animation:popIn .7s cubic-bezier(.34,1.56,.64,1) both}
+    /* 薬草の花：ぽんっと出て、ふわふわ揺れる */
+    .hero-flowers img{animation:popIn .6s cubic-bezier(.34,1.56,.64,1) both,float 4s ease-in-out 1.5s infinite}
+    .hero-flowers li:nth-child(2) img{animation-delay:.15s,1.8s}
+    .hero-flowers li:nth-child(3) img{animation-delay:.3s,2.1s}
+    .hero-flowers li:nth-child(4) img{animation-delay:.45s,2.4s}
+    .hero-flowers li:nth-child(5) img{animation-delay:.6s,2.7s}
+    .hero-flowers li:nth-child(6) img{animation-delay:.75s,3s}
+    .hero-flowers li:nth-child(7) img{animation-delay:.9s,3.3s}
+    .hero-flowers img{transition:transform .3s}
+    .hero-flowers li:hover img{animation-play-state:paused;transform:scale(1.08) rotate(-4deg)}
+    /* ミンサー柄の帯がゆっくり流れる */
+    .minsa{animation:minsa 12s linear infinite}
+    /* ボタンがときどき「こっちだよ」と弾む */
+    .hero .btn-main{animation:nudge 3.5s ease-in-out 3s infinite}
+    /* 12時間の矢印が流れる */
+    .ippo-time .mid{animation:sway 2.4s ease-in-out infinite}
+    /* スクロールで、ふわっと表示 */
+    .js-anim .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+    .js-anim .reveal.is-in{opacity:1;transform:none}
+    /* カードにふれると少し浮く */
+    .card,.step,.faq details,.cost-stat,.ippo-tips li{transition:transform .25s ease,box-shadow .25s ease,opacity .7s ease}
+    .card:hover,.cost-stat:hover,.ippo-tips li:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(90,60,0,.18)}
+    .js-anim .card.reveal.is-in:hover,.js-anim .cost-stat.reveal.is-in:hover{transform:translateY(-4px)}
+    .faq details:hover{box-shadow:0 10px 22px rgba(90,60,0,.16)}
+    .faq details[open] .a{animation:fadeUp .4s ease}
+    /* 見出しの葉っぱがそよぐ */
+    .sec-head .en::before{animation:leaf 3s ease-in-out infinite;transform-origin:50% 100%}
+  }
+  @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes popIn{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  @keyframes minsa{from{background-position:0 0}to{background-position:292px 0}}
+  @keyframes nudge{0%,88%,100%{transform:translateY(0)}92%{transform:translateY(-6px)}96%{transform:translateY(0)}}
+  @keyframes sway{0%,100%{transform:translateX(-3px)}50%{transform:translateX(3px)}}
+  @keyframes leaf{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+  /* ===== 薬草図鑑の動き ===== */
+  @media(prefers-reduced-motion:no-preference){
+    /* キャラクターがゆらゆら・ぴょこぴょこ（一人ずつリズムを変える） */
+    .chara svg{transform-origin:50% 90%;animation:bob 3.2s ease-in-out infinite}
+    .herb-card:nth-child(2n) .chara svg{animation-name:swing;animation-duration:3.8s}
+    .herb-card:nth-child(3n) .chara svg{animation-duration:2.8s}
+    .herb-card:nth-child(1) .chara svg{animation-delay:-.4s}
+    .herb-card:nth-child(2) .chara svg{animation-delay:-1.1s}
+    .herb-card:nth-child(3) .chara svg{animation-delay:-1.9s}
+    .herb-card:nth-child(4) .chara svg{animation-delay:-.7s}
+    .herb-card:nth-child(5) .chara svg{animation-delay:-2.3s}
+    .herb-card:nth-child(6) .chara svg{animation-delay:-1.5s}
+    .herb-card:nth-child(7) .chara svg{animation-delay:-.2s}
+    /* まばたき */
+    .chara svg circle[r="4.5"][fill="#2a2a2a"],.chara svg circle[r="1.5"][fill="#fff"]{transform-box:fill-box;transform-origin:center;animation:blink 4.6s infinite}
+    .herb-card:nth-child(2n) .chara svg circle{animation-delay:1.7s}
+    .herb-card:nth-child(3n) .chara svg circle{animation-delay:3.1s}
+    /* ふれる・タップすると、ぴょーんと跳ねて、ふきだしがはずむ */
+    .herb-card:hover .chara svg,.herb-card.poke .chara svg{animation:boing .7s ease}
+    .herb-card:hover .say,.herb-card.poke .say{animation:sayBounce .6s ease}
+    .chara{cursor:pointer;-webkit-tap-highlight-color:transparent}
+    .herb-card{transition:transform .25s ease,box-shadow .25s ease,opacity .7s ease}
+    .herb-card:hover,.js-anim .herb-card.reveal.is-in:hover{transform:translateY(-5px) rotate(-.6deg);box-shadow:0 14px 28px rgba(90,60,0,.2)}
+    .herb-card:nth-child(even):hover,.js-anim .herb-card.reveal.is-in:nth-child(even):hover{transform:translateY(-5px) rotate(.6deg)}
+    /* カードが出てきたら、少し遅れてふきだしがぽんっ */
+    .js-anim .herb-card.reveal .say{opacity:0}
+    .js-anim .herb-card.reveal.is-in .say{animation:sayPop .5s cubic-bezier(.34,1.56,.64,1) calc(var(--d,0s) + .45s) both}
+    .js-anim .herb-card.reveal.is-in:hover .say,.js-anim .herb-card.reveal.is-in.poke .say{opacity:1;animation:sayBounce .6s ease}
+    /* 「くわしく見る」を開いたら、ふわっと */
+    .herb-more[open] > :not(summary){animation:fadeUp .4s ease}
+  }
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+  @keyframes swing{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+  @keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+  @keyframes sayPop{from{opacity:0;transform:scale(.5) translateY(-6px)}to{opacity:1;transform:none}}
+  @keyframes sayBounce{0%,100%{transform:scale(1)}40%{transform:scale(1.08) rotate(-2deg)}70%{transform:scale(.97) rotate(1deg)}}
+  /* トップのボタン */
+  .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;margin-top:30px}
+  .hero-actions .btn{margin-top:0}
+  .hero-actions .btn-sub{background:#fff;color:var(--aka);box-shadow:inset 0 0 0 2px var(--aka)}
+  .hero-link{font-weight:700;color:var(--umi-deep)}
+  @media(max-width:520px){.hero-actions .btn{flex:1 1 100%;text-align:center}}
+  /* 1分でわかるファスティング */
+  .ichibun .card{position:relative;display:flex;flex-direction:column;padding-top:30px}
+  .ichibun .num{position:absolute;top:-16px;left:20px;width:36px;height:36px;border-radius:50%;background:var(--midori);color:#fff;font-family:"Zen Maru Gothic",sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px var(--ki)}
+  .ichibun .card:nth-child(2) .num{background:var(--aka)}
+  .ichibun .card:nth-child(3) .num{background:var(--umi)}
+  .ichibun .card p{flex:1}
+  .ichibun .more{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px 14px}
+  .ichibun .more a{font-weight:700;font-size:14px;color:var(--aka);text-decoration:none;border-bottom:2px solid var(--kiiro)}
+  .ichibun .cards{margin-top:10px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-top">
+    <a href="#top" class="logo">ゆいまーるファスティング</a>
+    <div class="nav-right">
+      <a href="./" class="lang-switch" lang="en" hreflang="en">English</a>
+      <a href="#course" class="nav-cta">講座・サポート</a>
+    </div>
+  </div>
+  <div class="nav-menu">
+    <ul>
+      <li><a href="#ichibun">1分でわかる</a></li>
+      <li><a href="#ippo">まずは今夜から</a></li>
+      <li><a href="#about">ファスティング（断食）とは</a></li>
+      <li><a href="#history">断食の歴史</a></li>
+      <li><a href="#howto">やり方・注意点</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#research">研究のいま</a></li>
+      <li><a href="#herb">薬草図鑑</a></li>
+      <li><a href="#story">痛みと体重</a></li>
+      <li><a href="#cost">肥満と医療費</a></li>
+      <li><a href="#note">note記事</a></li>
+      <li><a href="#course">講座・サポート</a></li>
+      <li><a href="#profile">プロフィール</a></li>
+      <li><a href="#kiroku">体重の記録</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+   <div class="hero-text">
+    <span class="eyebrow">薬剤師が伴走する、沖縄発のファスティング</span>
+    <h1><span><ruby>行逢<rt>いちゃ</rt></ruby>りば、</span><span><ruby>兄弟<rt>ちょーでー</rt></ruby>。</span><br><span><span class="aka">ゆいまーる</span>で、</span><span>一歩ずつ。</span></h1>
+    <p class="lead">出会えば、みな兄弟。ひとりで抱えこまなくていい。<br>仲間と記録を見せ合い、薬剤師が一人ひとりに合わせてサポートします。<br>沖縄の知恵と正しい知識で、無理なく、着実に。</p>
+    <div class="hero-actions">
+      <a href="#ippo" class="btn btn-main">まずは今夜からやってみる</a>
+      <a href="#course" class="btn btn-sub">講座・サポートを見る</a>
+      <a href="#ichibun" class="hero-link">1分でわかるファスティング →</a>
+    </div>
+   </div>
+    <img class="hero-photo" src="profile.jpg" alt="薬剤師 SHOKO の写真">
+    <ul class="hero-flowers" aria-label="ぬちぐすい薬草図鑑の薬草の花">
+      <li><img src="flower-gettou.jpg" alt="">月桃</li>
+      <li><img src="flower-ukon.jpg" alt="">ウコン</li>
+      <li><img src="flower-chomeiso.jpg" alt="">長命草</li>
+      <li><img src="flower-goya.jpg" alt="">ゴーヤー</li>
+      <li><img src="flower-fuchiba.jpg" alt="">フーチバー</li>
+      <li><img src="flower-guava.jpg" alt="">グァバ</li>
+      <li><img src="flower-kuwa.jpg" alt="">桑</li>
+    </ul>
+  </div>
+</header>
+
+<div class="minsa"></div>
+
+<!-- 1分でわかるファスティング -->
+<section id="ichibun" class="ichibun bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">IN 1 MINUTE</span>
+      <h2>1分でわかるファスティング</h2>
+      <p>はじめての方は、まずここから</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="num">1</span>
+        <h3>どんなもの？</h3>
+        <p>決めた時間だけ食事を休んで、胃腸と食習慣をととのえる方法です。「食べない」ではなく「整える」時間です。</p>
+        <div class="more"><a href="#about">ファスティングとは →</a><a href="#history">断食の歴史 →</a></div>
+      </div>
+      <div class="card">
+        <span class="num">2</span>
+        <h3>何から始める？</h3>
+        <p>いきなり何日も食べないのではなく、まずは「夜の12時間」から。慣れてきたら、3日間のプログラムへ。</p>
+        <div class="more"><a href="#ippo">まずは今夜から →</a><a href="#howto">3日間のやり方 →</a></div>
+      </div>
+      <div class="card">
+        <span class="num">3</span>
+        <h3>気をつけることは？</h3>
+        <p>お薬を飲んでいる方、持病のある方、妊娠中・授乳中の方は、始める前に医師・薬剤師に相談を。体調が悪いときはすぐ中止します。</p>
+        <div class="more"><a href="#howto">確認事項 →</a><a href="#faq">よくある質問 →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- まずは今夜から＋島の断食ごよみ -->
+<section id="ippo" class="goyomi bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">FIRST STEP</span>
+      <h2>まずは今夜から、12時間</h2>
+      <p>断食は、特別な修行ではなく「胃を休める」小さな習慣から</p>
+    </div>
+    <div class="ippo">
+      <h3>夕ごはんを早めに終えて、朝まで食べない</h3>
+      <div class="ippo-time">
+        <div class="t"><b>20:00</b><span>夕ごはん おわり</span></div>
+        <div class="mid">→ 12時間 →<small>ねている間も<br>おなかは休憩中</small></div>
+        <div class="t"><b>8:00</b><span>朝ごはん</span></div>
+      </div>
+      <ul class="ippo-tips">
+        <li><b>夜の空腹には</b>白湯・炭酸水・ノンカフェインの薬草茶（グァバ茶・桑の葉茶など）</li>
+        <li><b>時間はずらしてOK</b>19時〜7時、21時〜9時など、暮らしに合わせて</li>
+        <li><b>できた日に○をつける</b>週に2〜3日からで十分。続けることがいちばん大切</li>
+      </ul>
+      <p class="ippo-note">持病がある・お薬を飲んでいる・妊娠中や授乳中の方は、始める前に<a href="#howto">確認事項</a>を見て、医師・薬剤師にご相談ください。</p>
+    </div>
+
+    <div class="sub-head">
+      <span class="en">ISLAND WISDOM</span>
+      <h3>島の断食ごよみ</h3>
+      <p>沖縄の暮らしの中にある「食べすぎない知恵」</p>
+    </div>
+    <div class="cards goyomi-cards">
+      <div class="card">
+        <span class="tag">腹八分（はらはちぶ）</span>
+        <h3>「もう少し食べたい」で箸をおく</h3>
+        <p>長寿の島のお年寄りが大切にしてきた食べ方。断食の前に、まずはいつもの一口を減らすことから。</p>
+      </div>
+      <div class="card">
+        <span class="tag">かちゅーゆ</span>
+        <h3>お腹がすいたら、かつお節のお湯</h3>
+        <p>かつお節に熱いお湯を注ぐだけ。だしの香りで気持ちが落ち着きます。血圧が気になる方は、みそやしょうゆを控えめに。</p>
+        <a href="https://note.com/ichariba_fasting/n/n6f89f28e904c" target="_blank" rel="noopener">noteで読む →</a>
+      </div>
+      <div class="card">
+        <span class="tag">没頭する時間</span>
+        <h3>三線・畑・散歩で、空腹を忘れる</h3>
+        <p>空腹は、手や体を動かしているうちに波のように過ぎていきます。夢中になれることを一つ用意しておくと楽に。</p>
+        <a href="https://note.com/ichariba_fasting/n/n3c94ecd7a4ac" target="_blank" rel="noopener">noteで読む →</a>
+      </div>
+      <div class="card">
+        <span class="tag">行事のあと</span>
+        <h3>ごちそうの次の日は、胃をやすめる日</h3>
+        <p>お正月・シーミー・旧盆など、ごちそうが続いたあとは、おかゆや汁ものの軽い食事に。ゆるやかな「島のリセット」です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ファスティングとは -->
+<section id="about" class="bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">ABOUT</span>
+      <h2>ファスティング（断食）とは</h2>
+      <p>「食べない」ではなく「整える」時間</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">基本</span>
+        <h3>一定期間、食事を控える</h3>
+        <p>決めた期間、固形の食事を控えて、食習慣を見直すきっかけにする方法です。</p>
+      </div>
+      <div class="card">
+        <span class="tag">大切なこと</span>
+        <h3>最初の3日間と回復期</h3>
+        <p>最初の3日間で食欲を落ち着かせ、回復期はゆっくり食事を戻します。</p>
+      </div>
+      <div class="card">
+        <span class="tag">わたしの考え</span>
+        <h3>正しい情報で、安全に</h3>
+        <p>効果をあおらず、注意点もお伝えします。体調が最優先です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 断食の歴史 -->
+<section id="history" class="bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">HISTORY</span>
+      <h2>断食の歴史</h2>
+      <p>世界で受けつがれてきた習慣</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">古代〜</span>
+        <h3>祈りと修行の断食</h3>
+        <p>イスラム教のラマダンやキリスト教の四旬節など、多くの宗教で続く習慣。日本でも仏教や修験道の修行として行われてきました。</p>
+      </div>
+      <div class="card">
+        <span class="tag">20世紀</span>
+        <h3>医療と暮らしの中へ</h3>
+        <p>ドイツでは1920年代から医師の管理のもとで広まり、日本でも昭和に各地で「断食道場」ができました。</p>
+      </div>
+      <div class="card">
+        <span class="tag">現代</span>
+        <h3>研究と新しいスタイル</h3>
+        <p>2016年、大隅良典さんがオートファジーの研究でノーベル賞を受賞。「16時間断食」など続けやすい方法が広まっています。</p>
+      </div>
+      <div class="card" style="grid-column:1/-1;border-top-color:var(--sango)">
+        <span class="tag">沖縄</span>
+        <h3>長寿の島と「腹八分目」</h3>
+        <p>1970年代に始まった「沖縄百寿者研究」によると、昔のお年寄りは野菜・いも・豆腐を中心に「腹八分目」で食べ、目安より10〜15%ほど少ないカロリーで暮らしていたと推定されています。</p>
+        <p style="margin-top:10px">食生活の変化とともに順位は下がり、2000年に男性26位（26ショック）、2015年には男性36位・女性7位に。昔の食べ方に、見直すヒントがありそうです。</p>
+        <p style="margin-top:10px;font-size:13px;color:var(--hai)">出典：<a href="https://www.okinawaprogram.com/study.html" target="_blank" rel="noopener" style="color:var(--umi)">沖縄百寿者研究</a>／<a href="https://sp.m.jiji.com/english/show/19768" target="_blank" rel="noopener" style="color:var(--umi)">時事通信「長寿県沖縄」今は昔</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- やり方 -->
+<section id="howto" class="bg-midori">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">HOW TO</span>
+      <h2>やり方とスケジュール</h2>
+      <p>大切なのは「最初の3日間」と「回復期」</p>
+    </div>
+    <div class="med med-list med-check" id="medical">
+      <h3>始める前に｜薬剤師からの確認事項</h3>
+      <ul>
+        <li><b>医師に相談してから：</b>妊娠中・授乳中、持病がある・通院中、成長期・ご高齢、やせ型の方</li>
+        <li><b>お薬を飲んでいる方：</b>血糖値・血圧のお薬などは効き方が変わることも。自己判断せず相談を</li>
+        <li><b>すぐ中止するサイン：</b>強いめまい・冷や汗・手のふるえ・動悸・頭痛・吐き気など。続くときは受診を</li>
+        <li><b>情報の見極め：</b>「必ず痩せる」などの断定や商品のすすめは慎重に</li>
+      </ul>
+    </div>
+    <div class="steps">
+      <div class="step" style="background:var(--suna)">
+        <div>
+          <h3>1日目｜準備期</h3>
+          <ul>
+            <li>夜だけ断食（夕食を抜く）</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step" style="background:var(--suna)">
+        <div>
+          <h3>2〜3日目｜ファスティング期（液体だけで過ごす）</h3>
+          <ul>
+            <li>野菜ジュース＋プロテイン＋整腸剤</li>
+            <li>水分をしっかりとる</li>
+            <li>めまい・強いだるさがあれば中止</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step" style="background:var(--suna)">
+        <div>
+          <h3>4日目から｜回復期（夕食だけ断食）</h3>
+          <p>その月の終わりまで続けます。</p>
+          <ul>
+            <li>朝・昼はおかゆ・味噌汁など消化のよいものから</li>
+            <li>よく噛んで、ゆっくり食べる</li>
+            <li>夜の空腹には炭酸水</li>
+            <li>運動は軽いストレッチや散歩程度に</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="course-cycle"><b>1か月を1クール</b>として、<b>3か月</b>くり返します。</p>
+    <div class="alert">一般的な情報です。診断・治療に代わるものではありません。不安な方は医師・薬剤師にご相談ください。</div>
+  </div>
+</section>
+
+<!-- よくある質問 -->
+<section id="faq" class="bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">Q&amp;A</span>
+      <h2>よくある質問</h2>
+      <p>はじめる前の「気になる」に、薬剤師がお答えします</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>お腹がすいて、夜眠れなくなりませんか？</summary>
+        <div class="a"><div><p>はじめの数日は空腹を感じやすいですが、空腹は波のようにやってきて、しばらくすると落ち着きます。白湯や炭酸水、かちゅーゆで乗り切る方が多いです。</p><p>どうしても眠れないほどつらい日は、無理をせず軽いものを少し食べてOK。睡眠を削ってまで続ける必要はありません。</p></div></div>
+      </details>
+      <details>
+        <summary>仕事や家事、育児をしながらでもできますか？</summary>
+        <div class="a"><div><p>「夜だけの12時間」なら、ほとんどが寝ている時間なので、ふだん通りに過ごせます。</p><p>液体だけで過ごす日は、予定の少ない日や休日に合わせるのがおすすめ。車の運転や力仕事、激しい運動が多い日は避けましょう。</p></div></div>
+      </details>
+      <details>
+        <summary>授乳中でもできますか？</summary>
+        <div class="a"><div><p>授乳中の断食の安全性は、研究でもまだわかっていません。液体だけで過ごす断食は避け、「腹八分」や「夜食をやめる」くらいから始めてください。</p><p>母乳の出や赤ちゃんの体重が気になるときはすぐにやめて、医師・助産師にご相談ください。</p></div></div>
+      </details>
+      <details>
+        <summary>お薬を飲んでいてもできますか？</summary>
+        <div class="a"><div><p>血糖値を下げるお薬は低血糖、血圧のお薬はふらつきが起こりやすくなることがあります。食事に合わせて飲むお薬は、量やタイミングの見直しが必要なことも。</p><p>自己判断でお薬をやめたり減らしたりせず、始める前に主治医・薬剤師にご相談ください。</p></div></div>
+      </details>
+      <details>
+        <summary>頭が痛くなったり、ふらふらしたら？</summary>
+        <div class="a"><div><p>水分不足や、コーヒー・お茶のカフェインが急に減ったことが原因のこともあります。まずは水分をしっかりとりましょう。</p><p>強いめまい・冷や汗・手のふるえ・動悸があるときはすぐに中止して、糖分のあるものをとってください。症状が続くときは受診を。</p></div></div>
+      </details>
+      <details>
+        <summary>終わったあと、リバウンドしませんか？</summary>
+        <div class="a"><div><p>断食のあとに急にたくさん食べると、体重は戻りやすくなります。だからこそ「回復期」でゆっくり食事を戻すことが大切です。</p><p>終わったあとも体重の記録を続けると、増えはじめに早く気づけます。仲間と記録を見せ合うのは、そのためでもあります。</p></div></div>
+      </details>
+      <details>
+        <summary>運動はしたほうがいいですか？</summary>
+        <div class="a"><div><p>液体だけで過ごす日は、散歩や軽いストレッチ程度に。ふだんの食事に戻ってから、少しずつ体を動かす量を増やしていきましょう。</p></div></div>
+      </details>
+    </div>
+    <p style="text-align:center;margin-top:18px;color:#4a3d0c;font-size:14px">ほかに気になることは、<a href="#course">お問い合わせ</a>からお気軽にどうぞ。</p>
+  </div>
+</section>
+
+<!-- 研究 -->
+<section id="research" class="research bg-shiro">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">RESEARCH</span>
+      <h2>研究のいま</h2>
+      <p>わかっていること・いないこと</p>
+    </div>
+    <div class="lab-grid">
+      <div class="lab">
+        <span class="no">REPORT 01</span>
+        <h3>最新の研究報告</h3>
+        <ul>
+          <li>断続的ファスティングと、ふつうのカロリー制限で、体重の減り方に大きな差はない（99件の研究のまとめ・2025年）</li>
+          <li>食べる時間を決めるだけでは、体重の差は1〜2kgほど（2025年）</li>
+          <li>大切なのは「1日にとる量」。続けやすい方法を選ぶのがよい</li>
+          <li>授乳中の安全性はまだ不明。医師・助産師に相談を</li>
+        </ul>
+        <p class="src">出典：<a href="https://bmjgroup.com/intermittent-fasting-comparable-to-traditional-diets-for-weight-loss/" target="_blank" rel="noopener">BMJ 2025;389:e082007</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/41036194/" target="_blank" rel="noopener">Front Nutr 2025</a>／<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/oby.24252" target="_blank" rel="noopener">Obesity 2025</a></p>
+      </div>
+      <div class="lab">
+        <span class="no">REPORT 02</span>
+        <h3>細胞の「お掃除」オートファジー</h3>
+        <ul>
+          <li>細胞の古い部品を分解して再利用するしくみ（2016年ノーベル賞）</li>
+          <li>空腹で活発になることは、主に動物や細胞の実験で確認</li>
+          <li>人でも、食事の時間を制限した人で指標が高かったという報告あり（2025年・探索的）</li>
+          <li>「断食をまねた食事」で生物学的年齢が約2.5歳低かった報告も（2024年・推定値、研究者が関わる会社の食品を使用）</li>
+          <li>「若返る」「老化が止まる」とまでは確かめられていない</li>
+        </ul>
+        <p class="src">出典：<a href="https://doaj.org/article/07535cae9755447cbf16d32138fdada8" target="_blank" rel="noopener">Nature Communications 2024</a>／<a href="https://www.researchgate.net/publication/391597820_Intermittent_time-restricted_eating_may_increase_autophagic_flux_in_humans_an_exploratory_analysis" target="_blank" rel="noopener">J Physiol 2025</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 沖縄の薬草（キャラクター図鑑） -->
+<section id="herb" class="herb bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">OKINAWAN HERBS</span>
+      <h2>ぬちぐすい薬草図鑑</h2>
+      <p>「ぬちぐすい（命の薬）」の薬草たち</p>
+    </div>
+
+    <div class="herb-grid">
+
+      <!-- うっちんくん -->
+      <article class="herb-card">
+        <div class="chara">
+          <svg viewBox="0 0 120 120" role="img" aria-label="うっちんくんのイラスト">
+            <ellipse cx="32" cy="52" rx="11" ry="16" transform="rotate(-30 32 52)" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
+            <ellipse cx="89" cy="50" rx="10" ry="15" transform="rotate(28 89 50)" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
+            <ellipse cx="60" cy="72" rx="36" ry="32" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
+            <path d="M32 92 Q60 102 88 92" stroke="#c98a12" stroke-width="2" fill="none" opacity=".5"/>
+            <path d="M28 58 Q60 46 92 58" stroke="#d9483b" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M92 58 l12 -8 M92 58 l13 3" stroke="#d9483b" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="72" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="72" r="4.5" fill="#2a2a2a"/>
+            <circle cx="51.5" cy="70.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="70.5" r="1.5" fill="#fff"/>
+            <ellipse cx="41" cy="80" rx="6" ry="3.5" fill="#e8705f" opacity=".6"/><ellipse cx="79" cy="80" rx="6" ry="3.5" fill="#e8705f" opacity=".6"/>
+            <path d="M53 80 Q60 88 67 80" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="say">黄色いのは<br>クルクミンのおかげさー！</span>
+        </div>
+        <h3>うっちんくん</h3>
+        <p class="herb-name">ウコン（うっちん）｜ショウガ科</p>
+        <details class="herb-more">
+          <summary>くわしく見る</summary>
+        <dl>
+          <dt>島での使われ方</dt>
+          <dd>うっちん茶や料理の色づけに。秋・春・紫ウコンなどの種類があります。</dd>
+          <dt>研究では</dt>
+          <dd>黄色い成分クルクミンの研究は多いものの、体に吸収されにくい成分です。</dd>
+        </dl>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>クルクミンに炎症をおさえる働きが期待されていますが、人での効果ははっきりしていません。<br><span class="m-tag m-care">注意</span>サプリで肝臓をいためた報告あり。肝臓の病気・胆石のある方、血液をサラサラにする薬を飲んでいる方は相談を。</p>
+        </details>
+      </article>
+
+      <!-- サクナちゃん -->
+      <article class="herb-card">
+        <div class="chara">
+          <svg viewBox="0 0 120 120" role="img" aria-label="サクナちゃんのイラスト">
+            <path d="M60 44 V22" stroke="#3f8f5a" stroke-width="3" stroke-linecap="round"/>
+            <ellipse cx="46" cy="26" rx="9" ry="14" transform="rotate(-45 46 26)" fill="#5aa36d" stroke="#3f8f5a" stroke-width="2"/>
+            <ellipse cx="74" cy="26" rx="9" ry="14" transform="rotate(45 74 26)" fill="#5aa36d" stroke="#3f8f5a" stroke-width="2"/>
+            <ellipse cx="60" cy="16" rx="8" ry="12" fill="#6fb37d" stroke="#3f8f5a" stroke-width="2"/>
+            <circle cx="60" cy="74" r="34" fill="#9fd19a" stroke="#3f8f5a" stroke-width="2"/>
+            <circle cx="50" cy="72" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="72" r="4.5" fill="#2a2a2a"/>
+            <circle cx="51.5" cy="70.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="70.5" r="1.5" fill="#fff"/>
+            <ellipse cx="41" cy="81" rx="6" ry="3.5" fill="#f28b82" opacity=".7"/><ellipse cx="79" cy="81" rx="6" ry="3.5" fill="#f28b82" opacity=".7"/>
+            <path d="M55 81 Q60 86 65 81" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="say">1株食べたら1日長生き<br>…って言われてるよ〜</span>
+        </div>
+        <h3>サクナちゃん</h3>
+        <p class="herb-name">長命草（ボタンボウフウ）｜セリ科</p>
+        <details class="herb-more">
+          <summary>くわしく見る</summary>
+        <dl>
+          <dt>島での使われ方</dt>
+          <dd>海辺に育つ草。天ぷらや青汁に。「1株食べると1日長生き」が名前の由来とされます。</dd>
+          <dt>研究では</dt>
+          <dd>多くは試験管や動物での段階です。</dd>
+        </dl>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>ポリフェノールなどを含みますが、人での効果はまだ確かめられていません。<br><span class="m-tag m-care">注意</span>粉末・サプリのとりすぎに注意。セリ科（セロリ・にんじん等）アレルギーの方は避けて。</p>
+        </details>
+      </article>
+
+      <!-- ゴーヤーにぃにぃ -->
+      <article class="herb-card">
+        <div class="chara">
+          <svg viewBox="0 0 120 120" role="img" aria-label="ゴーヤーにぃにぃのイラスト">
+            <path d="M60 20 Q58 10 66 6" stroke="#6b8e3a" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <ellipse cx="60" cy="64" rx="27" ry="46" fill="#5fa35a" stroke="#3f7d3c" stroke-width="2"/>
+            <path d="M46 26 Q38 64 46 104 M74 26 Q82 64 74 104" stroke="#3f7d3c" stroke-width="1.5" fill="none" opacity=".6"/>
+            <g fill="#7cc076"><circle cx="40" cy="44" r="2.5"/><circle cx="38" cy="60" r="2.5"/><circle cx="40" cy="80" r="2.5"/><circle cx="80" cy="44" r="2.5"/><circle cx="82" cy="60" r="2.5"/><circle cx="80" cy="80" r="2.5"/><circle cx="54" cy="32" r="2.5"/><circle cx="66" cy="32" r="2.5"/><circle cx="54" cy="96" r="2.5"/><circle cx="66" cy="96" r="2.5"/></g>
+            <path d="M45 54 L55 57 M75 54 L65 57" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="51" cy="64" r="4.5" fill="#2a2a2a"/><circle cx="69" cy="64" r="4.5" fill="#2a2a2a"/>
+            <circle cx="52.5" cy="62.5" r="1.5" fill="#fff"/><circle cx="70.5" cy="62.5" r="1.5" fill="#fff"/>
+            <path d="M52 76 Q60 82 68 76" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="say">苦いのは<br>がんばってる証拠やっさー</span>
+        </div>
+        <h3>ゴーヤーにぃにぃ</h3>
+        <p class="herb-name">ゴーヤー（ニガウリ）｜ウリ科</p>
+        <details class="herb-more">
+          <summary>くわしく見る</summary>
+        <dl>
+          <dt>島での使われ方</dt>
+          <dd>ゴーヤーチャンプルーでおなじみの夏野菜です。</dd>
+          <dt>研究では</dt>
+          <dd>人での研究は小規模なものが中心です。</dd>
+        </dl>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>血糖値への作用が研究されていますが、結論はまだ出ていません。<br><span class="m-tag m-care">注意</span>糖尿病の薬と一緒にエキス・サプリをとると低血糖のおそれ。妊娠中は濃縮品を避けて。</p>
+        </details>
+      </article>
+
+      <!-- フーチバーおばぁ -->
+      <article class="herb-card">
+        <div class="chara">
+          <svg viewBox="0 0 120 120" role="img" aria-label="フーチバーおばぁのイラスト">
+            <ellipse cx="26" cy="72" rx="8" ry="14" transform="rotate(-25 26 72)" fill="#7fae7c" stroke="#557f53" stroke-width="2"/>
+            <ellipse cx="94" cy="72" rx="8" ry="14" transform="rotate(25 94 72)" fill="#7fae7c" stroke="#557f53" stroke-width="2"/>
+            <circle cx="60" cy="34" r="14" fill="#557f53"/>
+            <path d="M38 26 L84 40" stroke="#f2b632" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="60" cy="74" r="33" fill="#b5d6b0" stroke="#557f53" stroke-width="2"/>
+            <path d="M30 62 Q60 40 90 62" fill="#557f53"/>
+            <circle cx="50" cy="74" r="8" fill="none" stroke="#2a2a2a" stroke-width="2"/><circle cx="70" cy="74" r="8" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+            <path d="M58 74 H62" stroke="#2a2a2a" stroke-width="2"/>
+            <path d="M46 75 Q50 71 54 75 M66 75 Q70 71 74 75" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="40" cy="86" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="80" cy="86" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
+            <path d="M53 88 Q60 95 67 88" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="say">ジューシーにもヒージャー汁にも<br>わんがおらんとね〜</span>
+        </div>
+        <h3>フーチバーおばぁ</h3>
+        <p class="herb-name">フーチバー（ニシヨモギ）｜キク科</p>
+        <details class="herb-more">
+          <summary>くわしく見る</summary>
+        <dl>
+          <dt>島での使われ方</dt>
+          <dd>フーチバージューシーやヤギ汁、沖縄そばの薬味に。</dd>
+          <dt>研究では</dt>
+          <dd>香り成分などが調べられている段階です。</dd>
+        </dl>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>強い香りで料理のくさみをやわらげます。体への効果を確かめた人の研究は多くありません。<br><span class="m-tag m-care">注意</span>キク科（ブタクサ・菊など）アレルギーの方は注意。妊娠中は大量にとらないで。</p>
+        </details>
+      </article>
+
+      <!-- バンシルーちゃん -->
+      <article class="herb-card">
+        <div class="chara">
+          <svg viewBox="0 0 120 120" role="img" aria-label="バンシルーちゃんのイラスト">
+            <path d="M60 40 Q60 30 64 24" stroke="#6b5a3a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            <path d="M64 26 Q82 8 98 20 Q82 34 64 26 Z" fill="#4f9a6a" stroke="#3f8f5a" stroke-width="2"/>
+            <path d="M66 25 Q80 20 94 20" stroke="#3f8f5a" stroke-width="1.5" fill="none"/>
+            <circle cx="60" cy="74" r="35" fill="#c6dc7c" stroke="#8fae42" stroke-width="2"/>
+            <circle cx="60" cy="74" r="26" fill="#f6c2b8" opacity=".35"/>
+            <circle cx="50" cy="72" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="72" r="4.5" fill="#2a2a2a"/>
+            <circle cx="51.5" cy="70.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="70.5" r="1.5" fill="#fff"/>
+            <ellipse cx="40" cy="81" rx="7" ry="4" fill="#ef7f8c" opacity=".75"/><ellipse cx="80" cy="81" rx="7" ry="4" fill="#ef7f8c" opacity=".75"/>
+            <path d="M55 81 Q60 87 65 81" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="say">実だけじゃなく<br>葉っぱのお茶もよろしくね〜</span>
+        </div>
+        <h3>バンシルーちゃん</h3>
+        <p class="herb-name">グァバ（バンシルー）｜フトモモ科</p>
+        <details class="herb-more">
+          <summary>くわしく見る</summary>
+        <dl>
+          <dt>島での使われ方</dt>
+          <dd>庭先でもよく見る果物。葉を乾かしてお茶にします。</dd>
+          <dt>研究では</dt>
+          <dd>食後の血糖値の上がり方への作用が、人で確かめられています。</dd>
+        </dl>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>葉のポリフェノールが糖の吸収をおだやかにします（トクホの成分）。<br><span class="m-tag m-care">注意</span>糖尿病の薬を飲んでいる方は、血糖が下がりすぎないよう主治医に相談を。</p>
+        </details>
+      </article>
+
+      <!-- サンニンねぇねぇ -->
+      <article class="herb-card">
+        <div class="chara">
+          <svg viewBox="0 0 120 120" role="img" aria-label="サンニンねぇねぇのイラスト">
+            <path d="M60 8 C96 36 96 90 60 114 C24 90 24 36 60 8 Z" fill="#6cb27a" stroke="#3f8f5a" stroke-width="2"/>
+            <path d="M60 14 V108" stroke="#3f8f5a" stroke-width="1.5" opacity=".5"/>
+            <ellipse cx="60" cy="70" rx="22" ry="20" fill="#bfe2bf"/>
+            <g transform="translate(80 34)">
+              <ellipse cx="0" cy="0" rx="6" ry="8" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
+              <ellipse cx="9" cy="6" rx="5" ry="7" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
+              <ellipse cx="-2" cy="11" rx="5" ry="6.5" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
+              <circle cx="3" cy="5" r="2.5" fill="#f2b632"/>
+            </g>
+            <path d="M47 67 Q51 63 55 67 M65 67 Q69 63 73 67" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M46 66 l-3 -2 M74 66 l3 -2" stroke="#2a2a2a" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="45" cy="76" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="75" cy="76" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
+            <path d="M55 77 Q60 83 65 77" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="say">ムーチーは<br>わたしで包んでね</span>
+        </div>
+        <h3>サンニンねぇねぇ</h3>
+        <p class="herb-name">月桃（サンニン）｜ショウガ科</p>
+        <details class="herb-more">
+          <summary>くわしく見る</summary>
+        <dl>
+          <dt>島での使われ方</dt>
+          <dd>ムーチー（旧暦12月8日）でおもちを包む葉。お茶や虫よけにも。</dd>
+          <dt>研究では</dt>
+          <dd>葉のポリフェノールなどを調べている段階です。</dd>
+        </dl>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>さわやかな香りが楽しめます。体への効果は試験管・動物での研究が中心です。<br><span class="m-tag m-care">注意</span>妊娠中・授乳中の安全性は確かめられていないため、控えめに。</p>
+        </details>
+      </article>
+
+      <!-- クヮーギちゃん -->
+      <article class="herb-card">
+        <div class="chara">
+          <svg viewBox="0 0 120 120" role="img" aria-label="クヮーギちゃんのイラスト">
+            <path d="M60 112 C34 100 18 80 20 58 C21 44 28 34 38 30 L42 34 L46 27 L52 30 L56 22 L60 28 L64 22 L68 30 L74 27 L78 34 L82 30 C92 34 99 44 100 58 C102 80 86 100 60 112 Z" fill="#7cc06c" stroke="#4d8f42" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M60 30 V108 M60 70 L36 52 M60 70 L84 52 M60 88 L40 80 M60 88 L80 80" stroke="#4d8f42" stroke-width="1.5" fill="none" opacity=".45"/>
+            <ellipse cx="60" cy="68" rx="22" ry="19" fill="#c3e5b6"/>
+            <g transform="translate(26 24)">
+              <path d="M6 -6 Q8 -12 14 -14" stroke="#4d8f42" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="2" cy="0" r="4" fill="#5b2a4e"/><circle cx="8" cy="2" r="4" fill="#6e3360"/><circle cx="4" cy="6" r="4" fill="#5b2a4e"/><circle cx="10" cy="8" r="4" fill="#6e3360"/><circle cx="5" cy="12" r="3.5" fill="#5b2a4e"/>
+              <circle cx="1" cy="-1" r="1" fill="#fff" opacity=".7"/>
+            </g>
+            <circle cx="50" cy="66" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="66" r="4.5" fill="#2a2a2a"/>
+            <circle cx="51.5" cy="64.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="64.5" r="1.5" fill="#fff"/>
+            <ellipse cx="42" cy="75" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="78" cy="75" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
+            <path d="M54 75 Q60 82 66 75" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="say">食べる前に<br>わたしのお茶、一杯どうぞ〜</span>
+        </div>
+        <h3>クヮーギちゃん</h3>
+        <p class="herb-name">桑（クヮーギ）｜クワ科</p>
+        <details class="herb-more">
+          <summary>くわしく見る</summary>
+        <dl>
+          <dt>島での使われ方</dt>
+          <dd>葉はお茶、実はおやつに。「クヮーギヌシチャ」と唱える魔よけの言い伝えも。</dd>
+          <dt>研究では</dt>
+          <dd>食後の血糖値への作用が、人で調べられています。</dd>
+        </dl>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>葉のDNJが糖の吸収をおだやかにします（機能性表示食品の成分）。<br><span class="m-tag m-care">注意</span>糖尿病の薬と一緒だと効きすぎることも。おなかの張り・おならが増えることがあります。</p>
+        </details>
+      </article>
+
+    </div>
+
+    <details class="herb-tips">
+      <summary><h3>ファスティング中に薬草茶を飲むときは</h3></summary>
+      <ul>
+        <li>ノンカフェインのものが多く、水分補給の選択肢になります。砂糖が入っていないものを選びましょう</li>
+        <li>空腹のときに濃いものをたくさん飲むと、胃に負担がかかることがあります</li>
+        <li>授乳中は、母乳への影響がわかっていないものが多いため、少量から・心配なら相談を</li>
+        <li>「天然だから安全」とは限りません。お薬を飲んでいる方は、飲み合わせを薬剤師に確認してください</li>
+      </ul>
+      <p class="src">参考：国立健康・栄養研究所「健康食品」の安全性・有効性情報（HFNet）、消費者庁 特定保健用食品の情報</p>
+    </details>
+  </div>
+</section>
+
+<!-- 体重と体の痛み（根拠＋わたしの体験） -->
+<section id="story" class="bg-aka">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">BODY &amp; PAIN</span>
+      <h2>体重を落とすと、体の痛みは軽くなる？</h2>
+      <p>研究とわたしの体験から</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">ひざ</span>
+        <h3>1kg減ると、ひざの負担は約4kg分軽く</h3>
+        <p>ひざの痛みがある人で、1kg減るごとに歩くときの負担が約4kg分減少。体重を約1割減らすと、痛みも軽くなりました。</p>
+      </div>
+      <div class="card">
+        <span class="tag">腰</span>
+        <h3>体重が多いほど、腰痛が多い傾向</h3>
+        <p>肥満の人は腰痛の割合が高い傾向。ただし、減量で腰痛がよくなるかは研究がまだ少ないです。</p>
+      </div>
+      <div class="card">
+        <span class="tag">足</span>
+        <h3>体重は、かかとの痛みの要因のひとつ</h3>
+        <p>体重は「足底腱膜炎」の要因のひとつ。ストレッチやインソールとの組み合わせが勧められています。</p>
+      </div>
+    </div>
+    <p class="note" style="text-align:center;margin-top:14px">出典：<a href="https://pubmed.ncbi.nlm.nih.gov/15986358/" target="_blank" rel="noopener">Arthritis Rheum 2005</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/24065013/" target="_blank" rel="noopener">JAMA 2013（IDEA試験）</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/20007994/" target="_blank" rel="noopener">Am J Epidemiol 2010</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/38037331/" target="_blank" rel="noopener">JOSPT 2023</a></p>
+
+    <div class="story" style="margin-top:34px">
+      <h3 class="mincho" style="color:var(--umi-deep);font-size:21px;margin-bottom:12px">わたしの場合｜足底腱膜炎（個人の体験です）</h3>
+      <p>かかとの痛みが続き「足底腱膜炎」と診断。体外衝撃波治療でも痛みは引きませんでした。転機は、体重を落とすこととリハビリ。少しずつ痛みがやわらぎ、研究で言われていることを自分の体で実感しました。</p>
+      <div class="note">
+        <h3>薬剤師として伝えたいこと</h3>
+        <ul>
+          <li>減量は、ひざ・腰・足の負担を減らす「自分でできる」こと</li>
+          <li>リハビリや治療と組み合わせるのが大切</li>
+          <li>痛みが続く・しびれる・急に強く痛むときは整形外科へ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 肥満改善と医療費削減 -->
+<section id="cost" class="bg-midori">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">HEALTH &amp; COST</span>
+      <h2>肥満改善と医療費削減</h2>
+      <p>体にも、医療費にもやさしい減量</p>
+    </div>
+
+    <div class="cost-stats">
+      <div class="cost-stat"><div class="num">41.1<small>%</small></div><div class="label">沖縄県の男性の肥満者の割合<br>（全国は31.5%）</div></div>
+      <div class="cost-stat"><div class="num">48<small>兆円</small></div><div class="label">日本の国民医療費<br>（令和5年度・過去最高）</div></div>
+      <div class="cost-stat"><div class="num">+22<small>%</small></div><div class="label">BMI30以上の人の医療費<br>（標準体重の人と比べて）</div></div>
+      <div class="cost-stat"><div class="num">3<small>%</small></div><div class="label">検査値の改善が見えはじめる<br>減量の目安</div></div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span class="tag">沖縄の現状</span>
+        <h3>男性の4割以上が肥満</h3>
+        <p>沖縄の肥満者（BMI25以上）は男性41.1%・女性27.5%（2024年度）。40〜50代の男性は5割超で、男女とも全国を上回ります。</p>
+      </div>
+      <div class="card">
+        <span class="tag">肥満と医療費</span>
+        <h3>体重が多いほど医療費も増える</h3>
+        <p>標準体重の人に比べ、医療費はBMI25〜29.9で9.8%、BMI30以上で22.3%高い（大崎研究）。国民医療費は過去最高の48兆円です。</p>
+      </div>
+      <div class="card">
+        <span class="tag">減量の効果</span>
+        <h3>まずは3%、できれば5〜10%</h3>
+        <p>3%の減量で血圧・血糖・脂質が改善。5〜10%減らすと、さらに改善が大きくなります。</p>
+      </div>
+    </div>
+
+    <div class="cost-msg">
+      <h3>薬剤師として伝えたいこと</h3>
+      <ul>
+        <li>60kgの人なら3%は約1.8kg。「まずは2kg」から</li>
+        <li>生活習慣病の予防で、将来の通院やお薬が減る可能性も</li>
+        <li>一人ひとりの減量が、沖縄と日本の医療費を支えます（効果の大きさは研究でも議論中）</li>
+        <li>お薬を飲んでいる方は、量の見直しが必要なことも。主治医・薬剤師に相談を</li>
+      </ul>
+      <p style="margin-top:14px;text-align:center"><a href="#course" class="btn" style="margin-top:0">講座・サポートを見て、一緒に取り組む</a></p>
+    </div>
+    <p class="cost-src">出典：<a href="https://ryukyushimpo.jp/national/entry-5035817.html" target="_blank" rel="noopener">沖縄県 県民健康・栄養調査 2024年度（琉球新報）</a>／<a href="https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/23/" target="_blank" rel="noopener">厚生労働省「令和5年度 国民医療費の概況」</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/12119572/" target="_blank" rel="noopener">Int J Obes 2002（大崎研究）</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/25263836/" target="_blank" rel="noopener">Obes Res Clin Pract 2014</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/21593294/" target="_blank" rel="noopener">Diabetes Care 2011</a></p>
+  </div>
+</section>
+
+<!-- noteの記事（notes.json から自動で表示） -->
+<section id="note" class="bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">NOTE</span>
+      <h2>noteの最新記事</h2>
+      <p>記録や気づきをnoteで発信中</p>
+    </div>
+    <div class="note-grid" id="noteList"></div>
+    <p style="text-align:center;margin-top:26px">
+      <a href="https://note.com/ichariba_fasting" class="btn" target="_blank" rel="noopener">noteをもっと読む</a>
+    </p>
+  </div>
+</section>
+
+<!-- 講座 -->
+<section id="course" class="bg-midori">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">SUPPORT</span>
+      <h2>講座・サポートのご案内</h2>
+      <p>一緒に取り組む仲間を募集中</p>
+    </div>
+    <div class="course">
+      <div class="card">
+        <h3>はじめてのファスティング講座</h3>
+        <p>安全な進め方、食事、お薬との付き合い方を薬剤師が解説。</p>
+      </div>
+      <div class="card">
+        <h3>みんなで伴走サポート</h3>
+        <p>仲間と記録を見せ合い、決めた期間をやりぬくサポート。</p>
+      </div>
+    </div>
+    <p class="course-cycle">伴走のモットーは、<b>食事だけで</b>、<b>月2〜3kg</b>の減量を目指すこと。</p>
+    <p class="course-lead">講座・サポートの最新情報は、こちらから受け取れます ↓</p>
+    <p style="text-align:center;margin-top:0">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ-dp4M4bo3Go0nEAq2zYJWlwzx6iVNavDS1MJZV5o39d8FQ/viewform" class="btn" target="_blank" rel="noopener">お問い合わせ・最新情報を受け取る</a>
+    </p>
+  </div>
+</section>
+
+<div class="minsa"></div>
+
+<!-- プロフィール -->
+<section id="profile" class="bg-ki">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">PROFILE</span>
+      <h2>プロフィール</h2>
+    </div>
+    <div class="profile">
+      <div class="avatar"><img src="profile.jpg" alt="プロフィール写真"></div>
+      <div>
+        <h3 class="nickname">（ニックネーム）</h3>
+        <p class="role">薬剤師／沖縄在住／産後ママ</p>
+        <p>病院・大学病院・調剤薬局で勤務。1人目の産後に−10kgを達成し、2人目の産後の今、再挑戦中。モットーは「正しく、安全に、着実に」。</p>
+        <ul class="prof-tags">
+          <li>京都の大学で薬学を学ぶ</li>
+          <li>食品衛生管理者の資格</li>
+          <li>栄養・救急・臨床研究の研修・資格</li>
+          <li>沖縄生まれ・沖縄育ち</li>
+        </ul>
+        <p style="margin-top:8px"><a href="#sengen" style="font-weight:700">決意と記録を見る ↓</a></p>
+      </div>
+    </div>
+
+    <!-- わたしの決意 -->
+    <div class="sengen" id="sengen" style="margin-top:28px">
+      <h3>わたしの決意</h3>
+      <p class="kikkake"><b>覚悟を決めた日。</b>平らな道で足をひっかけて転び、「足が上がらなくなっている」ことに大きなショックを受けました。</p>
+      <p>1人目の産後、同じ方法で−10kgを達成。2人目の産後の今も、3か月で−10kgに挑戦中です。</p>
+      <p>着たい洋服が着られるようになりたい。体の痛みを治したい。きっかけは人それぞれです。それぞれの転機をきっかけに、仲間とともにやりぬき、自分らしい花を咲かせて自信をつける。ここを、そんなプラットフォームにしたいと思っています。</p>
+      <p class="sign">― <span class="nickname">（ニックネーム）</span></p>
+    </div>
+
+    <!-- 記録の見える化 -->
+    <div class="sub-head" id="kiroku">
+      <span class="en">RECORD</span>
+      <h3>記録の見える化</h3>
+      <p>体重の経過を公開中（目安は月2〜3kg）</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="label">スタート</div><div class="num" id="sStart">-<small>kg</small></div></div>
+      <div class="stat"><div class="label">現在</div><div class="num" id="sNow">-<small>kg</small></div></div>
+      <div class="stat hl"><div class="label">減った体重</div><div class="num" id="sLost">-<small>kg</small></div></div>
+      <div class="stat"><div class="label">目標まであと</div><div class="num" id="sLeft">-<small>kg</small></div></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="label">身長</div><div class="num" id="sHeight">-<small>cm</small></div></div>
+      <div class="stat"><div class="label">BMI（スタート）</div><div class="num" id="bStart">-</div></div>
+      <div class="stat hl"><div class="label">BMI（現在）</div><div class="num" id="bNow">-</div></div>
+      <div class="stat"><div class="label">BMI（目標）</div><div class="num" id="bGoal">-</div></div>
+    </div>
+
+    <div class="progress">
+      <div class="meta"><span>目標達成率</span><strong id="pText">0%</strong></div>
+      <div class="bar"><div class="fill" id="pFill"></div></div>
+    </div>
+
+    <div class="chart-box">
+      <svg id="chart" viewBox="0 0 800 340" role="img" aria-label="体重の推移グラフ"></svg>
+      <p class="note">※ 点線は目標体重です。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disc"><strong>ご注意：</strong>本サイトの体重記録は個人の経過であり、効果を保証するものではありません。掲載している医療情報は一般的な内容で、個別の診断・治療に代わるものではありません。ファスティングを行う際は、ご自身の体調に合わせ、必要に応じて医師・薬剤師にご相談ください。</p>
+    <p style="margin-bottom:6px">当サイトでは、アクセス状況の把握のためGoogleアナリティクスを利用しています。</p>
+    <p style="margin-bottom:6px">花の写真：月桃 David Clode（<a href="https://unsplash.com/photos/a-close-up-of-a-flower-with-a-black-background-XYng6S1Ky30" target="_blank" rel="noopener" style="color:inherit">Unsplash</a>）／ウコン Jonas Kakaroto Honorato（<a href="https://commons.wikimedia.org/wiki/File:Turmeric_Flower_Curcuma_Longa_(243825849).jpeg" target="_blank" rel="noopener" style="color:inherit">CC0</a>）／長命草 M108t（<a href="https://commons.wikimedia.org/wiki/File:Compound_umbel_of_Peucedanum_japonicum_in_Ishigaki,_Okinawa.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY 4.0</a>）／ゴーヤー Fahim Shahriyar Rifat（<a href="https://commons.wikimedia.org/wiki/File:Momordica_charantia_(flower).jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>）／フーチバー（ヨモギ属の花）Krzysztof Ziarnek, Kenraiz（<a href="https://commons.wikimedia.org/wiki/File:Artemisia_vulgaris_kz08.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>）／グァバ Joydeep（<a href="https://commons.wikimedia.org/wiki/File:Psidium_guajava_flower_26032014_01.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 3.0</a>）／桑 Suyash Dwivedi（<a href="https://commons.wikimedia.org/wiki/File:Morus_alba_flowers_in_India.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>）。花の写真は丸く切り抜いています。</p>
+    <p>© 2026 ゆいまーるファスティング</p>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   ★ ここを書き換えます ★
+   ニックネーム、スタート体重、目標体重、体重の記録
+   ========================================================= */
+const NICKNAME = "SHOKO";   // 決まったら書き換え
+const START_DATE   = "10/11";         // スタートした日
+const START_WEIGHT = 64.0;            // スタート時の体重（kg）
+const GOAL_WEIGHT  = 54.0;           // 目標体重（kg）
+const HEIGHT_CM    = 153;            // 身長（cm）
+
+// 記録：["日付", 体重] を1行ずつ追加していきます（下はサンプルです）
+const RECORDS = [
+  ["11/01", 59.0],
+  ["11/04", 59.6],
+  ["11/07", 59.1],
+  ["11/14", 58.3],
+  ["11/19", 56.7],
+];
+/* ========================================================= */
+
+document.querySelectorAll(".nickname").forEach(el => el.textContent = NICKNAME);
+
+const now  = RECORDS.length ? RECORDS[RECORDS.length - 1][1] : START_WEIGHT;
+const lost = START_WEIGHT - now;
+const total = START_WEIGHT - GOAL_WEIGHT;
+const left = Math.max(now - GOAL_WEIGHT, 0);
+const rate = Math.min(Math.max(lost / total * 100, 0), 100);
+const kg = v => v.toFixed(1) + "<small>kg</small>";
+
+document.getElementById("sStart").innerHTML = kg(START_WEIGHT);
+document.getElementById("sNow").innerHTML   = kg(now);
+document.getElementById("sLost").innerHTML  = (lost > 0 ? "−" : "") + kg(Math.abs(lost));
+document.getElementById("sLeft").innerHTML  = kg(left);
+
+const bmi = w => (w / ((HEIGHT_CM / 100) ** 2)).toFixed(1);
+document.getElementById("sHeight").innerHTML = HEIGHT_CM + "<small>cm</small>";
+document.getElementById("bStart").textContent = bmi(START_WEIGHT);
+document.getElementById("bNow").textContent   = bmi(now);
+document.getElementById("bGoal").textContent  = bmi(GOAL_WEIGHT);
+document.getElementById("pText").textContent = rate.toFixed(0) + "%";
+setTimeout(() => document.getElementById("pFill").style.width = rate + "%", 200);
+
+// グラフを描く
+(function drawChart(){
+  const DATA = [[START_DATE, START_WEIGHT], ...RECORDS]; // グラフはスタート体重から描く
+  const svg = document.getElementById("chart");
+  const W = 800, H = 340, L = 56, R = 24, T = 24, B = 44;
+  const ys = DATA.map(r => r[1]).concat([START_WEIGHT, GOAL_WEIGHT]);
+  const yMax = Math.ceil(Math.max(...ys) + 0.5);
+  const yMin = Math.floor(Math.min(...ys) - 0.5);
+  // 日付（"月/日"）を、スタート日からの日数に直す（年をまたいだら翌年として数える）
+  let year = 2000, prevMonth = 0;
+  const days = DATA.map(r => {
+    const [m, d] = r[0].split("/").map(Number);
+    if (m < prevMonth) year++;
+    prevMonth = m;
+    return Date.UTC(year, m - 1, d) / 86400000;
+  });
+  const span = Math.max(days[days.length - 1] - days[0], 1);
+  const x = i => L + (W - L - R) * (days[i] - days[0]) / span;
+  const y = v => T + (H - T - B) * (yMax - v) / (yMax - yMin);
+  let s = "";
+
+  // 目盛り
+  const step = (yMax - yMin) > 8 ? 2 : 1;
+  for (let v = yMin; v <= yMax; v += step) {
+    s += `<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="#eee6d6"/>`;
+    s += `<text x="${L-10}" y="${y(v)+4}" font-size="12" text-anchor="end" fill="#6b7280">${v}</text>`;
+  }
+  // 目標ライン
+  s += `<line x1="${L}" x2="${W-R}" y1="${y(GOAL_WEIGHT)}" y2="${y(GOAL_WEIGHT)}" stroke="#d9483b" stroke-width="2" stroke-dasharray="6 6"/>`;
+  s += `<text x="${W-R}" y="${y(GOAL_WEIGHT)-8}" font-size="12" text-anchor="end" fill="#d9483b" font-weight="700">目標 ${GOAL_WEIGHT.toFixed(1)}kg</text>`;
+
+  if (DATA.length) {
+    const pts = DATA.map((r, i) => `${x(i)},${y(r[1])}`).join(" ");
+    const area = `${x(0)},${H-B} ${pts} ${x(DATA.length-1)},${H-B}`;
+    s += `<polygon points="${area}" fill="#0b4f6c" opacity=".08"/>`;
+    s += `<polyline points="${pts}" fill="none" stroke="#0b4f6c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>`;
+    // 日付ラベルが重ならないよう、間隔が狭いものは省く（最初と最後は必ず表示）
+    const GAP = 46, lastX = x(DATA.length - 1);
+    let prevX = -Infinity;
+    DATA.forEach((r, i) => {
+      const last = i === DATA.length - 1;
+      s += `<circle cx="${x(i)}" cy="${y(r[1])}" r="${last ? 6 : 4}" fill="${last ? '#d9483b' : '#0b4f6c'}" stroke="#fff" stroke-width="2"><title>${r[0]}：${r[1]}kg</title></circle>`;
+      if (last || (x(i) - prevX >= GAP && lastX - x(i) >= GAP)) {
+        prevX = x(i);
+        s += `<text x="${x(i)}" y="${H-B+22}" font-size="12" text-anchor="middle" fill="#6b7280">${r[0]}</text>`;
+      }
+    });
+    const lr = DATA[DATA.length - 1];
+    s += `<text x="${x(DATA.length-1)}" y="${y(lr[1])-14}" font-size="13" text-anchor="end" fill="#d9483b" font-weight="700">${lr[1].toFixed(1)}kg</text>`;
+  }
+  svg.innerHTML = s;
+})();
+
+/* メニュー：いま見ているコーナーを黄色で表示 */
+(function(){
+  const links = [...document.querySelectorAll(".nav-menu a")];
+  const map = new Map(links.map(a => [a.getAttribute("href").slice(1), a]));
+  const secs = [...map.keys()].map(id => document.getElementById(id)).filter(Boolean);
+  if (!("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.classList.remove("active"));
+      const a = map.get(e.target.id);
+      if (a) { a.classList.add("active"); const ul = a.closest("ul"); ul.scrollTo({left: a.offsetLeft - (ul.clientWidth - a.offsetWidth) / 2, behavior: "smooth"}); }
+    });
+  }, {rootMargin: "-45% 0px -50% 0px"});
+  secs.forEach(s => io.observe(s));
+})();
+
+/* noteの記事：GitHubが3時間ごとに notes.json を更新します */
+(async function(){
+  const box = document.getElementById("noteList");
+  const esc = t => String(t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  let items = [];
+  try {
+    const res = await fetch("notes.json", {cache: "no-cache"});
+    if (res.ok) items = await res.json();
+  } catch (e) {}
+  if (!items.length) {
+    box.outerHTML = '<p class="note-empty">記事は準備中です。公開したら、ここに自動で表示されます。</p>';
+    return;
+  }
+  box.innerHTML = items.map(n => `
+    <a class="note-card" href="${esc(n.url)}" target="_blank" rel="noopener">
+      ${n.thumbnail ? `<img src="${esc(n.thumbnail)}" alt="" loading="lazy">` : ""}
+      <div class="body"><div class="date">${esc(n.date)}</div><h3>${esc(n.title)}</h3></div>
+    </a>`).join("");
+})();
+
+/* 動き：スクロールでふわっと表示・数字のカウントアップ */
+(function(){
+  if (!window.matchMedia || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.documentElement.classList.add("js-anim");
+  const sel = ".sec-head,.sub-head,.card,.step,.ippo,.faq details,.herb-card,.cost-stat,.cost-msg,.profile,.sengen,.alert,.note-card,.course-cycle";
+  const els = document.querySelectorAll(sel);
+  els.forEach(el => {
+    el.classList.add("reveal");
+    // 横に並んだものは、少しずつ時間をずらす
+    const sibs = Array.from(el.parentElement.children).filter(c => c.matches(sel));
+    el.style.setProperty("--d", (Math.min(sibs.indexOf(el), 6) * 0.08) + "s");
+  });
+  // 画面に入ったものから表示（読み込み時・スクロール時・サイズ変更時にチェック）
+  let pending = Array.from(els);
+  function show(el){
+    el.classList.add("is-in");
+    if (el.classList.contains("cost-stat")) countUp(el.querySelector(".num"));
+  }
+  function check(){
+    const h = window.innerHeight;
+    const atBottom = h + window.scrollY >= document.documentElement.scrollHeight - 4;
+    pending = pending.filter(el => {
+      if (atBottom || el.getBoundingClientRect().top < h * 0.92) { show(el); return false; }
+      return true;
+    });
+  }
+  let timer = null;
+  function onScroll(){ if (!timer) timer = setTimeout(() => { timer = null; check(); }, 80); }
+  addEventListener("scroll", onScroll, {passive: true});
+  addEventListener("resize", onScroll);
+  addEventListener("load", check);
+  if (document.fonts) document.fonts.ready.then(check);
+  check();
+  setTimeout(check, 300);
+  // noteの記事など、あとから出てくるカードにも
+  new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => {
+    if (n.nodeType === 1 && n.matches(sel)) { n.classList.add("reveal"); pending.push(n); onScroll(); }
+  }))).observe(document.body, {childList: true, subtree: true});
+
+  function countUp(num){
+    if (!num) return;
+    const t = num.firstChild;
+    if (!t || t.nodeType !== 3) return;
+    const m = t.textContent.match(/^(\D*)([\d.]+)(.*)$/);
+    if (!m) return;
+    const goal = parseFloat(m[2]), dec = (m[2].split(".")[1] || "").length;
+    const start = performance.now(), dur = 1200;
+    (function step(now){
+      const k = Math.max(0, Math.min((now - start) / dur, 1)), v = goal * (1 - Math.pow(1 - k, 3));
+      t.textContent = m[1] + v.toFixed(dec) + m[3];
+      if (k < 1) requestAnimationFrame(step);
+    })(start);
+  }
+})();
+
+/* 薬草図鑑：キャラクターをタップすると跳ねる（スマホ用） */
+document.querySelectorAll(".herb-card .chara").forEach(c => c.addEventListener("click", () => {
+  const card = c.closest(".herb-card");
+  card.classList.remove("poke");
+  void card.offsetWidth; // アニメーションをもう一度動かすため
+  card.classList.add("poke");
+  setTimeout(() => card.classList.remove("poke"), 700);
+}));
+</script>
+</body>
+</html>

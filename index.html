@@ -18,6 +18,9 @@
 <meta property="og:url" content="https://yuimaru-fasting.github.io/">
 <meta property="og:site_name" content="Yuimaru Fasting">
 <meta name="description" content="Don't go it alone. An Okinawan pharmacist supports you in fasting correctly and safely, with friends cheering each other on.">
+<link rel="alternate" hreflang="en" href="https://yuimaru-fasting.github.io/">
+<link rel="alternate" hreflang="ja" href="https://yuimaru-fasting.github.io/ja.html">
+<link rel="alternate" hreflang="x-default" href="https://yuimaru-fasting.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -62,6 +65,10 @@
   nav{position:sticky;top:0;z-index:10;background:rgba(251,253,250,.95);backdrop-filter:blur(8px);box-shadow:0 2px 12px rgba(11,79,108,.08);border-bottom:1px solid #dcebe2}
   nav .nav-top{display:flex;align-items:center;justify-content:space-between;gap:12px;height:52px}
   nav .logo{color:var(--umi-deep);font-family:"Zen Maru Gothic",sans-serif;font-weight:800;text-decoration:none;letter-spacing:.05em;white-space:nowrap}
+  nav .nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+  nav .lang-switch{flex-shrink:0;color:var(--umi-deep);font-weight:700;font-size:12.5px;line-height:1;padding:8px 12px;border:1.5px solid #cfe3d8;border-radius:999px;text-decoration:none;white-space:nowrap;background:#fff}
+  nav .lang-switch:hover{background:#e3f3ea}
+  @media(max-width:420px){nav .lang-switch{padding:7px 9px;font-size:11.5px}}
   nav .nav-cta{flex-shrink:0;background:var(--sango);color:#fff;font-weight:700;font-size:13px;line-height:1;padding:9px 16px;border-radius:999px;text-decoration:none;white-space:nowrap}
   nav .nav-cta:hover{background:#c23d31}
   .nav-menu{position:relative;border-top:1px solid #e3efe7}
@@ -507,7 +514,10 @@
 <nav>
   <div class="wrap nav-top">
     <a href="#top" class="logo">Yuimaru Fasting</a>
-    <a href="#course" class="nav-cta">Courses &amp; Support</a>
+    <div class="nav-right">
+      <a href="ja.html" class="lang-switch" lang="ja" hreflang="ja">日本語</a>
+      <a href="#course" class="nav-cta">Courses &amp; Support</a>
+    </div>
   </div>
   <div class="nav-menu">
     <ul>
