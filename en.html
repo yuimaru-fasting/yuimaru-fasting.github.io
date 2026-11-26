@@ -11,13 +11,13 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yuimaru Fasting | Don't go it alone — fast together</title>
-<meta property="og:title" content="Yuimaru Fasting | Don't go it alone — fast together">
-<meta property="og:description" content="Don't go it alone. An Okinawan pharmacist supports you in fasting correctly and safely, with friends cheering each other on.">
+<title>Yuimaru Fasting | Pharmacist-guided lifestyle disease prevention in Okinawa</title>
+<meta property="og:title" content="Yuimaru Fasting | Pharmacist-guided lifestyle disease prevention in Okinawa">
+<meta property="og:description" content="Over 40% of men in Okinawa have obesity. Each person's weight loss helps prevent lifestyle diseases and can help sustain healthcare in the community. A pharmacist checks your safety and walks alongside you and your peers.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yuimaru-fasting.github.io/en.html">
 <meta property="og:site_name" content="Yuimaru Fasting">
-<meta name="description" content="Don't go it alone. An Okinawan pharmacist supports you in fasting correctly and safely, with friends cheering each other on.">
+<meta name="description" content="Over 40% of men in Okinawa have obesity. Each person's weight loss helps prevent lifestyle diseases and can help sustain healthcare in the community. A pharmacist checks your safety and walks alongside you and your peers.">
 <link rel="alternate" hreflang="en" href="https://yuimaru-fasting.github.io/en.html">
 <link rel="alternate" hreflang="ja" href="https://yuimaru-fasting.github.io/">
 <link rel="alternate" hreflang="x-default" href="https://yuimaru-fasting.github.io/">
@@ -272,6 +272,16 @@
   .card-link{margin-top:auto;padding-top:14px;align-self:flex-start;color:var(--sango);font-weight:700;text-decoration:none;border-bottom:2px solid var(--kiiro)}
   .card-link:hover{color:var(--umi)}
   .course-lead{margin-top:22px;text-align:center;font-weight:700;color:#fff}
+  /* 予防プログラム：安全に伴走するための約束 */
+  .course-safe{margin-top:18px;background:#fff;border-radius:14px;border-left:6px solid var(--kusa);padding:22px 24px;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+  .course-safe h3{color:var(--umi-deep);font-size:19px;margin-bottom:10px}
+  .course-safe ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:820px){.course-safe ol{grid-template-columns:1fr}}
+  .course-safe li{counter-increment:safe;background:var(--suna);border-radius:10px;padding:12px 14px;font-size:14.5px;line-height:1.8}
+  .course-safe ol{counter-reset:safe}
+  .course-safe li::before{content:counter(safe);display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--kusa);color:#fff;font-size:13px;font-weight:700;margin-right:8px}
+  .course-safe li b{color:var(--umi-deep)}
+  .course .card .for{margin-top:auto;padding-top:10px;font-size:13px;color:var(--hai)}
   .soon{display:inline-block;background:var(--kiiro);color:var(--umi-deep);font-weight:700;font-size:12px;padding:0 10px;border-radius:999px;margin-left:6px;vertical-align:middle}
 
   /* プロフィール */
@@ -561,11 +571,13 @@
         <span aria-current="true">EN</span>
         <a href="./" lang="ja" hreflang="ja">日本語</a>
       </div>
-      <a href="#course" class="nav-cta">Courses &amp; Support</a>
+      <a href="#course" class="nav-cta">Prevention Program</a>
     </div>
   </div>
   <div class="nav-menu">
     <ul>
+      <li><a href="#cost">Obesity &amp; Medical Costs</a></li>
+      <li><a href="#course">Prevention Program</a></li>
       <li><a href="philosophy-en.html">My Philosophy</a></li>
       <li><a href="#ichibun">In 1 Minute</a></li>
       <li><a href="#ippo">Start Tonight</a></li>
@@ -577,9 +589,7 @@
       <li><a href="#herb">Herb Guide</a></li>
       <li><a href="#herb-effect">Herbs &amp; Fasting</a></li>
       <li><a href="#story">Pain &amp; Weight</a></li>
-      <li><a href="#cost">Obesity &amp; Medical Costs</a></li>
       <li><a href="#note">note Articles</a></li>
-      <li><a href="#course">Courses &amp; Support</a></li>
       <li><a href="#profile">Profile</a></li>
       <li><a href="#kiroku">Weight Log</a></li>
     </ul>
@@ -589,12 +599,13 @@
 <header class="hero" id="top">
   <div class="wrap">
    <div class="hero-text">
-    <span class="eyebrow">Fasting from Okinawa, guided by a pharmacist</span>
+    <span class="eyebrow">Pharmacist-guided lifestyle disease prevention in Okinawa</span>
     <h1><span><ruby>Ichariba<rt>once we meet,</rt></ruby>&nbsp;</span><span><ruby>chōdē.<rt>we're family</rt></ruby></span><br><span>With <span class="aka">yuimaru</span>,&nbsp;</span><span>step by step.</span></h1>
-    <p class="lead">Once we meet, we're all family. You don't have to carry it alone.<br>Share your progress with friends, and get support from a pharmacist tailored to you.<br>With Okinawan wisdom and the right knowledge — gently and steadily.</p>
+    <p class="lead">Over 40% of men in Okinawa have obesity.<br>Losing even a little weight helps prevent lifestyle diseases and can help sustain healthcare in our community.<br>You don't have to carry it alone — share your progress with friends.<br>A pharmacist checks your safety and walks alongside each of you.</p>
     <div class="hero-actions">
-      <a href="#ippo" class="btn btn-main">Try it tonight</a>
-      <a href="#course" class="btn btn-sub">See courses &amp; support</a>
+      <a href="#cost" class="btn btn-main">Okinawa's obesity &amp; medical costs</a>
+      <a href="#course" class="btn btn-sub">See the prevention program</a>
+      <a href="#ippo" class="hero-link">Try 12 hours tonight →</a>
       <a href="#ichibun" class="hero-link">Fasting in 1 minute →</a>
       <a href="#herb-effect" class="hero-link">How herbs help while you fast →</a>
     </div>
@@ -613,6 +624,54 @@
 </header>
 
 <div class="minsa"></div>
+
+<!-- 肥満改善と医療費削減 -->
+<section id="cost" class="bg-midori">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">WHY OKINAWA</span>
+      <h2>Obesity and Medical Costs in Okinawa</h2>
+      <p>One person's weight loss can help sustain healthcare for the whole community</p>
+    </div>
+
+    <div class="cost-stats">
+      <div class="cost-stat"><div class="num">41.1<small>%</small></div><div class="label">Share of men in Okinawa with obesity<br>(national: 31.5%)</div></div>
+      <div class="cost-stat"><div class="num">48<small> trillion yen</small></div><div class="label">Japan's national medical expenditure<br>(FY2023, record high)</div></div>
+      <div class="cost-stat"><div class="num">+22<small>%</small></div><div class="label">Medical costs for people with BMI 30+<br>(vs. normal weight)</div></div>
+      <div class="cost-stat"><div class="num">3<small>%</small></div><div class="label">Weight loss at which test results<br>start to improve</div></div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Okinawa today</span>
+        <h3>Over 40% of men have obesity</h3>
+        <p>In Okinawa, obesity (BMI 25+) affects 41.1% of men and 27.5% of women (FY2024). Among men in their 40s–50s it's over 50%, and both sexes exceed the national average.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Obesity &amp; medical costs</span>
+        <h3>More weight, higher medical costs</h3>
+        <p>Compared with people of normal weight, medical costs are 9.8% higher at BMI 25–29.9 and 22.3% higher at BMI 30+ (Ohsaki Study). National medical expenditure is at a record 48 trillion yen.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Effects of weight loss</span>
+        <h3>Start with 3%, aim for 5–10%</h3>
+        <p>Losing 3% improves blood pressure, blood sugar, and lipids. Losing 5–10% brings even greater improvement.</p>
+      </div>
+    </div>
+
+    <div class="cost-msg">
+      <h3>That's why this is not a "diet" but community lifestyle disease prevention</h3>
+      <ul>
+        <li><b>The goal is your checkup numbers, not your looks.</b> Starting with 3% of body weight (about 1.8 kg for someone weighing 60 kg), we aim to improve blood pressure, blood sugar and lipids</li>
+        <li><b>Prevention isn't just for you.</b> Preventing lifestyle diseases may mean fewer doctor visits and medications later, easing the burden on your family and community</li>
+        <li><b>Many people's weight loss, added up, can help sustain healthcare costs in Okinawa.</b> How big that effect is, though, is still debated in research</li>
+        <li><b>A pharmacist walks alongside you and checks your safety.</b> If you take medication, losing weight may mean your dose needs adjusting. When needed, we encourage you to consult your doctor</li>
+      </ul>
+      <p style="margin-top:14px;text-align:center"><a href="#course" class="btn" style="margin-top:0">See the pharmacist-guided prevention program</a></p>
+    </div>
+    <p class="cost-src">Sources: <a href="https://ryukyushimpo.jp/national/entry-5035817.html" target="_blank" rel="noopener">Okinawa Prefectural Health and Nutrition Survey FY2024 (Ryukyu Shimpo)</a> / <a href="https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/23/" target="_blank" rel="noopener">Ministry of Health, Labour and Welfare: Overview of National Medical Care Expenditure FY2023</a> / <a href="https://pubmed.ncbi.nlm.nih.gov/12119572/" target="_blank" rel="noopener">Int J Obes 2002 (Ohsaki Study)</a> / <a href="https://pubmed.ncbi.nlm.nih.gov/25263836/" target="_blank" rel="noopener">Obes Res Clin Pract 2014</a> / <a href="https://pubmed.ncbi.nlm.nih.gov/21593294/" target="_blank" rel="noopener">Diabetes Care 2011</a></p>
+  </div>
+</section>
 
 <!-- 私の想い（理念ページへの入口） -->
 <section id="omoi" class="bg-ki">
@@ -1234,54 +1293,6 @@
   </div>
 </section>
 
-<!-- 肥満改善と医療費削減 -->
-<section id="cost" class="bg-midori">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="en">HEALTH &amp; COST</span>
-      <h2>Reducing Obesity, Cutting Medical Costs</h2>
-      <p>Weight loss that's good for your body — and for healthcare costs</p>
-    </div>
-
-    <div class="cost-stats">
-      <div class="cost-stat"><div class="num">41.1<small>%</small></div><div class="label">Share of men in Okinawa with obesity<br>(national: 31.5%)</div></div>
-      <div class="cost-stat"><div class="num">48<small> trillion yen</small></div><div class="label">Japan's national medical expenditure<br>(FY2023, record high)</div></div>
-      <div class="cost-stat"><div class="num">+22<small>%</small></div><div class="label">Medical costs for people with BMI 30+<br>(vs. normal weight)</div></div>
-      <div class="cost-stat"><div class="num">3<small>%</small></div><div class="label">Weight loss at which test results<br>start to improve</div></div>
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <span class="tag">Okinawa today</span>
-        <h3>Over 40% of men have obesity</h3>
-        <p>In Okinawa, obesity (BMI 25+) affects 41.1% of men and 27.5% of women (FY2024). Among men in their 40s–50s it's over 50%, and both sexes exceed the national average.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Obesity &amp; medical costs</span>
-        <h3>More weight, higher medical costs</h3>
-        <p>Compared with people of normal weight, medical costs are 9.8% higher at BMI 25–29.9 and 22.3% higher at BMI 30+ (Ohsaki Study). National medical expenditure is at a record 48 trillion yen.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Effects of weight loss</span>
-        <h3>Start with 3%, aim for 5–10%</h3>
-        <p>Losing 3% improves blood pressure, blood sugar, and lipids. Losing 5–10% brings even greater improvement.</p>
-      </div>
-    </div>
-
-    <div class="cost-msg">
-      <h3>What I want to share as a pharmacist</h3>
-      <ul>
-        <li>For someone weighing 60 kg, 3% is about 1.8 kg. Start with "2 kg first"</li>
-        <li>Preventing lifestyle diseases may mean fewer doctor visits and medications in the future</li>
-        <li>Each person's weight loss helps support healthcare costs in Okinawa and Japan (how big the effect is remains debated in research)</li>
-        <li>If you take medication, your dose may need adjusting. Consult your doctor or pharmacist</li>
-      </ul>
-      <p style="margin-top:14px;text-align:center"><a href="#course" class="btn" style="margin-top:0">See courses &amp; support, and work on it together</a></p>
-    </div>
-    <p class="cost-src">Sources: <a href="https://ryukyushimpo.jp/national/entry-5035817.html" target="_blank" rel="noopener">Okinawa Prefectural Health and Nutrition Survey FY2024 (Ryukyu Shimpo)</a> / <a href="https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/23/" target="_blank" rel="noopener">Ministry of Health, Labour and Welfare: Overview of National Medical Care Expenditure FY2023</a> / <a href="https://pubmed.ncbi.nlm.nih.gov/12119572/" target="_blank" rel="noopener">Int J Obes 2002 (Ohsaki Study)</a> / <a href="https://pubmed.ncbi.nlm.nih.gov/25263836/" target="_blank" rel="noopener">Obes Res Clin Pract 2014</a> / <a href="https://pubmed.ncbi.nlm.nih.gov/21593294/" target="_blank" rel="noopener">Diabetes Care 2011</a></p>
-  </div>
-</section>
-
 <!-- noteの記事（notes.json から自動で表示） -->
 <section id="note" class="bg-ki">
   <div class="wrap">
@@ -1301,21 +1312,30 @@
 <section id="course" class="bg-midori">
   <div class="wrap">
     <div class="sec-head">
-      <span class="en">SUPPORT</span>
-      <h2>Courses &amp; Support</h2>
-      <p>Looking for friends to take this on together</p>
+      <span class="en">PREVENTION PROGRAM</span>
+      <h2>A Pharmacist-Guided Lifestyle Disease Prevention Program</h2>
+      <p>With <i>yuimaru</i> (mutual help), building Okinawa's health step by step</p>
     </div>
     <div class="course">
       <div class="card">
-        <h3>Intro to Fasting course</h3>
-        <p>A pharmacist explains how to fast safely, what to eat, and how to manage your medications.</p>
+        <h3>Learn | Intro to Fasting course</h3>
+        <p>A pharmacist explains the link between obesity and lifestyle diseases, how to fast safely, what to eat, and how to manage your medications.</p>
+        <p class="for">For: people told at a checkup to watch their weight, blood pressure or blood sugar, and anyone unsure where to start</p>
       </div>
       <div class="card">
-        <h3>Group support, side by side</h3>
-        <p>Share your logs with friends and get support to see your chosen period through.</p>
+        <h3>Keep going | Group support, side by side</h3>
+        <p>Share your weight logs with friends and get support to see your chosen period through. What is hard to keep up alone becomes possible with <i>yuimaru</i>.</p>
+        <p class="for">For: people who have struggled to keep weight off, and anyone who wants to do this with others</p>
       </div>
     </div>
-    <p class="course-cycle">Our motto: aim to lose <b>2–3 kg a month</b> <b>through diet alone</b>.</p>
+    <div class="course-safe">
+      <h3>A pharmacist's promises for keeping you safe</h3>
+      <ol>
+        <li><b>Check before you start</b>&nbsp; We ask about medical conditions, medications, pregnancy or breastfeeding, and encourage you to see a doctor if needed</li>
+        <li><b>No extreme weight loss</b>&nbsp; About <b>2–3 kg a month through diet alone</b>. Keeping it off matters more than losing it fast</li>
+        <li><b>Watch for warning signs</b>&nbsp; Stop if you feel dizzy or have palpitations. If your medication dose may need adjusting, we refer you to your doctor</li>
+      </ol>
+    </div>
     <p class="course-lead">Share your thoughts on this site, ask a question, or get the latest updates here ↓</p>
     <p style="text-align:center;margin-top:0">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoLhjHQo1j9Xf3DdlVGUlRU6SxPW9RMfTSrckl-nvVH-tbSQ/viewform" class="btn" target="_blank" rel="noopener">Share feedback / Contact us</a>

@@ -11,13 +11,13 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ゆいまーるファスティング｜ひとりで頑張らない、みんなでファスティング</title>
-<meta property="og:title" content="ゆいまーるファスティング｜ひとりで頑張らない、みんなでファスティング">
-<meta property="og:description" content="ひとりで頑張らなくていい。沖縄の薬剤師が、仲間と支え合いながら、正しく安全なファスティングをサポートします。">
+<title>ゆいまーるファスティング｜薬剤師が伴走する、沖縄の生活習慣病予防</title>
+<meta property="og:title" content="ゆいまーるファスティング｜薬剤師が伴走する、沖縄の生活習慣病予防">
+<meta property="og:description" content="沖縄の男性の4割以上が肥満。一人ひとりの減量は、生活習慣病を防ぎ、地域の医療を支える力になります。薬剤師が安全を確かめながら、仲間と一緒に伴走する生活習慣病予防の取り組みです。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yuimaru-fasting.github.io/">
 <meta property="og:site_name" content="ゆいまーるファスティング">
-<meta name="description" content="ひとりで頑張らなくていい。沖縄の薬剤師が、仲間と支え合いながら、正しく安全なファスティングをサポートします。">
+<meta name="description" content="沖縄の男性の4割以上が肥満。一人ひとりの減量は、生活習慣病を防ぎ、地域の医療を支える力になります。薬剤師が安全を確かめながら、仲間と一緒に伴走する生活習慣病予防の取り組みです。">
 <link rel="alternate" hreflang="en" href="https://yuimaru-fasting.github.io/en.html">
 <link rel="alternate" hreflang="ja" href="https://yuimaru-fasting.github.io/">
 <link rel="alternate" hreflang="x-default" href="https://yuimaru-fasting.github.io/">
@@ -272,6 +272,16 @@
   .card-link{margin-top:auto;padding-top:14px;align-self:flex-start;color:var(--sango);font-weight:700;text-decoration:none;border-bottom:2px solid var(--kiiro)}
   .card-link:hover{color:var(--umi)}
   .course-lead{margin-top:22px;text-align:center;font-weight:700;color:#fff}
+  /* 予防プログラム：安全に伴走するための約束 */
+  .course-safe{margin-top:18px;background:#fff;border-radius:14px;border-left:6px solid var(--kusa);padding:22px 24px;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+  .course-safe h3{color:var(--umi-deep);font-size:19px;margin-bottom:10px}
+  .course-safe ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:820px){.course-safe ol{grid-template-columns:1fr}}
+  .course-safe li{counter-increment:safe;background:var(--suna);border-radius:10px;padding:12px 14px;font-size:14.5px;line-height:1.8}
+  .course-safe ol{counter-reset:safe}
+  .course-safe li::before{content:counter(safe);display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--kusa);color:#fff;font-size:13px;font-weight:700;margin-right:8px}
+  .course-safe li b{color:var(--umi-deep)}
+  .course .card .for{margin-top:auto;padding-top:10px;font-size:13px;color:var(--hai)}
   .soon{display:inline-block;background:var(--kiiro);color:var(--umi-deep);font-weight:700;font-size:12px;padding:0 10px;border-radius:999px;margin-left:6px;vertical-align:middle}
 
   /* プロフィール */
@@ -561,11 +571,13 @@
         <a href="en.html" lang="en" hreflang="en">EN</a>
         <span aria-current="true">日本語</span>
       </div>
-      <a href="#course" class="nav-cta">講座・サポート</a>
+      <a href="#course" class="nav-cta">予防プログラム</a>
     </div>
   </div>
   <div class="nav-menu">
     <ul>
+      <li><a href="#cost">沖縄の肥満と医療費</a></li>
+      <li><a href="#course">予防プログラム</a></li>
       <li><a href="philosophy.html">私の想い</a></li>
       <li><a href="#ichibun">1分でわかる</a></li>
       <li><a href="#ippo">まずは今夜から</a></li>
@@ -578,9 +590,7 @@
       <li><a href="#herb">薬草図鑑</a></li>
       <li><a href="#herb-effect">断食と薬草</a></li>
       <li><a href="#story">痛みと体重</a></li>
-      <li><a href="#cost">肥満と医療費</a></li>
       <li><a href="#note">note記事</a></li>
-      <li><a href="#course">講座・サポート</a></li>
       <li><a href="#profile">プロフィール</a></li>
       <li><a href="#kiroku">体重の記録</a></li>
     </ul>
@@ -590,12 +600,13 @@
 <header class="hero" id="top">
   <div class="wrap">
    <div class="hero-text">
-    <span class="eyebrow">薬剤師が伴走する、沖縄発のファスティング</span>
+    <span class="eyebrow">薬剤師が伴走する、沖縄の生活習慣病予防</span>
     <h1><span><ruby>行逢<rt>いちゃ</rt></ruby>りば、</span><span><ruby>兄弟<rt>ちょーでー</rt></ruby>。</span><br><span><span class="aka">ゆいまーる</span>で、</span><span>一歩ずつ。</span></h1>
-    <p class="lead">出会えば、みな兄弟。ひとりで抱えこまなくていい。<br>仲間と記録を見せ合い、薬剤師が一人ひとりに合わせてサポートします。<br>沖縄の知恵と正しい知識で、無理なく、着実に。</p>
+    <p class="lead">沖縄の男性の4割以上が肥満。少しの減量が、生活習慣病を防ぎ、<br>地域の医療を支える力になります。<br>ひとりで抱えこまず、仲間と記録を見せ合いながら。<br>薬剤師が安全を確かめ、一人ひとりに伴走します。</p>
     <div class="hero-actions">
-      <a href="#ippo" class="btn btn-main">まずは今夜からやってみる</a>
-      <a href="#course" class="btn btn-sub">講座・サポートを見る</a>
+      <a href="#cost" class="btn btn-main">沖縄の肥満と医療費を知る</a>
+      <a href="#course" class="btn btn-sub">予防プログラムを見る</a>
+      <a href="#ippo" class="hero-link">まずは今夜から、12時間 →</a>
       <a href="#ichibun" class="hero-link">1分でわかるファスティング →</a>
       <a href="#herb-effect" class="hero-link">断食中に薬草を取り入れる効果 →</a>
     </div>
@@ -614,6 +625,54 @@
 </header>
 
 <div class="minsa"></div>
+
+<!-- 肥満改善と医療費削減 -->
+<section id="cost" class="bg-midori">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">WHY OKINAWA</span>
+      <h2>沖縄の肥満と医療費</h2>
+      <p>ひとりの減量は、地域の医療を支える力になる</p>
+    </div>
+
+    <div class="cost-stats">
+      <div class="cost-stat"><div class="num">41.1<small>%</small></div><div class="label">沖縄県の男性の肥満者の割合<br>（全国は31.5%）</div></div>
+      <div class="cost-stat"><div class="num">48<small>兆円</small></div><div class="label">日本の国民医療費<br>（令和5年度・過去最高）</div></div>
+      <div class="cost-stat"><div class="num">+22<small>%</small></div><div class="label">BMI30以上の人の医療費<br>（標準体重の人と比べて）</div></div>
+      <div class="cost-stat"><div class="num">3<small>%</small></div><div class="label">検査値の改善が見えはじめる<br>減量の目安</div></div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span class="tag">沖縄の現状</span>
+        <h3>男性の4割以上が肥満</h3>
+        <p>沖縄の肥満者（BMI25以上）は男性41.1%・女性27.5%（2024年度）。40〜50代の男性は5割超で、男女とも全国を上回ります。</p>
+      </div>
+      <div class="card">
+        <span class="tag">肥満と医療費</span>
+        <h3>体重が多いほど医療費も増える</h3>
+        <p>標準体重の人に比べ、医療費はBMI25〜29.9で9.8%、BMI30以上で22.3%高い（大崎研究）。国民医療費は過去最高の48兆円です。</p>
+      </div>
+      <div class="card">
+        <span class="tag">減量の効果</span>
+        <h3>まずは3%、できれば5〜10%</h3>
+        <p>3%の減量で血圧・血糖・脂質が改善。5〜10%減らすと、さらに改善が大きくなります。</p>
+      </div>
+    </div>
+
+    <div class="cost-msg">
+      <h3>だから「ダイエット」ではなく、地域の生活習慣病予防として</h3>
+      <ul>
+        <li><b>目標は見た目ではなく、健診の数値。</b>まずは体重の3%（60kgの人で約1.8kg）から、血圧・血糖・脂質の改善を目指します</li>
+        <li><b>予防は、本人だけのものではありません。</b>生活習慣病を防ぐことは、将来の通院やお薬を減らし、家族や地域の負担を軽くする可能性があります</li>
+        <li><b>一人ひとりの減量の積み重ねが、沖縄の医療費を支えうる。</b>ただし、効果の大きさは研究でもまだ議論が続いています</li>
+        <li><b>薬剤師が、安全を確かめながら伴走します。</b>お薬を飲んでいる方は、減量で量の見直しが必要になることも。必要なときは主治医への相談をすすめます</li>
+      </ul>
+      <p style="margin-top:14px;text-align:center"><a href="#course" class="btn" style="margin-top:0">薬剤師が伴走する予防プログラムを見る</a></p>
+    </div>
+    <p class="cost-src">出典：<a href="https://ryukyushimpo.jp/national/entry-5035817.html" target="_blank" rel="noopener">沖縄県 県民健康・栄養調査 2024年度（琉球新報）</a>／<a href="https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/23/" target="_blank" rel="noopener">厚生労働省「令和5年度 国民医療費の概況」</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/12119572/" target="_blank" rel="noopener">Int J Obes 2002（大崎研究）</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/25263836/" target="_blank" rel="noopener">Obes Res Clin Pract 2014</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/21593294/" target="_blank" rel="noopener">Diabetes Care 2011</a></p>
+  </div>
+</section>
 
 <!-- 私の想い（理念ページへの入口） -->
 <section id="omoi" class="bg-ki">
@@ -1236,54 +1295,6 @@
   </div>
 </section>
 
-<!-- 肥満改善と医療費削減 -->
-<section id="cost" class="bg-midori">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="en">HEALTH &amp; COST</span>
-      <h2>肥満改善と医療費削減</h2>
-      <p>体にも、医療費にもやさしい減量</p>
-    </div>
-
-    <div class="cost-stats">
-      <div class="cost-stat"><div class="num">41.1<small>%</small></div><div class="label">沖縄県の男性の肥満者の割合<br>（全国は31.5%）</div></div>
-      <div class="cost-stat"><div class="num">48<small>兆円</small></div><div class="label">日本の国民医療費<br>（令和5年度・過去最高）</div></div>
-      <div class="cost-stat"><div class="num">+22<small>%</small></div><div class="label">BMI30以上の人の医療費<br>（標準体重の人と比べて）</div></div>
-      <div class="cost-stat"><div class="num">3<small>%</small></div><div class="label">検査値の改善が見えはじめる<br>減量の目安</div></div>
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <span class="tag">沖縄の現状</span>
-        <h3>男性の4割以上が肥満</h3>
-        <p>沖縄の肥満者（BMI25以上）は男性41.1%・女性27.5%（2024年度）。40〜50代の男性は5割超で、男女とも全国を上回ります。</p>
-      </div>
-      <div class="card">
-        <span class="tag">肥満と医療費</span>
-        <h3>体重が多いほど医療費も増える</h3>
-        <p>標準体重の人に比べ、医療費はBMI25〜29.9で9.8%、BMI30以上で22.3%高い（大崎研究）。国民医療費は過去最高の48兆円です。</p>
-      </div>
-      <div class="card">
-        <span class="tag">減量の効果</span>
-        <h3>まずは3%、できれば5〜10%</h3>
-        <p>3%の減量で血圧・血糖・脂質が改善。5〜10%減らすと、さらに改善が大きくなります。</p>
-      </div>
-    </div>
-
-    <div class="cost-msg">
-      <h3>薬剤師として伝えたいこと</h3>
-      <ul>
-        <li>60kgの人なら3%は約1.8kg。「まずは2kg」から</li>
-        <li>生活習慣病の予防で、将来の通院やお薬が減る可能性も</li>
-        <li>一人ひとりの減量が、沖縄と日本の医療費を支えます（効果の大きさは研究でも議論中）</li>
-        <li>お薬を飲んでいる方は、量の見直しが必要なことも。主治医・薬剤師に相談を</li>
-      </ul>
-      <p style="margin-top:14px;text-align:center"><a href="#course" class="btn" style="margin-top:0">講座・サポートを見て、一緒に取り組む</a></p>
-    </div>
-    <p class="cost-src">出典：<a href="https://ryukyushimpo.jp/national/entry-5035817.html" target="_blank" rel="noopener">沖縄県 県民健康・栄養調査 2024年度（琉球新報）</a>／<a href="https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/23/" target="_blank" rel="noopener">厚生労働省「令和5年度 国民医療費の概況」</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/12119572/" target="_blank" rel="noopener">Int J Obes 2002（大崎研究）</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/25263836/" target="_blank" rel="noopener">Obes Res Clin Pract 2014</a>／<a href="https://pubmed.ncbi.nlm.nih.gov/21593294/" target="_blank" rel="noopener">Diabetes Care 2011</a></p>
-  </div>
-</section>
-
 <!-- noteの記事（notes.json から自動で表示） -->
 <section id="note" class="bg-ki">
   <div class="wrap">
@@ -1299,25 +1310,34 @@
   </div>
 </section>
 
-<!-- 講座 -->
+<!-- 生活習慣病予防プログラム -->
 <section id="course" class="bg-midori">
   <div class="wrap">
     <div class="sec-head">
-      <span class="en">SUPPORT</span>
-      <h2>講座・サポートのご案内</h2>
-      <p>一緒に取り組む仲間を募集中</p>
+      <span class="en">PREVENTION PROGRAM</span>
+      <h2>薬剤師が伴走する、生活習慣病予防プログラム</h2>
+      <p>ゆいまーる（助け合い）で、沖縄の健康を一歩ずつ</p>
     </div>
     <div class="course">
       <div class="card">
-        <h3>はじめてのファスティング講座</h3>
-        <p>安全な進め方、食事、お薬との付き合い方を薬剤師が解説。</p>
+        <h3>学ぶ｜はじめてのファスティング講座</h3>
+        <p>肥満と生活習慣病の関係、安全な断食の進め方、食事、お薬との付き合い方を薬剤師が解説します。</p>
+        <p class="for">こんな方に：健診で体重・血圧・血糖を指摘された方、何から始めればいいかわからない方</p>
       </div>
       <div class="card">
-        <h3>みんなで伴走サポート</h3>
-        <p>仲間と記録を見せ合い、決めた期間をやりぬくサポート。</p>
+        <h3>続ける｜みんなで伴走サポート</h3>
+        <p>仲間と体重の記録を見せ合い、決めた期間をやりぬくサポート。ひとりでは続かないことも、ゆいまーるなら続けられます。</p>
+        <p class="for">こんな方に：これまで減量が続かなかった方、仲間と一緒に取り組みたい方</p>
       </div>
     </div>
-    <p class="course-cycle">伴走のモットーは、<b>食事だけで</b>、<b>月2〜3kg</b>の減量を目指すこと。</p>
+    <div class="course-safe">
+      <h3>安全に伴走するための、薬剤師の約束</h3>
+      <ol>
+        <li><b>始める前に確認</b>　持病・飲んでいるお薬・妊娠や授乳などを確かめ、必要なら医師への相談をすすめます</li>
+        <li><b>無理な減量はしない</b>　食事だけで<b>月2〜3kg</b>が目安。急いで落とすより、続けて戻さないことを大切にします</li>
+        <li><b>体のサインを見逃さない</b>　めまい・動悸などがあれば中止。お薬の量の見直しが必要なときは主治医へつなぎます</li>
+      </ol>
+    </div>
     <p class="course-lead">ホームページのご感想、ご質問、最新情報の受け取りはこちらから ↓</p>
     <p style="text-align:center;margin-top:0">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2XPHHwP6Wy0julv9a0-aFVQj_8VLFaHSxDTcKbVhbdrkOFA/viewform" class="btn" target="_blank" rel="noopener">ご感想・お問い合わせはこちら</a>
