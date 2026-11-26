@@ -306,6 +306,20 @@
   .herb-card dd{font-size:14.5px;line-height:1.8}
   .memo{margin-top:14px;background:#fdf1ef;border-left:4px solid var(--sango);border-radius:6px;padding:10px 12px;font-size:14px;line-height:1.75}
   .memo b{display:block;color:var(--sango);font-size:13px}
+  /* 断食中にぬちぐすいを取り入れる効果 */
+  .herb-effect{margin-top:32px;background:#fff;border-radius:14px;padding:28px 24px;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+  .herb-effect>h3{font-size:clamp(19px,3vw,22px);color:var(--umi-deep);text-align:center;line-height:1.6}
+  .herb-effect>.lead{max-width:660px;margin:10px auto 20px;font-size:15px;text-align:center}
+  .he-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.he-grid{grid-template-columns:1fr}.herb-effect>.lead{text-align:left}}
+  .he-item{background:var(--suna);border-radius:12px;padding:16px 18px;border-left:4px solid var(--kusa)}
+  .he-item .when{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--umi);border-radius:999px;padding:0 10px;line-height:1.9}
+  .he-item h4{font-size:17px;color:var(--umi-deep);margin:8px 0 4px;line-height:1.6}
+  .he-item p{font-size:14.5px;line-height:1.85}
+  .he-item .ev{margin-top:8px;font-size:12.5px;color:var(--hai);line-height:1.7}
+  .he-item .ev b{color:var(--kusa)}
+  .he-myth{margin-top:16px;background:#fdf1ef;border-left:4px solid var(--sango);border-radius:6px;padding:12px 16px;font-size:14.5px;line-height:1.85}
+  .he-myth b{color:var(--sango)}
   .herb-tips{margin-top:28px;background:#fff;border:2px dashed var(--kusa);border-radius:14px;padding:24px 26px}
   .herb-tips h3{color:var(--umi-deep);font-size:19px;margin-bottom:8px}
   .herb-tips ul{padding-left:1.2em}
@@ -1127,6 +1141,39 @@
         </details>
       </article>
 
+    </div>
+
+    <!-- 断食中にぬちぐすいを取り入れる効果 -->
+    <div class="herb-effect" id="herb-effect">
+      <h3>断食中に「ぬちぐすい」を取り入れる効果</h3>
+      <p class="lead">薬草は、断食の効果を何倍にもする魔法ではありません。けれど、断食を<b>安全に、続けやすくする</b>心強い味方です。やり方とスケジュールの時期ごとに、期待できることを薬剤師が整理しました。</p>
+      <div class="he-grid">
+        <div class="he-item">
+          <span class="when">ファスティング期（2〜3日目）</span>
+          <h4>水分を、無理なくたっぷりとれる</h4>
+          <p>液体だけで過ごす日は、水分が不足しがち。水だけだと飽きてしまう人も、月桃茶・グァバ茶・桑の葉茶など香りのちがうお茶を替えながらなら、自然と量を飲めます。多くはノンカフェインで、カロリーもほとんどありません。</p>
+          <p class="ev"><b>ポイント</b>　水分補給としての効果です（お茶の成分の効果ではありません）</p>
+        </div>
+        <div class="he-item">
+          <span class="when">空腹がつらいとき</span>
+          <h4>温かい香りで、気持ちを切りかえる</h4>
+          <p>空腹の波は、たいてい数十分でおさまります。温かい薬草茶をゆっくり飲むと、おなかが温まり、香りで気分が切りかわって、波をやり過ごしやすくなります。夜の空腹には、炭酸水と並ぶ選択肢に。</p>
+          <p class="ev"><b>ポイント</b>　体験としての工夫です。空腹をおさえる効果を確かめた人の研究は、まだありません</p>
+        </div>
+        <div class="he-item">
+          <span class="when">回復期（4日目から）</span>
+          <h4>食後の血糖値の上がり方を、おだやかに</h4>
+          <p>食事を再開するときは、血糖値が急に上がりやすいタイミング。食事と一緒にグァバ葉茶や桑の葉茶を飲むと、糖の吸収がおだやかになることが、人の研究で確かめられています（トクホ・機能性表示食品の成分）。</p>
+          <p class="ev"><b>ポイント</b>　食事と一緒に飲んだときの働きです。何も食べていない時間に飲んでも、この効果はありません</p>
+        </div>
+        <div class="he-item">
+          <span class="when">回復期の食事</span>
+          <h4>島の薬草で、回復食をおいしく</h4>
+          <p>おかゆや味噌汁に長命草やフーチバーを少し加えたり、ゴーヤーを副菜にしたり。香りや苦みがアクセントになって、薄味でも満足しやすくなり、野菜もとれます。よく噛んで食べることは、食べすぎの予防にもつながります。</p>
+          <p class="ev"><b>ポイント</b>　食材としての取り入れ方です。粉末やサプリでの大量摂取はおすすめしません</p>
+        </div>
+      </div>
+      <p class="he-myth"><b>よくある誤解</b>　「デトックスになる」「脂肪が早く燃える」「断食の効果が高まる」――こうした効果を人で確かめた研究はありません。薬草は断食の主役ではなく、<b>そっと寄りそう名脇役</b>。おいしく楽しみながら、島の知恵を暮らしに取り入れましょう。</p>
     </div>
 
     <details class="herb-tips">

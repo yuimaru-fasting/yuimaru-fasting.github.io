@@ -306,6 +306,20 @@
   .herb-card dd{font-size:14.5px;line-height:1.8}
   .memo{margin-top:14px;background:#fdf1ef;border-left:4px solid var(--sango);border-radius:6px;padding:10px 12px;font-size:14px;line-height:1.75}
   .memo b{display:block;color:var(--sango);font-size:13px}
+  /* 断食中にぬちぐすいを取り入れる効果 */
+  .herb-effect{margin-top:32px;background:#fff;border-radius:14px;padding:28px 24px;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+  .herb-effect>h3{font-size:clamp(19px,3vw,22px);color:var(--umi-deep);text-align:center;line-height:1.6}
+  .herb-effect>.lead{max-width:660px;margin:10px auto 20px;font-size:15px;text-align:center}
+  .he-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.he-grid{grid-template-columns:1fr}.herb-effect>.lead{text-align:left}}
+  .he-item{background:var(--suna);border-radius:12px;padding:16px 18px;border-left:4px solid var(--kusa)}
+  .he-item .when{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--umi);border-radius:999px;padding:0 10px;line-height:1.9}
+  .he-item h4{font-size:17px;color:var(--umi-deep);margin:8px 0 4px;line-height:1.6}
+  .he-item p{font-size:14.5px;line-height:1.85}
+  .he-item .ev{margin-top:8px;font-size:12.5px;color:var(--hai);line-height:1.7}
+  .he-item .ev b{color:var(--kusa)}
+  .he-myth{margin-top:16px;background:#fdf1ef;border-left:4px solid var(--sango);border-radius:6px;padding:12px 16px;font-size:14.5px;line-height:1.85}
+  .he-myth b{color:var(--sango)}
   .herb-tips{margin-top:28px;background:#fff;border:2px dashed var(--kusa);border-radius:14px;padding:24px 26px}
   .herb-tips h3{color:var(--umi-deep);font-size:19px;margin-bottom:8px}
   .herb-tips ul{padding-left:1.2em}
@@ -1125,6 +1139,39 @@
         </details>
       </article>
 
+    </div>
+
+    <!-- Benefits of nuchigusui herbs during fasting -->
+    <div class="herb-effect" id="herb-effect">
+      <h3>How <i>nuchigusui</i> herbs can help while you fast</h3>
+      <p class="lead">Herbs are not magic that multiplies the effects of fasting. But they can make fasting <b>safer and easier to stick with</b>. Here is what you can reasonably expect at each stage of the schedule, explained by a pharmacist.</p>
+      <div class="he-grid">
+        <div class="he-item">
+          <span class="when">Fasting days (Days 2–3)</span>
+          <h4>Drink plenty of fluids without forcing it</h4>
+          <p>On liquid-only days it is easy to run short on fluids. If plain water gets boring, rotating teas with different aromas, such as shell ginger, guava and mulberry leaf, makes it natural to drink more. Most are caffeine-free and have almost no calories.</p>
+          <p class="ev"><b>Note</b>&nbsp; This is about hydration, not about compounds in the tea.</p>
+        </div>
+        <div class="he-item">
+          <span class="when">When hunger hits</span>
+          <h4>A warm, fragrant reset</h4>
+          <p>Waves of hunger usually pass within a few dozen minutes. Slowly sipping a warm herbal tea warms your stomach and shifts your mood with its aroma, making the wave easier to ride out. At night, it is another option alongside sparkling water.</p>
+          <p class="ev"><b>Note</b>&nbsp; This is a practical tip from experience. No human study has yet shown that these teas suppress hunger.</p>
+        </div>
+        <div class="he-item">
+          <span class="when">Recovery period (Day 4 on)</span>
+          <h4>A gentler rise in blood sugar after meals</h4>
+          <p>When you start eating again, blood sugar can rise quickly. Drinking guava leaf tea or mulberry leaf tea with your meal has been shown in human studies to slow sugar absorption (these are approved functional ingredients in Japan).</p>
+          <p class="ev"><b>Note</b>&nbsp; This works when taken with food. Drinking it while you are not eating has no such effect.</p>
+        </div>
+        <div class="he-item">
+          <span class="when">Recovery meals</span>
+          <h4>Island herbs make recovery meals tasty</h4>
+          <p>Add a little chomeiso or fuchiba to rice porridge or miso soup, or have goya as a side dish. Their aroma and bitterness add interest, so lightly seasoned food feels satisfying, and you get more vegetables. Chewing well also helps prevent overeating.</p>
+          <p class="ev"><b>Note</b>&nbsp; This is about herbs as food. Large amounts as powders or supplements are not recommended.</p>
+        </div>
+      </div>
+      <p class="he-myth"><b>Common myths</b>&nbsp; "It detoxes you," "it burns fat faster," "it boosts the effects of fasting": no human study has confirmed any of these. Herbs are not the star of fasting but <b>a quiet, reliable supporting role</b>. Enjoy them, and bring a bit of island wisdom into your daily life.</p>
     </div>
 
     <details class="herb-tips">
