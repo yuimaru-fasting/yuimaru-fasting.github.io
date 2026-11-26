@@ -1,14 +1,11 @@
-"""noteのRSSから、ファスティング関連の記事だけを notes.json に書き出す。"""
+"""noteのRSSから、新しい記事を notes.json に書き出す。"""
 import json
-import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
 NOTE_ID = "ichariba_fasting"
-# タイトルにこの言葉のどれかが入っている記事だけを載せる
-KEYWORDS = ["ファスティング", "断食", "ゆいまーる", "ユイマール", "いちゃりば", "イチャリバ", "腹八分", "減量", "ダイエット", "体重"]
-MAX_ITEMS = 6
+MAX_ITEMS = 6  # 新しい順にこの件数だけ載せる
 
 NS = {"media": "http://search.yahoo.com/mrss/"}
 req = urllib.request.Request(
@@ -18,12 +15,9 @@ req = urllib.request.Request(
 with urllib.request.urlopen(req, timeout=30) as res:
     root = ET.fromstring(res.read())
 
-pattern = re.compile("|".join(map(re.escape, KEYWORDS)))
 items = []
 for it in root.iter("item"):
     title = (it.findtext("title") or "").strip()
-    if not pattern.search(title):
-        continue
     date = parsedate_to_datetime(it.findtext("pubDate"))
     items.append({
         "title": title,
