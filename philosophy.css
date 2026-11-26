@@ -1,0 +1,149 @@
+/* 理念ページ（philosophy.html / philosophy-en.html）共通のスタイル
+   トップページ・manabi.html と同じ見た目（黄色の背景・白いカード・ミンサー帯） */
+:root{
+  --umi:#0b4f6c;--umi-deep:#062f40;--sango:#d9483b;--kiiro:#f2b632;
+  --suna:#f5faf4;--sumi:#2a2a2a;--hai:#5b5f66;--line:#e7dfd0;--kusa:#3f8f5a;
+  --ki:#f3c12f;--midori:#17744a;--midori-deep:#0d4a30;--aka:#d9483b;--cha:#4a3d0c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:"Zen Maru Gothic",sans-serif;color:var(--sumi);background:var(--ki);line-height:1.9;font-size:16px}
+a{color:var(--umi)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.aka{color:var(--sango)}
+
+/* ミンサー柄の帯（五つと四つの絣＝いつ（五）の世（四）までも） */
+.minsa{height:14px;background:
+  repeating-linear-gradient(90deg,
+    var(--umi) 0 40px,var(--suna) 40px 44px,
+    var(--kiiro) 44px 48px,var(--suna) 48px 50px,var(--kiiro) 50px 54px,var(--suna) 54px 56px,
+    var(--kiiro) 56px 60px,var(--suna) 60px 62px,var(--kiiro) 62px 66px,var(--suna) 66px 68px,
+    var(--kiiro) 68px 72px,var(--suna) 72px 76px,var(--umi) 76px 116px,var(--suna) 116px 120px,
+    var(--sango) 120px 124px,var(--suna) 124px 126px,var(--sango) 126px 130px,var(--suna) 130px 132px,
+    var(--sango) 132px 136px,var(--suna) 136px 138px,var(--sango) 138px 142px,var(--suna) 142px 146px)}
+
+/* ナビ */
+nav{position:sticky;top:0;z-index:10;background:rgba(251,253,250,.95);backdrop-filter:blur(8px);box-shadow:0 2px 12px rgba(11,79,108,.08);border-bottom:1px solid #dcebe2}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:52px}
+nav .logo{color:var(--umi-deep);font-weight:800;text-decoration:none;letter-spacing:.05em;white-space:nowrap}
+nav .nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+nav .lang-toggle{display:flex;align-items:center;flex-shrink:0;gap:2px;padding:3px 3px 3px 9px;border:2px solid var(--umi-deep);border-radius:999px;background:#fff;white-space:nowrap}
+nav .lang-toggle svg{width:19px;height:19px;color:var(--umi-deep);margin-right:4px;flex-shrink:0}
+nav .lang-toggle a,nav .lang-toggle span{font-weight:700;font-size:14px;line-height:1;padding:8px 13px;border-radius:999px;text-decoration:none}
+nav .lang-toggle span{background:var(--umi-deep);color:#fff}
+nav .lang-toggle a{color:var(--umi-deep)}
+nav .lang-toggle a:hover{background:#e3f3ea}
+nav .back{flex-shrink:0;background:var(--sango);color:#fff;font-weight:700;font-size:13px;line-height:1;padding:9px 16px;border-radius:999px;text-decoration:none;white-space:nowrap}
+nav .back:hover{background:#c23d31}
+@media(max-width:520px){nav .wrap{gap:8px}nav .nav-right{gap:6px}nav .lang-toggle{padding:2px 2px 2px 7px}nav .lang-toggle span{display:none}nav .lang-toggle svg{margin-right:0}nav .lang-toggle a{font-size:13px;padding:8px 9px 8px 5px}}
+@media(max-width:420px){nav .wrap{padding:0 12px}nav .logo{font-size:14px;letter-spacing:.02em}nav .back{font-size:12px;padding:8px 12px}}
+@media(max-width:360px){nav .logo{font-size:13px;letter-spacing:0}nav .lang-toggle svg{display:none}}
+.toc{border-top:1px solid #e3efe7}
+.toc ul{display:flex;gap:4px;list-style:none;max-width:1200px;margin:0 auto;padding:7px 14px;overflow-x:auto;scrollbar-width:none}
+.toc ul::-webkit-scrollbar{display:none}
+.toc li{flex-shrink:0}
+.toc a{display:block;color:#2d4a52;text-decoration:none;font-size:13.5px;line-height:1;padding:8px 12px;border-radius:999px;white-space:nowrap}
+.toc a:hover{background:#e3f3ea;color:var(--umi-deep)}
+@media(min-width:900px){.toc ul{justify-content:center}}
+
+/* ヒーロー */
+.hero{padding:56px 0 64px}
+.hero .eyebrow{display:inline-block;background:#fff;color:#0d3b4f;font-weight:800;border-radius:999px;padding:5px 18px;font-size:14px;letter-spacing:.08em;margin-bottom:18px}
+.hero h1{color:var(--umi-deep);font-size:clamp(30px,5.6vw,52px);line-height:1.35;letter-spacing:.03em;margin-bottom:16px;word-break:auto-phrase}
+.hero p.lead{font-size:clamp(16px,2vw,18px);max-width:680px;word-break:auto-phrase}
+
+/* セクション見出し */
+section{padding:72px 0;border-top:1px solid rgba(0,0,0,.1)}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head .en{display:block;color:var(--aka);font-size:13px;letter-spacing:.25em;font-weight:700}
+.sec-head .en::before{content:"";display:block;width:40px;height:24px;margin:0 auto 4px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 24'%3E%3Cpath d='M20 22 C8 20 4 10 10 3 C16 6 19 13 20 22Z' fill='%2372c470' stroke='%230b2a22' stroke-width='1.5'/%3E%3Cpath d='M20 22 C32 20 36 10 30 3 C24 6 21 13 20 22Z' fill='%233f8f5a' stroke='%230b2a22' stroke-width='1.5'/%3E%3C/svg%3E") center/contain no-repeat}
+.sec-head h2{font-size:clamp(24px,4vw,34px);color:var(--midori-deep);margin-top:4px;word-break:auto-phrase}
+.sec-head p{color:var(--cha);margin-top:8px;font-size:15px;font-weight:500}
+
+/* カード */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border-radius:14px;padding:26px 22px;border-top:4px solid var(--umi);box-shadow:0 6px 18px rgba(90,60,0,.12);display:flex;flex-direction:column}
+.card h3{font-size:20px;color:var(--umi-deep);margin-bottom:8px;line-height:1.5}
+.card p{flex:1}
+.card .tag{align-self:flex-start;display:inline-block;font-size:12px;background:var(--suna);border:1px solid var(--line);border-radius:999px;padding:0 10px;margin-bottom:10px;color:var(--hai)}
+.cards .card:nth-child(2){border-top-color:var(--sango)}
+.cards .card:nth-child(3){border-top-color:var(--kiiro)}
+.card-link{margin-top:14px;align-self:flex-start;color:var(--sango);font-weight:700;text-decoration:none;border-bottom:2px solid var(--kiiro)}
+.card-link:hover{color:var(--umi)}
+
+/* はじまりの言葉 */
+.kotoba{list-style:none;counter-reset:k;background:#fff;border-radius:18px;padding:12px 32px;box-shadow:0 6px 18px rgba(90,60,0,.12);max-width:760px;margin:0 auto}
+.kotoba li{counter-increment:k;display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px dashed var(--line)}
+.kotoba li:last-child{border-bottom:0}
+.kotoba li::before{content:counter(k);flex-shrink:0;width:32px;height:32px;margin-top:2px;border-radius:50%;background:var(--midori);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.kotoba p{font-size:clamp(16px,2.2vw,19px);font-weight:700;color:var(--umi-deep);word-break:auto-phrase}
+.kotoba .en-sub{display:block;font-size:14px;font-weight:500;color:var(--hai);margin-top:2px}
+.kotoba li.last::before{background:var(--sango)}
+.kotoba li.last p{color:var(--sango)}
+
+/* 理念（宣言の白い箱） */
+.sengen{background:#fff;border-left:6px solid var(--sango);padding:32px 32px;border-radius:4px;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+.sengen h3{font-size:clamp(22px,3.4vw,30px);color:var(--umi-deep);margin-bottom:14px;line-height:1.5;word-break:auto-phrase}
+.sengen p+p{margin-top:10px}
+.sengen .sign{text-align:right;margin-top:16px;color:var(--hai);font-weight:700}
+.vmc{margin-top:22px}
+.vmc .tag{font-weight:700;color:var(--midori-deep)}
+.vmc .card h3{font-size:21px}
+
+/* 8つの行動指針 */
+.rules{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:26px 18px;margin-top:10px}
+.rules .card{position:relative;padding-top:30px;border-top-color:var(--midori)}
+.rules .card:nth-child(4n+2),.rules .card:nth-child(4n+3){border-top-color:var(--sango)}
+.rules .num{position:absolute;top:-16px;left:20px;width:36px;height:36px;border-radius:50%;background:var(--midori);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px var(--ki)}
+.rules .card:nth-child(4n+2) .num,.rules .card:nth-child(4n+3) .num{background:var(--aka)}
+.rules .sub{display:block;font-size:13px;color:var(--hai);font-weight:700;margin:-6px 0 6px}
+
+/* 代表メッセージ */
+.msg::after{content:"";display:block;clear:both}
+.msg-photo{float:right;width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 0 14px 24px;box-shadow:0 0 0 4px var(--ki)}
+
+/* 概要 */
+.outline{background:#fff;border-radius:14px;padding:6px 28px;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+.outline > div{display:grid;grid-template-columns:150px 1fr;gap:4px 20px;padding:16px 0;border-bottom:1px dashed var(--line)}
+.outline > div:last-child{border-bottom:0}
+.outline dt{font-weight:700;color:var(--midori-deep)}
+
+/* 参加の呼びかけ */
+.join{margin-top:40px;text-align:center}
+.course-cycle{background:#fff;color:var(--umi-deep);border:3px solid var(--ki);border-radius:14px;padding:16px 20px;font-size:17px;font-weight:700;box-shadow:0 6px 18px rgba(90,60,0,.12)}
+.course-cycle b{color:var(--sango)}
+.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px;margin-top:24px}
+.btn{display:inline-block;background:var(--sango);color:#fff;text-decoration:none;padding:12px 28px;border-radius:999px;font-weight:700;letter-spacing:.05em;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-sub{background:#fff;color:var(--aka);box-shadow:inset 0 0 0 2px var(--aka)}
+
+footer{background:var(--ki);border-top:1px solid rgba(0,0,0,.1);color:var(--cha);font-size:13px;padding:34px 0;text-align:center}
+footer .disc{max-width:720px;margin:0 auto 14px;text-align:left;line-height:1.8}
+footer strong{color:var(--sumi)}
+
+/* スマホ */
+@media(max-width:760px){
+  .cards{grid-template-columns:1fr}
+  .rules{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  section{padding:56px 0}
+  .kotoba{padding:6px 20px}
+  .sengen{padding:24px 22px}
+  .msg-photo{float:none;margin:0 auto 16px;width:130px;height:130px}
+  .outline{padding:4px 20px}
+  .outline > div{grid-template-columns:1fr;gap:0}
+  .btns .btn{flex:1 1 100%;text-align:center}
+}
+
+/* 動き（トップページと同じ「ふわっと表示」「カードが浮く」「ミンサー帯が流れる」） */
+@media(prefers-reduced-motion:no-preference){
+  .minsa{animation:minsa 12s linear infinite}
+  .js-anim .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+  .js-anim .reveal.is-in{opacity:1;transform:none}
+  .card{transition:transform .25s ease,box-shadow .25s ease,opacity .7s ease}
+  .card:hover,.js-anim .card.reveal.is-in:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(90,60,0,.18)}
+  .sec-head .en::before{animation:leaf 3s ease-in-out infinite;transform-origin:50% 100%}
+}
+@keyframes minsa{from{background-position:0 0}to{background-position:292px 0}}
+@keyframes leaf{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
