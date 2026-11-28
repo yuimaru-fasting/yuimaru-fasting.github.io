@@ -93,17 +93,17 @@
   @media(max-width:420px){nav .logo{font-size:15px}nav .nav-cta{padding:8px 12px;font-size:12px}}
 
   /* ヒーロー */
-  /* 沖縄の薬草（ゴーヤー棚・月桃・ウコン・長命草・フーチバー・グァバ・桑） */
+  /* 果実（グァバ・キンカン） */
   .hero{background:var(--ki);color:var(--sumi);position:relative;overflow:hidden}
   .hero .wrap{z-index:2}
-  /* サイトに載せている薬草の花（丸い写真） */
+  /* サイトに載せている果実の花（丸い写真） */
   .hero-flowers{display:grid;grid-template-columns:repeat(2,120px);column-gap:18px;row-gap:6px;margin:0;padding:0;list-style:none}
   .hero-flowers li{text-align:center;font-size:13px;font-weight:700;line-height:1.4;color:var(--sumi)}
   .hero-flowers li:nth-child(even){transform:translateY(64px)}
   .hero-flowers img{display:block;width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 0 0 1px #e6e6e6,0 4px 12px rgba(0,0,0,.08);margin:0 auto 4px}
   @media(min-width:1200px){.hero-flowers{position:absolute;right:calc((100vw - 100%) / -2 + 28px);top:50%;transform:translateY(-58%)}}
-  @media(max-width:720px){.hero-flowers{grid-template-columns:repeat(4,1fr) !important;max-width:520px !important}}
-  @media(max-width:1199px){.hero-flowers{order:5;grid-template-columns:repeat(7,1fr);column-gap:10px;row-gap:12px;width:100%;max-width:820px}.hero-flowers li:nth-child(even){transform:none}.hero-flowers img{width:100%;height:auto;aspect-ratio:1;border-width:3px}.hero-flowers li{font-size:11.5px}}
+  @media(max-width:720px){.hero-flowers{max-width:240px !important}}
+  @media(max-width:1199px){.hero-flowers{order:5;grid-template-columns:repeat(2,1fr);column-gap:14px;row-gap:12px;width:100%;max-width:280px}.hero-flowers li:nth-child(even){transform:none}.hero-flowers img{width:100%;height:auto;aspect-ratio:1;border-width:3px}.hero-flowers li{font-size:11.5px}}
   /* キャッチコピーと説明文（白い背景） */
   .hero h1{color:var(--umi-deep)}
   .hero h1 rt{color:#4a3d0c}
@@ -295,7 +295,7 @@
   .profile ul{list-style:none;margin-top:10px}
   .profile li::before{content:"◆ ";color:var(--kiiro)}
 
-  /* 沖縄の薬草（キャラクター図鑑） */
+  /* ぬちぐすい果実（キャラクター図鑑） */
   .herb-intro{max-width:760px;margin:0 auto 34px;text-align:center}
   .herb-intro b{color:var(--kusa)}
   .herb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -352,8 +352,7 @@
   .cost-src a{color:#fff}
 
   /* 薬草図鑑をコンパクトに */
-  .herb-grid{grid-template-columns:repeat(4,1fr);gap:14px}
-  @media(max-width:900px){.herb-grid{grid-template-columns:repeat(3,1fr)}}
+  .herb-grid{grid-template-columns:repeat(2,1fr);gap:14px;max-width:620px;margin:0 auto}
   @media(max-width:640px){.herb-grid{grid-template-columns:1fr 1fr;gap:10px}}
   .herb-card{padding:12px 12px 10px;border-radius:14px}
   .chara{padding:8px 6px;margin-bottom:8px}
@@ -587,8 +586,8 @@
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#research">研究のいま</a></li>
       <li><a href="manabi.html">中高生向け：教科と薬学</a></li>
-      <li><a href="#herb">薬草図鑑</a></li>
-      <li><a href="#herb-effect">断食と薬草</a></li>
+      <li><a href="#herb">果実図鑑</a></li>
+      <li><a href="#herb-effect">断食と果実</a></li>
       <li><a href="#story">痛みと体重</a></li>
       <li><a href="#note">note記事</a></li>
       <li><a href="#profile">プロフィール</a></li>
@@ -608,18 +607,13 @@
       <a href="#course" class="btn btn-sub">予防プログラムを見る</a>
       <a href="#ippo" class="hero-link">まずは今夜から、12時間 →</a>
       <a href="#ichibun" class="hero-link">1分でわかるファスティング →</a>
-      <a href="#herb-effect" class="hero-link">断食中に薬草を取り入れる効果 →</a>
+      <a href="#herb-effect" class="hero-link">断食中に果実を取り入れる効果 →</a>
     </div>
    </div>
     <img class="hero-photo" src="profile.jpg" alt="薬剤師 SHOKO の写真">
-    <ul class="hero-flowers" aria-label="タップすると断食中に薬草を取り入れる効果へ：ぬちぐすい薬草図鑑の薬草の花">
-      <li><a href="#herb-effect"><img src="flower-gettou.jpg" alt="">月桃</a></li>
-      <li><a href="#herb-effect"><img src="flower-ukon.jpg" alt="">ウコン</a></li>
-      <li><a href="#herb-effect"><img src="flower-chomeiso.jpg" alt="">長命草</a></li>
-      <li><a href="#herb-effect"><img src="flower-goya.jpg" alt="">ゴーヤー</a></li>
-      <li><a href="#herb-effect"><img src="flower-fuchiba.jpg" alt="">フーチバー</a></li>
+    <ul class="hero-flowers" aria-label="タップすると断食中に果実を取り入れる効果へ：ぬちぐすい果実図鑑の果実の花">
       <li><a href="#herb-effect"><img src="flower-guava.jpg" alt="">グァバ</a></li>
-      <li><a href="#herb-effect"><img src="flower-kuwa.jpg" alt="">桑</a></li>
+      <li><a href="#herb-effect"><img src="flower-kinkan.jpg" alt="">キンカン</a></li>
     </ul>
   </div>
 </header>
@@ -739,7 +733,7 @@
         <div class="t"><b>8:00</b><span>朝ごはん</span></div>
       </div>
       <ul class="ippo-tips">
-        <li><b>夜の空腹には</b>白湯・炭酸水・ノンカフェインの薬草茶（グァバ茶・桑の葉茶など） <a href="#herb-effect" class="herb-link">薬草茶の効果 →</a></li>
+        <li><b>夜の空腹には</b>白湯・炭酸水・ノンカフェインのグァバ葉茶 <a href="#herb-effect" class="herb-link">グァバ葉茶の効果 →</a></li>
         <li><b>時間はずらしてOK</b>19時〜7時、21時〜9時など、暮らしに合わせて</li>
         <li><b>できた日に○をつける</b>週に2〜3日からで十分。続けることがいちばん大切</li>
       </ul>
@@ -872,7 +866,7 @@
           <h3>2〜3日目｜ファスティング期（液体だけで過ごす）</h3>
           <ul>
             <li>野菜ジュース＋プロテイン＋整腸剤</li>
-            <li>水分をしっかりとる（薬草茶を替えながらだと飲みやすい <a href="#herb-effect" class="herb-link">効果を見る →</a>）</li>
+            <li>水分をしっかりとる（グァバ葉茶やキンカンの香りのお湯をはさむと飲みやすい <a href="#herb-effect" class="herb-link">効果を見る →</a>）</li>
             <li>めまい・強いだるさがあれば中止</li>
           </ul>
         </div>
@@ -885,7 +879,7 @@
             <li>朝・昼はおかゆ・味噌汁など消化のよいものから</li>
             <li>よく噛んで、ゆっくり食べる</li>
             <li>夜の空腹には炭酸水</li>
-            <li>食事と一緒にグァバ葉茶・桑の葉茶を飲むと、血糖値の上がり方がおだやかに <a href="#herb-effect" class="herb-link">効果を見る →</a></li>
+            <li>食事と一緒にグァバ葉茶を飲むと、血糖値の上がり方がおだやかに <a href="#herb-effect" class="herb-link">効果を見る →</a></li>
             <li>運動は軽いストレッチや散歩程度に</li>
           </ul>
         </div>
@@ -975,136 +969,46 @@
   </div>
 </section>
 
-<!-- 沖縄の薬草（キャラクター図鑑） -->
+<!-- ぬちぐすい果実（キャラクター図鑑） -->
 <section id="herb" class="herb bg-ki">
   <div class="wrap">
     <div class="sec-head">
-      <span class="en">OKINAWAN HERBS</span>
-      <h2>ぬちぐすい薬草図鑑</h2>
-      <p>「ぬちぐすい（命の薬）」の薬草たち</p>
+      <span class="en">NUCHIGUSUI FRUITS</span>
+      <h2>ぬちぐすい果実図鑑</h2>
+      <p>「ぬちぐすい（命の薬）」の果実たち</p>
     </div>
 
     <div class="herb-grid">
 
-      <!-- うっちんくん -->
+      <!-- キンカンにぃにぃ -->
       <article class="herb-card">
         <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="うっちんくんのイラスト">
-            <ellipse cx="32" cy="52" rx="11" ry="16" transform="rotate(-30 32 52)" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
-            <ellipse cx="89" cy="50" rx="10" ry="15" transform="rotate(28 89 50)" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
-            <ellipse cx="60" cy="72" rx="36" ry="32" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
-            <path d="M32 92 Q60 102 88 92" stroke="#c98a12" stroke-width="2" fill="none" opacity=".5"/>
-            <path d="M28 58 Q60 46 92 58" stroke="#d9483b" stroke-width="7" fill="none" stroke-linecap="round"/>
-            <path d="M92 58 l12 -8 M92 58 l13 3" stroke="#d9483b" stroke-width="4" stroke-linecap="round"/>
+          <svg viewBox="0 0 120 120" role="img" aria-label="キンカンにぃにぃのイラスト">
+            <path d="M60 34 Q60 26 63 20" stroke="#6b5a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M62 22 Q78 6 94 16 Q80 30 62 22 Z" fill="#4f9a6a" stroke="#3f8f5a" stroke-width="2"/>
+            <path d="M64 21 Q78 16 90 16" stroke="#3f8f5a" stroke-width="1.5" fill="none"/>
+            <ellipse cx="60" cy="72" rx="31" ry="37" fill="#f6a623" stroke="#d9801a" stroke-width="2"/>
+            <circle cx="60" cy="36" r="3" fill="#8fae42"/>
+            <g fill="#f8c15a"><circle cx="42" cy="56" r="1.6"/><circle cx="78" cy="56" r="1.6"/><circle cx="46" cy="96" r="1.6"/><circle cx="74" cy="96" r="1.6"/><circle cx="60" cy="48" r="1.6"/></g>
+            <ellipse cx="46" cy="52" rx="6" ry="9" transform="rotate(-25 46 52)" fill="#fff" opacity=".35"/>
             <circle cx="50" cy="72" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="72" r="4.5" fill="#2a2a2a"/>
             <circle cx="51.5" cy="70.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="70.5" r="1.5" fill="#fff"/>
-            <ellipse cx="41" cy="80" rx="6" ry="3.5" fill="#e8705f" opacity=".6"/><ellipse cx="79" cy="80" rx="6" ry="3.5" fill="#e8705f" opacity=".6"/>
-            <path d="M53 80 Q60 88 67 80" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="40" cy="81" rx="6.5" ry="3.5" fill="#e8705f" opacity=".6"/><ellipse cx="80" cy="81" rx="6.5" ry="3.5" fill="#e8705f" opacity=".6"/>
+            <path d="M54 81 Q60 88 66 81" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
           </svg>
-          <span class="say">黄色いのは<br>クルクミンのおかげさー！</span>
+          <span class="say">わんは<br>皮ごと食べてね〜</span>
         </div>
-        <h3>うっちんくん</h3>
-        <p class="herb-name">ウコン（うっちん）｜ショウガ科</p>
+        <h3>キンカンにぃにぃ</h3>
+        <p class="herb-name">キンカン（金柑）｜ミカン科</p>
         <details class="herb-more">
           <summary>くわしく見る</summary>
         <dl>
-          <dt>島での使われ方</dt>
-          <dd>うっちん茶や料理の色づけに。秋・春・紫ウコンなどの種類があります。</dd>
+          <dt>暮らしでの使われ方</dt>
+          <dd>皮ごと生で食べたり、甘煮・はちみつ漬けにしたり。のどがイガイガするときの、昔ながらの家庭の知恵としても親しまれています。</dd>
           <dt>研究では</dt>
-          <dd>黄色い成分クルクミンの研究は多いものの、体に吸収されにくい成分です。</dd>
+          <dd>皮にビタミンCやヘスペリジンなどのポリフェノールを含みます。人での効果を確かめた研究はまだ少ない段階です。</dd>
         </dl>
-        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>クルクミンに炎症をおさえる働きが期待されていますが、人での効果ははっきりしていません。<br><span class="m-tag m-care">注意</span>サプリで肝臓をいためた報告あり。肝臓の病気・胆石のある方、血液をサラサラにする薬を飲んでいる方は相談を。</p>
-        </details>
-      </article>
-
-      <!-- サクナちゃん -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="サクナちゃんのイラスト">
-            <path d="M60 44 V22" stroke="#3f8f5a" stroke-width="3" stroke-linecap="round"/>
-            <ellipse cx="46" cy="26" rx="9" ry="14" transform="rotate(-45 46 26)" fill="#5aa36d" stroke="#3f8f5a" stroke-width="2"/>
-            <ellipse cx="74" cy="26" rx="9" ry="14" transform="rotate(45 74 26)" fill="#5aa36d" stroke="#3f8f5a" stroke-width="2"/>
-            <ellipse cx="60" cy="16" rx="8" ry="12" fill="#6fb37d" stroke="#3f8f5a" stroke-width="2"/>
-            <circle cx="60" cy="74" r="34" fill="#9fd19a" stroke="#3f8f5a" stroke-width="2"/>
-            <circle cx="50" cy="72" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="72" r="4.5" fill="#2a2a2a"/>
-            <circle cx="51.5" cy="70.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="70.5" r="1.5" fill="#fff"/>
-            <ellipse cx="41" cy="81" rx="6" ry="3.5" fill="#f28b82" opacity=".7"/><ellipse cx="79" cy="81" rx="6" ry="3.5" fill="#f28b82" opacity=".7"/>
-            <path d="M55 81 Q60 86 65 81" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">1株食べたら1日長生き<br>…って言われてるよ〜</span>
-        </div>
-        <h3>サクナちゃん</h3>
-        <p class="herb-name">長命草（ボタンボウフウ）｜セリ科</p>
-        <details class="herb-more">
-          <summary>くわしく見る</summary>
-        <dl>
-          <dt>島での使われ方</dt>
-          <dd>海辺に育つ草。天ぷらや青汁に。「1株食べると1日長生き」が名前の由来とされます。</dd>
-          <dt>研究では</dt>
-          <dd>多くは試験管や動物での段階です。</dd>
-        </dl>
-        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>ポリフェノールなどを含みますが、人での効果はまだ確かめられていません。<br><span class="m-tag m-care">注意</span>粉末・サプリのとりすぎに注意。セリ科（セロリ・にんじん等）アレルギーの方は避けて。</p>
-        </details>
-      </article>
-
-      <!-- ゴーヤーにぃにぃ -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="ゴーヤーにぃにぃのイラスト">
-            <path d="M60 20 Q58 10 66 6" stroke="#6b8e3a" stroke-width="4" fill="none" stroke-linecap="round"/>
-            <ellipse cx="60" cy="64" rx="27" ry="46" fill="#5fa35a" stroke="#3f7d3c" stroke-width="2"/>
-            <path d="M46 26 Q38 64 46 104 M74 26 Q82 64 74 104" stroke="#3f7d3c" stroke-width="1.5" fill="none" opacity=".6"/>
-            <g fill="#7cc076"><circle cx="40" cy="44" r="2.5"/><circle cx="38" cy="60" r="2.5"/><circle cx="40" cy="80" r="2.5"/><circle cx="80" cy="44" r="2.5"/><circle cx="82" cy="60" r="2.5"/><circle cx="80" cy="80" r="2.5"/><circle cx="54" cy="32" r="2.5"/><circle cx="66" cy="32" r="2.5"/><circle cx="54" cy="96" r="2.5"/><circle cx="66" cy="96" r="2.5"/></g>
-            <path d="M45 54 L55 57 M75 54 L65 57" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="51" cy="64" r="4.5" fill="#2a2a2a"/><circle cx="69" cy="64" r="4.5" fill="#2a2a2a"/>
-            <circle cx="52.5" cy="62.5" r="1.5" fill="#fff"/><circle cx="70.5" cy="62.5" r="1.5" fill="#fff"/>
-            <path d="M52 76 Q60 82 68 76" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">苦いのは<br>がんばってる証拠やっさー</span>
-        </div>
-        <h3>ゴーヤーにぃにぃ</h3>
-        <p class="herb-name">ゴーヤー（ニガウリ）｜ウリ科</p>
-        <details class="herb-more">
-          <summary>くわしく見る</summary>
-        <dl>
-          <dt>島での使われ方</dt>
-          <dd>ゴーヤーチャンプルーでおなじみの夏野菜です。</dd>
-          <dt>研究では</dt>
-          <dd>人での研究は小規模なものが中心です。</dd>
-        </dl>
-        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>血糖値への作用が研究されていますが、結論はまだ出ていません。<br><span class="m-tag m-care">注意</span>糖尿病の薬と一緒にエキス・サプリをとると低血糖のおそれ。妊娠中は濃縮品を避けて。</p>
-        </details>
-      </article>
-
-      <!-- フーチバーおばぁ -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="フーチバーおばぁのイラスト">
-            <ellipse cx="26" cy="72" rx="8" ry="14" transform="rotate(-25 26 72)" fill="#7fae7c" stroke="#557f53" stroke-width="2"/>
-            <ellipse cx="94" cy="72" rx="8" ry="14" transform="rotate(25 94 72)" fill="#7fae7c" stroke="#557f53" stroke-width="2"/>
-            <circle cx="60" cy="34" r="14" fill="#557f53"/>
-            <path d="M38 26 L84 40" stroke="#f2b632" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="60" cy="74" r="33" fill="#b5d6b0" stroke="#557f53" stroke-width="2"/>
-            <path d="M30 62 Q60 40 90 62" fill="#557f53"/>
-            <circle cx="50" cy="74" r="8" fill="none" stroke="#2a2a2a" stroke-width="2"/><circle cx="70" cy="74" r="8" fill="none" stroke="#2a2a2a" stroke-width="2"/>
-            <path d="M58 74 H62" stroke="#2a2a2a" stroke-width="2"/>
-            <path d="M46 75 Q50 71 54 75 M66 75 Q70 71 74 75" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <ellipse cx="40" cy="86" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="80" cy="86" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
-            <path d="M53 88 Q60 95 67 88" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">ジューシーにもヒージャー汁にも<br>わんがおらんとね〜</span>
-        </div>
-        <h3>フーチバーおばぁ</h3>
-        <p class="herb-name">フーチバー（ニシヨモギ）｜キク科</p>
-        <details class="herb-more">
-          <summary>くわしく見る</summary>
-        <dl>
-          <dt>島での使われ方</dt>
-          <dd>フーチバージューシーやヤギ汁、沖縄そばの薬味に。</dd>
-          <dt>研究では</dt>
-          <dd>香り成分などが調べられている段階です。</dd>
-        </dl>
-        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>強い香りで料理のくさみをやわらげます。体への効果を確かめた人の研究は多くありません。<br><span class="m-tag m-care">注意</span>キク科（ブタクサ・菊など）アレルギーの方は注意。妊娠中は大量にとらないで。</p>
+        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>皮ごと食べると、ビタミンCや食物繊維がとれる果実です。のどへの効果は言い伝えの段階です。<br><span class="m-tag m-care">注意</span>甘煮・はちみつ漬けは糖分が多いので食べすぎに注意。1歳未満の赤ちゃんには、はちみつを与えないで。</p>
         </details>
       </article>
 
@@ -1138,114 +1042,47 @@
         </details>
       </article>
 
-      <!-- サンニンねぇねぇ -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="サンニンねぇねぇのイラスト">
-            <path d="M60 8 C96 36 96 90 60 114 C24 90 24 36 60 8 Z" fill="#6cb27a" stroke="#3f8f5a" stroke-width="2"/>
-            <path d="M60 14 V108" stroke="#3f8f5a" stroke-width="1.5" opacity=".5"/>
-            <ellipse cx="60" cy="70" rx="22" ry="20" fill="#bfe2bf"/>
-            <g transform="translate(80 34)">
-              <ellipse cx="0" cy="0" rx="6" ry="8" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
-              <ellipse cx="9" cy="6" rx="5" ry="7" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
-              <ellipse cx="-2" cy="11" rx="5" ry="6.5" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
-              <circle cx="3" cy="5" r="2.5" fill="#f2b632"/>
-            </g>
-            <path d="M47 67 Q51 63 55 67 M65 67 Q69 63 73 67" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M46 66 l-3 -2 M74 66 l3 -2" stroke="#2a2a2a" stroke-width="1.8" stroke-linecap="round"/>
-            <ellipse cx="45" cy="76" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="75" cy="76" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
-            <path d="M55 77 Q60 83 65 77" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">ムーチーは<br>わたしで包んでね</span>
-        </div>
-        <h3>サンニンねぇねぇ</h3>
-        <p class="herb-name">月桃（サンニン）｜ショウガ科</p>
-        <details class="herb-more">
-          <summary>くわしく見る</summary>
-        <dl>
-          <dt>島での使われ方</dt>
-          <dd>ムーチー（旧暦12月8日）でおもちを包む葉。お茶や虫よけにも。</dd>
-          <dt>研究では</dt>
-          <dd>葉のポリフェノールなどを調べている段階です。</dd>
-        </dl>
-        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>さわやかな香りが楽しめます。体への効果は試験管・動物での研究が中心です。<br><span class="m-tag m-care">注意</span>妊娠中・授乳中の安全性は確かめられていないため、控えめに。</p>
-        </details>
-      </article>
-
-      <!-- クヮーギちゃん -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="クヮーギちゃんのイラスト">
-            <path d="M60 112 C34 100 18 80 20 58 C21 44 28 34 38 30 L42 34 L46 27 L52 30 L56 22 L60 28 L64 22 L68 30 L74 27 L78 34 L82 30 C92 34 99 44 100 58 C102 80 86 100 60 112 Z" fill="#7cc06c" stroke="#4d8f42" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M60 30 V108 M60 70 L36 52 M60 70 L84 52 M60 88 L40 80 M60 88 L80 80" stroke="#4d8f42" stroke-width="1.5" fill="none" opacity=".45"/>
-            <ellipse cx="60" cy="68" rx="22" ry="19" fill="#c3e5b6"/>
-            <g transform="translate(26 24)">
-              <path d="M6 -6 Q8 -12 14 -14" stroke="#4d8f42" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <circle cx="2" cy="0" r="4" fill="#5b2a4e"/><circle cx="8" cy="2" r="4" fill="#6e3360"/><circle cx="4" cy="6" r="4" fill="#5b2a4e"/><circle cx="10" cy="8" r="4" fill="#6e3360"/><circle cx="5" cy="12" r="3.5" fill="#5b2a4e"/>
-              <circle cx="1" cy="-1" r="1" fill="#fff" opacity=".7"/>
-            </g>
-            <circle cx="50" cy="66" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="66" r="4.5" fill="#2a2a2a"/>
-            <circle cx="51.5" cy="64.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="64.5" r="1.5" fill="#fff"/>
-            <ellipse cx="42" cy="75" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="78" cy="75" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
-            <path d="M54 75 Q60 82 66 75" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">食べる前に<br>わたしのお茶、一杯どうぞ〜</span>
-        </div>
-        <h3>クヮーギちゃん</h3>
-        <p class="herb-name">桑（クヮーギ）｜クワ科</p>
-        <details class="herb-more">
-          <summary>くわしく見る</summary>
-        <dl>
-          <dt>島での使われ方</dt>
-          <dd>葉はお茶、実はおやつに。「クヮーギヌシチャ」と唱える魔よけの言い伝えも。</dd>
-          <dt>研究では</dt>
-          <dd>食後の血糖値への作用が、人で調べられています。</dd>
-        </dl>
-        <p class="memo"><b>薬剤師メモ</b><span class="m-tag m-eff">効果</span>葉のDNJが糖の吸収をおだやかにします（機能性表示食品の成分）。<br><span class="m-tag m-care">注意</span>糖尿病の薬と一緒だと効きすぎることも。おなかの張り・おならが増えることがあります。</p>
-        </details>
-      </article>
-
     </div>
 
     <!-- 断食中にぬちぐすいを取り入れる効果 -->
     <div class="herb-effect" id="herb-effect">
       <h3>断食中に「ぬちぐすい」を取り入れる効果</h3>
-      <p class="lead">薬草は、断食の効果を何倍にもする魔法ではありません。けれど、断食を<b>安全に、続けやすくする</b>心強い味方です。やり方とスケジュールの時期ごとに、期待できることを薬剤師が整理しました。</p>
+      <p class="lead">果実は、断食の効果を何倍にもする魔法ではありません。けれど、断食を<b>安全に、続けやすくする</b>心強い味方です。やり方とスケジュールの時期ごとに、期待できることを薬剤師が整理しました。</p>
       <div class="he-grid">
         <div class="he-item">
           <span class="when">ファスティング期（2〜3日目）</span>
           <h4>水分を、無理なくたっぷりとれる</h4>
-          <p>液体だけで過ごす日は、水分が不足しがち。水だけだと飽きてしまう人も、月桃茶・グァバ茶・桑の葉茶など香りのちがうお茶を替えながらなら、自然と量を飲めます。多くはノンカフェインで、カロリーもほとんどありません。</p>
+          <p>液体だけで過ごす日は、水分が不足しがち。水だけだと飽きてしまう人も、グァバ葉茶を温かくしたり冷やしたり、お湯にキンカンの皮をひとかけ浮かべて香りをつけたりすると、自然と量を飲めます。グァバ葉茶はノンカフェインで、カロリーもほとんどありません。</p>
           <p class="ev"><b>ポイント</b>　水分補給としての効果です（お茶の成分の効果ではありません）</p>
         </div>
         <div class="he-item">
           <span class="when">空腹がつらいとき</span>
           <h4>温かい香りで、気持ちを切りかえる</h4>
-          <p>空腹の波は、たいてい数十分でおさまります。温かい薬草茶をゆっくり飲むと、おなかが温まり、香りで気分が切りかわって、波をやり過ごしやすくなります。夜の空腹には、炭酸水と並ぶ選択肢に。</p>
+          <p>空腹の波は、たいてい数十分でおさまります。温かいグァバ葉茶をゆっくり飲むと、おなかが温まり、香りで気分が切りかわって、波をやり過ごしやすくなります。夜の空腹には、炭酸水と並ぶ選択肢に。</p>
           <p class="ev"><b>ポイント</b>　体験としての工夫です。空腹をおさえる効果を確かめた人の研究は、まだありません</p>
         </div>
         <div class="he-item">
           <span class="when">回復期（4日目から）</span>
           <h4>食後の血糖値の上がり方を、おだやかに</h4>
-          <p>食事を再開するときは、血糖値が急に上がりやすいタイミング。食事と一緒にグァバ葉茶や桑の葉茶を飲むと、糖の吸収がおだやかになることが、人の研究で確かめられています（トクホ・機能性表示食品の成分）。</p>
+          <p>食事を再開するときは、血糖値が急に上がりやすいタイミング。食事と一緒にグァバ葉茶を飲むと、糖の吸収がおだやかになることが、人の研究で確かめられています（トクホの成分）。</p>
           <p class="ev"><b>ポイント</b>　食事と一緒に飲んだときの働きです。何も食べていない時間に飲んでも、この効果はありません</p>
         </div>
         <div class="he-item">
           <span class="when">回復期の食事</span>
-          <h4>島の薬草で、回復食をおいしく</h4>
-          <p>おかゆや味噌汁に長命草やフーチバーを少し加えたり、ゴーヤーを副菜にしたり。香りや苦みがアクセントになって、薄味でも満足しやすくなり、野菜もとれます。よく噛んで食べることは、食べすぎの予防にもつながります。</p>
-          <p class="ev"><b>ポイント</b>　食材としての取り入れ方です。粉末やサプリでの大量摂取はおすすめしません</p>
+          <h4>キンカンで、回復食にさわやかな香りを</h4>
+          <p>薄味の回復食に、キンカンを1〜2個。皮ごとよく噛んで食べると、さわやかな香りと甘みで満足しやすくなり、ビタミンCや食物繊維もとれます。よく噛んで食べることは、食べすぎの予防にもつながります。</p>
+          <p class="ev"><b>ポイント</b>　生の果実としての取り入れ方です。甘煮・はちみつ漬けは糖分が多いので、回復期の最初は避けましょう</p>
         </div>
       </div>
-      <p class="he-myth"><b>よくある誤解</b>　「デトックスになる」「脂肪が早く燃える」「断食の効果が高まる」――こうした効果を人で確かめた研究はありません。薬草は断食の主役ではなく、<b>そっと寄りそう名脇役</b>。おいしく楽しみながら、島の知恵を暮らしに取り入れましょう。</p>
+      <p class="he-myth"><b>よくある誤解</b>　「デトックスになる」「脂肪が早く燃える」「断食の効果が高まる」――こうした効果を人で確かめた研究はありません。果実は断食の主役ではなく、<b>そっと寄りそう名脇役</b>。おいしく楽しみながら、島の知恵を暮らしに取り入れましょう。</p>
     </div>
 
     <details class="herb-tips">
-      <summary><h3>ファスティング中に薬草茶を飲むときは</h3></summary>
+      <summary><h3>ファスティング中にグァバ葉茶を飲むときは</h3></summary>
       <ul>
-        <li>ノンカフェインのものが多く、水分補給の選択肢になります。砂糖が入っていないものを選びましょう</li>
+        <li>ノンカフェインなので、水分補給の選択肢になります。砂糖が入っていないものを選びましょう</li>
         <li>空腹のときに濃いものをたくさん飲むと、胃に負担がかかることがあります</li>
-        <li>授乳中は、母乳への影響がわかっていないものが多いため、少量から・心配なら相談を</li>
+        <li>授乳中は、母乳への影響が十分わかっていないため、少量から・心配なら相談を</li>
         <li>「天然だから安全」とは限りません。お薬を飲んでいる方は、飲み合わせを薬剤師に確認してください</li>
       </ul>
       <p class="src">参考：国立健康・栄養研究所「健康食品」の安全性・有効性情報（HFNet）、消費者庁 特定保健用食品の情報</p>
@@ -1360,6 +1197,7 @@
         <h3 class="nickname">（ニックネーム）</h3>
         <p class="role">薬剤師／沖縄在住／産後ママ</p>
         <p>病院・大学病院・調剤薬局で勤務。1人目の産後に−10kgを達成し、2人目の産後の今、再挑戦中。モットーは「正しく、安全に、着実に」。</p>
+        <p>これからは、沖縄のヘルスケア開発をすすめたい。データの分析を中心に、研究に取り組んでいきます。</p>
         <ul class="prof-tags">
           <li>京都の大学で薬学を学ぶ</li>
           <li>食品衛生管理者の資格</li>
@@ -1416,7 +1254,7 @@
   <div class="wrap">
     <p class="disc"><strong>ご注意：</strong>本サイトの体重記録は個人の経過であり、効果を保証するものではありません。掲載している医療情報は一般的な内容で、個別の診断・治療に代わるものではありません。ファスティングを行う際は、ご自身の体調に合わせ、必要に応じて医師・薬剤師にご相談ください。</p>
     <p style="margin-bottom:6px">当サイトでは、アクセス状況の把握のためGoogleアナリティクスを利用しています。</p>
-    <p style="margin-bottom:6px">花の写真：月桃 David Clode（<a href="https://unsplash.com/photos/a-close-up-of-a-flower-with-a-black-background-XYng6S1Ky30" target="_blank" rel="noopener" style="color:inherit">Unsplash</a>）／ウコン Jonas Kakaroto Honorato（<a href="https://commons.wikimedia.org/wiki/File:Turmeric_Flower_Curcuma_Longa_(243825849).jpeg" target="_blank" rel="noopener" style="color:inherit">CC0</a>）／長命草 M108t（<a href="https://commons.wikimedia.org/wiki/File:Compound_umbel_of_Peucedanum_japonicum_in_Ishigaki,_Okinawa.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY 4.0</a>）／ゴーヤー Fahim Shahriyar Rifat（<a href="https://commons.wikimedia.org/wiki/File:Momordica_charantia_(flower).jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>）／フーチバー（ヨモギ属の花）Krzysztof Ziarnek, Kenraiz（<a href="https://commons.wikimedia.org/wiki/File:Artemisia_vulgaris_kz08.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>）／グァバ Joydeep（<a href="https://commons.wikimedia.org/wiki/File:Psidium_guajava_flower_26032014_01.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 3.0</a>）／桑 Suyash Dwivedi（<a href="https://commons.wikimedia.org/wiki/File:Morus_alba_flowers_in_India.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>）。花の写真は丸く切り抜いています。</p>
+    <p style="margin-bottom:6px">花の写真：グァバ Joydeep（<a href="https://commons.wikimedia.org/wiki/File:Psidium_guajava_flower_26032014_01.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 3.0</a>）／キンカン KENPEI（<a href="https://commons.wikimedia.org/wiki/File:Citrus_japonica4.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 3.0</a>）。花の写真は丸く切り抜いています。</p>
     <p>© 2026 ゆいまーるファスティング</p>
   </div>
 </footer>

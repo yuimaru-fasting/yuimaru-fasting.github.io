@@ -93,17 +93,17 @@
   @media(max-width:420px){nav .logo{font-size:15px}nav .nav-cta{padding:8px 12px;font-size:12px}}
 
   /* ヒーロー */
-  /* 沖縄の薬草（ゴーヤー棚・月桃・ウコン・長命草・フーチバー・グァバ・桑） */
+  /* 果実（グァバ・キンカン） */
   .hero{background:var(--ki);color:var(--sumi);position:relative;overflow:hidden}
   .hero .wrap{z-index:2}
-  /* サイトに載せている薬草の花（丸い写真） */
+  /* サイトに載せている果実の花（丸い写真） */
   .hero-flowers{display:grid;grid-template-columns:repeat(2,120px);column-gap:18px;row-gap:6px;margin:0;padding:0;list-style:none}
   .hero-flowers li{text-align:center;font-size:13px;font-weight:700;line-height:1.4;color:var(--sumi)}
   .hero-flowers li:nth-child(even){transform:translateY(64px)}
   .hero-flowers img{display:block;width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 0 0 1px #e6e6e6,0 4px 12px rgba(0,0,0,.08);margin:0 auto 4px}
   @media(min-width:1200px){.hero-flowers{position:absolute;right:calc((100vw - 100%) / -2 + 28px);top:50%;transform:translateY(-58%)}}
-  @media(max-width:720px){.hero-flowers{grid-template-columns:repeat(4,1fr) !important;max-width:520px !important}}
-  @media(max-width:1199px){.hero-flowers{order:5;grid-template-columns:repeat(7,1fr);column-gap:10px;row-gap:12px;width:100%;max-width:820px}.hero-flowers li:nth-child(even){transform:none}.hero-flowers img{width:100%;height:auto;aspect-ratio:1;border-width:3px}.hero-flowers li{font-size:11.5px}}
+  @media(max-width:720px){.hero-flowers{max-width:240px !important}}
+  @media(max-width:1199px){.hero-flowers{order:5;grid-template-columns:repeat(2,1fr);column-gap:14px;row-gap:12px;width:100%;max-width:280px}.hero-flowers li:nth-child(even){transform:none}.hero-flowers img{width:100%;height:auto;aspect-ratio:1;border-width:3px}.hero-flowers li{font-size:11.5px}}
   /* キャッチコピーと説明文（白い背景） */
   .hero h1{color:var(--umi-deep)}
   .hero h1 rt{color:#4a3d0c}
@@ -295,7 +295,7 @@
   .profile ul{list-style:none;margin-top:10px}
   .profile li::before{content:"◆ ";color:var(--kiiro)}
 
-  /* 沖縄の薬草（キャラクター図鑑） */
+  /* ぬちぐすい果実（キャラクター図鑑） */
   .herb-intro{max-width:760px;margin:0 auto 34px;text-align:center}
   .herb-intro b{color:var(--kusa)}
   .herb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -352,8 +352,7 @@
   .cost-src a{color:#fff}
 
   /* 薬草図鑑をコンパクトに */
-  .herb-grid{grid-template-columns:repeat(4,1fr);gap:14px}
-  @media(max-width:900px){.herb-grid{grid-template-columns:repeat(3,1fr)}}
+  .herb-grid{grid-template-columns:repeat(2,1fr);gap:14px;max-width:620px;margin:0 auto}
   @media(max-width:640px){.herb-grid{grid-template-columns:1fr 1fr;gap:10px}}
   .herb-card{padding:12px 12px 10px;border-radius:14px}
   .chara{padding:8px 6px;margin-bottom:8px}
@@ -586,8 +585,8 @@
       <li><a href="#howto">How-To &amp; Cautions</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#research">Research Today</a></li>
-      <li><a href="#herb">Herb Guide</a></li>
-      <li><a href="#herb-effect">Herbs &amp; Fasting</a></li>
+      <li><a href="#herb">Fruit Guide</a></li>
+      <li><a href="#herb-effect">Fruits &amp; Fasting</a></li>
       <li><a href="#story">Pain &amp; Weight</a></li>
       <li><a href="#note">note Articles</a></li>
       <li><a href="#profile">Profile</a></li>
@@ -607,18 +606,13 @@
       <a href="#course" class="btn btn-sub">See the prevention program</a>
       <a href="#ippo" class="hero-link">Try 12 hours tonight →</a>
       <a href="#ichibun" class="hero-link">Fasting in 1 minute →</a>
-      <a href="#herb-effect" class="hero-link">How herbs help while you fast →</a>
+      <a href="#herb-effect" class="hero-link">How fruits help while you fast →</a>
     </div>
    </div>
     <img class="hero-photo" src="profile.jpg" alt="Photo of pharmacist SHOKO">
-    <ul class="hero-flowers" aria-label="Tap to see how herbs help while you fast: Flowers of the herbs in the Nuchigusui Herb Guide">
-      <li><a href="#herb-effect"><img src="flower-gettou.jpg" alt="">Shell ginger</a></li>
-      <li><a href="#herb-effect"><img src="flower-ukon.jpg" alt="">Turmeric</a></li>
-      <li><a href="#herb-effect"><img src="flower-chomeiso.jpg" alt="">Chomeiso</a></li>
-      <li><a href="#herb-effect"><img src="flower-goya.jpg" alt="">Goya</a></li>
-      <li><a href="#herb-effect"><img src="flower-fuchiba.jpg" alt="">Fuchiba</a></li>
+    <ul class="hero-flowers" aria-label="Tap to see how fruits help while you fast: Flowers of the fruits in the Nuchigusui Fruit Guide">
       <li><a href="#herb-effect"><img src="flower-guava.jpg" alt="">Guava</a></li>
-      <li><a href="#herb-effect"><img src="flower-kuwa.jpg" alt="">Mulberry</a></li>
+      <li><a href="#herb-effect"><img src="flower-kinkan.jpg" alt="">Kumquat</a></li>
     </ul>
   </div>
 </header>
@@ -738,7 +732,7 @@
         <div class="t"><b>8:00</b><span>Breakfast</span></div>
       </div>
       <ul class="ippo-tips">
-        <li><b>Hungry at night?</b>Warm water, sparkling water, or caffeine-free herbal tea (guava tea, mulberry leaf tea, etc.) <a href="#herb-effect" class="herb-link">How herbal tea helps →</a></li>
+        <li><b>Hungry at night?</b>Warm water, sparkling water, or caffeine-free guava leaf tea <a href="#herb-effect" class="herb-link">How guava leaf tea helps →</a></li>
         <li><b>Shift the hours freely</b>7pm–7am, 9pm–9am — whatever fits your life</li>
         <li><b>Mark the days you did it</b>2–3 days a week is plenty. Keeping it up is what matters most</li>
       </ul>
@@ -871,7 +865,7 @@
           <h3>Days 2–3 | Fasting phase (liquids only)</h3>
           <ul>
             <li>Vegetable juice + protein + probiotics</li>
-            <li>Drink plenty of fluids (rotating herbal teas makes it easier <a href="#herb-effect" class="herb-link">See how →</a>)</li>
+            <li>Drink plenty of fluids (guava leaf tea or hot water with a hint of kumquat makes it easier <a href="#herb-effect" class="herb-link">See how →</a>)</li>
             <li>Stop if you feel dizzy or very fatigued</li>
           </ul>
         </div>
@@ -884,7 +878,7 @@
             <li>For breakfast and lunch, start with easy-to-digest food like rice porridge and miso soup</li>
             <li>Chew well and eat slowly</li>
             <li>Sparkling water for hunger at night</li>
-            <li>Guava or mulberry leaf tea with meals helps blood sugar rise more gently <a href="#herb-effect" class="herb-link">See how →</a></li>
+            <li>Guava leaf tea with meals helps blood sugar rise more gently <a href="#herb-effect" class="herb-link">See how →</a></li>
             <li>Keep exercise light — stretching or a walk</li>
           </ul>
         </div>
@@ -973,136 +967,46 @@
   </div>
 </section>
 
-<!-- 沖縄の薬草（キャラクター図鑑） -->
+<!-- ぬちぐすい果実（キャラクター図鑑） -->
 <section id="herb" class="herb bg-ki">
   <div class="wrap">
     <div class="sec-head">
-      <span class="en">OKINAWAN HERBS</span>
-      <h2>Nuchigusui Herb Guide</h2>
-      <p>Herbs of "nuchigusui" (medicine for life)</p>
+      <span class="en">NUCHIGUSUI FRUITS</span>
+      <h2>Nuchigusui Fruit Guide</h2>
+      <p>Fruits of "nuchigusui" (medicine for life)</p>
     </div>
 
     <div class="herb-grid">
 
-      <!-- うっちんくん -->
+      <!-- キンカンにぃにぃ -->
       <article class="herb-card">
         <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="Illustration of Ucchin-kun">
-            <ellipse cx="32" cy="52" rx="11" ry="16" transform="rotate(-30 32 52)" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
-            <ellipse cx="89" cy="50" rx="10" ry="15" transform="rotate(28 89 50)" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
-            <ellipse cx="60" cy="72" rx="36" ry="32" fill="#f2b632" stroke="#c98a12" stroke-width="2"/>
-            <path d="M32 92 Q60 102 88 92" stroke="#c98a12" stroke-width="2" fill="none" opacity=".5"/>
-            <path d="M28 58 Q60 46 92 58" stroke="#d9483b" stroke-width="7" fill="none" stroke-linecap="round"/>
-            <path d="M92 58 l12 -8 M92 58 l13 3" stroke="#d9483b" stroke-width="4" stroke-linecap="round"/>
+          <svg viewBox="0 0 120 120" role="img" aria-label="Illustration of Big Bro Kinkan">
+            <path d="M60 34 Q60 26 63 20" stroke="#6b5a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M62 22 Q78 6 94 16 Q80 30 62 22 Z" fill="#4f9a6a" stroke="#3f8f5a" stroke-width="2"/>
+            <path d="M64 21 Q78 16 90 16" stroke="#3f8f5a" stroke-width="1.5" fill="none"/>
+            <ellipse cx="60" cy="72" rx="31" ry="37" fill="#f6a623" stroke="#d9801a" stroke-width="2"/>
+            <circle cx="60" cy="36" r="3" fill="#8fae42"/>
+            <g fill="#f8c15a"><circle cx="42" cy="56" r="1.6"/><circle cx="78" cy="56" r="1.6"/><circle cx="46" cy="96" r="1.6"/><circle cx="74" cy="96" r="1.6"/><circle cx="60" cy="48" r="1.6"/></g>
+            <ellipse cx="46" cy="52" rx="6" ry="9" transform="rotate(-25 46 52)" fill="#fff" opacity=".35"/>
             <circle cx="50" cy="72" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="72" r="4.5" fill="#2a2a2a"/>
             <circle cx="51.5" cy="70.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="70.5" r="1.5" fill="#fff"/>
-            <ellipse cx="41" cy="80" rx="6" ry="3.5" fill="#e8705f" opacity=".6"/><ellipse cx="79" cy="80" rx="6" ry="3.5" fill="#e8705f" opacity=".6"/>
-            <path d="M53 80 Q60 88 67 80" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="40" cy="81" rx="6.5" ry="3.5" fill="#e8705f" opacity=".6"/><ellipse cx="80" cy="81" rx="6.5" ry="3.5" fill="#e8705f" opacity=".6"/>
+            <path d="M54 81 Q60 88 66 81" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
           </svg>
-          <span class="say">I'm yellow<br>thanks to curcumin!</span>
+          <span class="say">Eat me<br>peel and all~</span>
         </div>
-        <h3>Ucchin-kun</h3>
-        <p class="herb-name">Turmeric (ucchin) | Ginger family</p>
+        <h3>Big Bro Kinkan</h3>
+        <p class="herb-name">Kumquat (kinkan) | Citrus family</p>
         <details class="herb-more">
           <summary>Learn more</summary>
         <dl>
-          <dt>How it's used on the island</dt>
-          <dd>In ucchin tea and to color dishes. Varieties include autumn, spring, and purple turmeric.</dd>
+          <dt>How it's used at home</dt>
+          <dd>Eaten raw with the peel, or simmered in syrup or steeped in honey. A traditional home remedy for a scratchy throat.</dd>
           <dt>What research says</dt>
-          <dd>There's a lot of research on its yellow compound, curcumin, but it is poorly absorbed by the body.</dd>
+          <dd>The peel contains vitamin C and polyphenols such as hesperidin. Few studies have tested its effects in humans.</dd>
         </dl>
-        <p class="memo"><b>Pharmacist's note</b><span class="m-tag m-eff">Benefits</span>Curcumin is expected to have anti-inflammatory effects, but its effects in humans are not clear.<br><span class="m-tag m-care">Caution</span>There are reports of liver damage from supplements. If you have liver disease or gallstones, or take blood thinners, consult first.</p>
-        </details>
-      </article>
-
-      <!-- サクナちゃん -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="Illustration of Sakuna-chan">
-            <path d="M60 44 V22" stroke="#3f8f5a" stroke-width="3" stroke-linecap="round"/>
-            <ellipse cx="46" cy="26" rx="9" ry="14" transform="rotate(-45 46 26)" fill="#5aa36d" stroke="#3f8f5a" stroke-width="2"/>
-            <ellipse cx="74" cy="26" rx="9" ry="14" transform="rotate(45 74 26)" fill="#5aa36d" stroke="#3f8f5a" stroke-width="2"/>
-            <ellipse cx="60" cy="16" rx="8" ry="12" fill="#6fb37d" stroke="#3f8f5a" stroke-width="2"/>
-            <circle cx="60" cy="74" r="34" fill="#9fd19a" stroke="#3f8f5a" stroke-width="2"/>
-            <circle cx="50" cy="72" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="72" r="4.5" fill="#2a2a2a"/>
-            <circle cx="51.5" cy="70.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="70.5" r="1.5" fill="#fff"/>
-            <ellipse cx="41" cy="81" rx="6" ry="3.5" fill="#f28b82" opacity=".7"/><ellipse cx="79" cy="81" rx="6" ry="3.5" fill="#f28b82" opacity=".7"/>
-            <path d="M55 81 Q60 86 65 81" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">Eat one plant, live one day longer<br>…or so they say~</span>
-        </div>
-        <h3>Sakuna-chan</h3>
-        <p class="herb-name">Chomeiso (Peucedanum japonicum) | Carrot family</p>
-        <details class="herb-more">
-          <summary>Learn more</summary>
-        <dl>
-          <dt>How it's used on the island</dt>
-          <dd>A plant that grows by the sea. Eaten as tempura or in green juice. Its name ("long-life herb") is said to come from "eat one plant, live one day longer."</dd>
-          <dt>What research says</dt>
-          <dd>Most studies are still at the test-tube or animal stage.</dd>
-        </dl>
-        <p class="memo"><b>Pharmacist's note</b><span class="m-tag m-eff">Benefits</span>It contains polyphenols and more, but its effects in humans have not yet been confirmed.<br><span class="m-tag m-care">Caution</span>Don't overdo powders or supplements. Avoid if you're allergic to the carrot family (celery, carrots, etc.).</p>
-        </details>
-      </article>
-
-      <!-- ゴーヤーにぃにぃ -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="Illustration of Big Bro Goya">
-            <path d="M60 20 Q58 10 66 6" stroke="#6b8e3a" stroke-width="4" fill="none" stroke-linecap="round"/>
-            <ellipse cx="60" cy="64" rx="27" ry="46" fill="#5fa35a" stroke="#3f7d3c" stroke-width="2"/>
-            <path d="M46 26 Q38 64 46 104 M74 26 Q82 64 74 104" stroke="#3f7d3c" stroke-width="1.5" fill="none" opacity=".6"/>
-            <g fill="#7cc076"><circle cx="40" cy="44" r="2.5"/><circle cx="38" cy="60" r="2.5"/><circle cx="40" cy="80" r="2.5"/><circle cx="80" cy="44" r="2.5"/><circle cx="82" cy="60" r="2.5"/><circle cx="80" cy="80" r="2.5"/><circle cx="54" cy="32" r="2.5"/><circle cx="66" cy="32" r="2.5"/><circle cx="54" cy="96" r="2.5"/><circle cx="66" cy="96" r="2.5"/></g>
-            <path d="M45 54 L55 57 M75 54 L65 57" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="51" cy="64" r="4.5" fill="#2a2a2a"/><circle cx="69" cy="64" r="4.5" fill="#2a2a2a"/>
-            <circle cx="52.5" cy="62.5" r="1.5" fill="#fff"/><circle cx="70.5" cy="62.5" r="1.5" fill="#fff"/>
-            <path d="M52 76 Q60 82 68 76" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">Being bitter means<br>I'm working hard, sa!</span>
-        </div>
-        <h3>Big Bro Goya</h3>
-        <p class="herb-name">Goya (bitter melon) | Gourd family</p>
-        <details class="herb-more">
-          <summary>Learn more</summary>
-        <dl>
-          <dt>How it's used on the island</dt>
-          <dd>A familiar summer vegetable, famous in goya champuru stir-fry.</dd>
-          <dt>What research says</dt>
-          <dd>Human studies are mostly small-scale.</dd>
-        </dl>
-        <p class="memo"><b>Pharmacist's note</b><span class="m-tag m-eff">Benefits</span>Its effect on blood sugar is being studied, but there's no conclusion yet.<br><span class="m-tag m-care">Caution</span>Taking extracts or supplements with diabetes medication may cause low blood sugar. Avoid concentrated products during pregnancy.</p>
-        </details>
-      </article>
-
-      <!-- フーチバーおばぁ -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="Illustration of Grandma Fuchiba">
-            <ellipse cx="26" cy="72" rx="8" ry="14" transform="rotate(-25 26 72)" fill="#7fae7c" stroke="#557f53" stroke-width="2"/>
-            <ellipse cx="94" cy="72" rx="8" ry="14" transform="rotate(25 94 72)" fill="#7fae7c" stroke="#557f53" stroke-width="2"/>
-            <circle cx="60" cy="34" r="14" fill="#557f53"/>
-            <path d="M38 26 L84 40" stroke="#f2b632" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="60" cy="74" r="33" fill="#b5d6b0" stroke="#557f53" stroke-width="2"/>
-            <path d="M30 62 Q60 40 90 62" fill="#557f53"/>
-            <circle cx="50" cy="74" r="8" fill="none" stroke="#2a2a2a" stroke-width="2"/><circle cx="70" cy="74" r="8" fill="none" stroke="#2a2a2a" stroke-width="2"/>
-            <path d="M58 74 H62" stroke="#2a2a2a" stroke-width="2"/>
-            <path d="M46 75 Q50 71 54 75 M66 75 Q70 71 74 75" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <ellipse cx="40" cy="86" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="80" cy="86" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
-            <path d="M53 88 Q60 95 67 88" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">Juushii or goat soup —<br>can't make 'em without me~</span>
-        </div>
-        <h3>Grandma Fuchiba</h3>
-        <p class="herb-name">Fuchiba (Artemisia) | Daisy family</p>
-        <details class="herb-more">
-          <summary>Learn more</summary>
-        <dl>
-          <dt>How it's used on the island</dt>
-          <dd>In fuchiba juushii (seasoned rice), goat soup, and as a garnish for Okinawa soba.</dd>
-          <dt>What research says</dt>
-          <dd>Its aromatic compounds and other components are still being studied.</dd>
-        </dl>
-        <p class="memo"><b>Pharmacist's note</b><span class="m-tag m-eff">Benefits</span>Its strong aroma softens gamey smells in cooking. There are few human studies confirming effects on the body.<br><span class="m-tag m-care">Caution</span>Take care if you're allergic to the daisy family (ragweed, chrysanthemum, etc.). Don't consume large amounts during pregnancy.</p>
+        <p class="memo"><b>Pharmacist's note</b><span class="m-tag m-eff">Benefits</span>Eaten whole, it gives you vitamin C and fiber. Its effect on the throat is folk wisdom so far.<br><span class="m-tag m-care">Caution</span>Syrup- or honey-preserved kumquats are high in sugar, so don't overdo them. Never give honey to babies under 1 year old.</p>
         </details>
       </article>
 
@@ -1136,114 +1040,47 @@
         </details>
       </article>
 
-      <!-- サンニンねぇねぇ -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="Illustration of Big Sis Sannin">
-            <path d="M60 8 C96 36 96 90 60 114 C24 90 24 36 60 8 Z" fill="#6cb27a" stroke="#3f8f5a" stroke-width="2"/>
-            <path d="M60 14 V108" stroke="#3f8f5a" stroke-width="1.5" opacity=".5"/>
-            <ellipse cx="60" cy="70" rx="22" ry="20" fill="#bfe2bf"/>
-            <g transform="translate(80 34)">
-              <ellipse cx="0" cy="0" rx="6" ry="8" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
-              <ellipse cx="9" cy="6" rx="5" ry="7" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
-              <ellipse cx="-2" cy="11" rx="5" ry="6.5" fill="#fff" stroke="#e8a3a3" stroke-width="1.5"/>
-              <circle cx="3" cy="5" r="2.5" fill="#f2b632"/>
-            </g>
-            <path d="M47 67 Q51 63 55 67 M65 67 Q69 63 73 67" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M46 66 l-3 -2 M74 66 l3 -2" stroke="#2a2a2a" stroke-width="1.8" stroke-linecap="round"/>
-            <ellipse cx="45" cy="76" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="75" cy="76" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
-            <path d="M55 77 Q60 83 65 77" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">Wrap your muchi<br>in me, OK?</span>
-        </div>
-        <h3>Big Sis Sannin</h3>
-        <p class="herb-name">Shell ginger (sannin) | Ginger family</p>
-        <details class="herb-more">
-          <summary>Learn more</summary>
-        <dl>
-          <dt>How it's used on the island</dt>
-          <dd>The leaf used to wrap rice cakes for Muchi (the 8th day of the 12th lunar month). Also used for tea and as an insect repellent.</dd>
-          <dt>What research says</dt>
-          <dd>Polyphenols in the leaves and other components are still being studied.</dd>
-        </dl>
-        <p class="memo"><b>Pharmacist's note</b><span class="m-tag m-eff">Benefits</span>Enjoy its refreshing aroma. Research on effects on the body is mostly test-tube and animal studies.<br><span class="m-tag m-care">Caution</span>Safety during pregnancy and breastfeeding hasn't been confirmed, so use sparingly.</p>
-        </details>
-      </article>
-
-      <!-- クヮーギちゃん -->
-      <article class="herb-card">
-        <div class="chara">
-          <svg viewBox="0 0 120 120" role="img" aria-label="Illustration of Kwagi-chan">
-            <path d="M60 112 C34 100 18 80 20 58 C21 44 28 34 38 30 L42 34 L46 27 L52 30 L56 22 L60 28 L64 22 L68 30 L74 27 L78 34 L82 30 C92 34 99 44 100 58 C102 80 86 100 60 112 Z" fill="#7cc06c" stroke="#4d8f42" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M60 30 V108 M60 70 L36 52 M60 70 L84 52 M60 88 L40 80 M60 88 L80 80" stroke="#4d8f42" stroke-width="1.5" fill="none" opacity=".45"/>
-            <ellipse cx="60" cy="68" rx="22" ry="19" fill="#c3e5b6"/>
-            <g transform="translate(26 24)">
-              <path d="M6 -6 Q8 -12 14 -14" stroke="#4d8f42" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <circle cx="2" cy="0" r="4" fill="#5b2a4e"/><circle cx="8" cy="2" r="4" fill="#6e3360"/><circle cx="4" cy="6" r="4" fill="#5b2a4e"/><circle cx="10" cy="8" r="4" fill="#6e3360"/><circle cx="5" cy="12" r="3.5" fill="#5b2a4e"/>
-              <circle cx="1" cy="-1" r="1" fill="#fff" opacity=".7"/>
-            </g>
-            <circle cx="50" cy="66" r="4.5" fill="#2a2a2a"/><circle cx="70" cy="66" r="4.5" fill="#2a2a2a"/>
-            <circle cx="51.5" cy="64.5" r="1.5" fill="#fff"/><circle cx="71.5" cy="64.5" r="1.5" fill="#fff"/>
-            <ellipse cx="42" cy="75" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/><ellipse cx="78" cy="75" rx="5.5" ry="3" fill="#f28b82" opacity=".7"/>
-            <path d="M54 75 Q60 82 66 75" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="say">Before you eat,<br>have a cup of my tea~</span>
-        </div>
-        <h3>Kwagi-chan</h3>
-        <p class="herb-name">Mulberry (kwagi) | Mulberry family</p>
-        <details class="herb-more">
-          <summary>Learn more</summary>
-        <dl>
-          <dt>How it's used on the island</dt>
-          <dd>Leaves for tea, berries for snacks. There's also a folk charm against evil where people chant "kwagi nu shicha" (under the mulberry tree).</dd>
-          <dt>What research says</dt>
-          <dd>Its effect on blood sugar after meals is being studied in humans.</dd>
-        </dl>
-        <p class="memo"><b>Pharmacist's note</b><span class="m-tag m-eff">Benefits</span>DNJ in the leaves slows sugar absorption (an ingredient in Japan's Foods with Function Claims).<br><span class="m-tag m-care">Caution</span>It may work too strongly together with diabetes medication. It can cause bloating and more gas.</p>
-        </details>
-      </article>
-
     </div>
 
-    <!-- Benefits of nuchigusui herbs during fasting -->
+    <!-- Benefits of nuchigusui fruits during fasting -->
     <div class="herb-effect" id="herb-effect">
-      <h3>How <i>nuchigusui</i> herbs can help while you fast</h3>
-      <p class="lead">Herbs are not magic that multiplies the effects of fasting. But they can make fasting <b>safer and easier to stick with</b>. Here is what you can reasonably expect at each stage of the schedule, explained by a pharmacist.</p>
+      <h3>How <i>nuchigusui</i> fruits can help while you fast</h3>
+      <p class="lead">Fruits are not magic that multiplies the effects of fasting. But they can make fasting <b>safer and easier to stick with</b>. Here is what you can reasonably expect at each stage of the schedule, explained by a pharmacist.</p>
       <div class="he-grid">
         <div class="he-item">
           <span class="when">Fasting days (Days 2–3)</span>
           <h4>Drink plenty of fluids without forcing it</h4>
-          <p>On liquid-only days it is easy to run short on fluids. If plain water gets boring, rotating teas with different aromas, such as shell ginger, guava and mulberry leaf, makes it natural to drink more. Most are caffeine-free and have almost no calories.</p>
+          <p>On liquid-only days it is easy to run short on fluids. If plain water gets boring, drinking guava leaf tea hot or iced, or floating a sliver of kumquat peel in hot water for aroma, makes it natural to drink more. Guava leaf tea is caffeine-free and has almost no calories.</p>
           <p class="ev"><b>Note</b>&nbsp; This is about hydration, not about compounds in the tea.</p>
         </div>
         <div class="he-item">
           <span class="when">When hunger hits</span>
           <h4>A warm, fragrant reset</h4>
-          <p>Waves of hunger usually pass within a few dozen minutes. Slowly sipping a warm herbal tea warms your stomach and shifts your mood with its aroma, making the wave easier to ride out. At night, it is another option alongside sparkling water.</p>
+          <p>Waves of hunger usually pass within a few dozen minutes. Slowly sipping warm guava leaf tea warms your stomach and shifts your mood with its aroma, making the wave easier to ride out. At night, it is another option alongside sparkling water.</p>
           <p class="ev"><b>Note</b>&nbsp; This is a practical tip from experience. No human study has yet shown that these teas suppress hunger.</p>
         </div>
         <div class="he-item">
           <span class="when">Recovery period (Day 4 on)</span>
           <h4>A gentler rise in blood sugar after meals</h4>
-          <p>When you start eating again, blood sugar can rise quickly. Drinking guava leaf tea or mulberry leaf tea with your meal has been shown in human studies to slow sugar absorption (these are approved functional ingredients in Japan).</p>
+          <p>When you start eating again, blood sugar can rise quickly. Drinking guava leaf tea with your meal has been shown in human studies to slow sugar absorption (it is an approved FOSHU ingredient in Japan).</p>
           <p class="ev"><b>Note</b>&nbsp; This works when taken with food. Drinking it while you are not eating has no such effect.</p>
         </div>
         <div class="he-item">
           <span class="when">Recovery meals</span>
-          <h4>Island herbs make recovery meals tasty</h4>
-          <p>Add a little chomeiso or fuchiba to rice porridge or miso soup, or have goya as a side dish. Their aroma and bitterness add interest, so lightly seasoned food feels satisfying, and you get more vegetables. Chewing well also helps prevent overeating.</p>
-          <p class="ev"><b>Note</b>&nbsp; This is about herbs as food. Large amounts as powders or supplements are not recommended.</p>
+          <h4>Kumquats add a fresh note to recovery meals</h4>
+          <p>Add one or two kumquats to a lightly seasoned recovery meal. Chewed well, peel and all, their fresh aroma and sweetness make the meal more satisfying, and you get vitamin C and fiber. Chewing well also helps prevent overeating.</p>
+          <p class="ev"><b>Note</b>&nbsp; This is about eating the fresh fruit. Syrup- or honey-preserved kumquats are high in sugar, so skip them early in recovery.</p>
         </div>
       </div>
-      <p class="he-myth"><b>Common myths</b>&nbsp; "It detoxes you," "it burns fat faster," "it boosts the effects of fasting": no human study has confirmed any of these. Herbs are not the star of fasting but <b>a quiet, reliable supporting role</b>. Enjoy them, and bring a bit of island wisdom into your daily life.</p>
+      <p class="he-myth"><b>Common myths</b>&nbsp; "It detoxes you," "it burns fat faster," "it boosts the effects of fasting": no human study has confirmed any of these. Fruits are not the star of fasting but <b>a quiet, reliable supporting role</b>. Enjoy them, and bring a bit of island wisdom into your daily life.</p>
     </div>
 
     <details class="herb-tips">
-      <summary><h3>Drinking herbal tea while fasting</h3></summary>
+      <summary><h3>Drinking guava leaf tea while fasting</h3></summary>
       <ul>
-        <li>Many are caffeine-free, making them a good option for staying hydrated. Choose ones without added sugar</li>
+        <li>It is caffeine-free, making it a good option for staying hydrated. Choose one without added sugar</li>
         <li>Drinking a lot of strong tea on an empty stomach can be hard on your stomach</li>
-        <li>While breastfeeding, the effects on breast milk are unknown for many herbs, so start small — and ask if you're worried</li>
+        <li>While breastfeeding, the effects on breast milk are not well known, so start small — and ask if you're worried</li>
         <li>"Natural" doesn't always mean "safe." If you take medication, check for interactions with a pharmacist</li>
       </ul>
       <p class="src">References: National Institute of Health and Nutrition (Japan), "Safety and Efficacy of Health Foods" database (HFNet); Consumer Affairs Agency information on Foods for Specified Health Uses (FOSHU)</p>
@@ -1358,6 +1195,7 @@
         <h3 class="nickname">(Nickname)</h3>
         <p class="role">Pharmacist / Based in Okinawa / Postpartum mom</p>
         <p>Has worked at hospitals, a university hospital, and community pharmacies. Lost 10 kg after my first baby, and I'm taking on the challenge again now, after my second. My motto: "correctly, safely, steadily."</p>
+        <p>Next, I want to advance healthcare development in Okinawa, focusing my research on data analysis.</p>
         <ul class="prof-tags">
           <li>Studied pharmacy at a university in Kyoto</li>
           <li>Qualified Food Sanitation Supervisor</li>
@@ -1414,7 +1252,7 @@
   <div class="wrap">
     <p class="disc"><strong>Please note: </strong>The weight log on this site is one person's progress and does not guarantee results. The medical information here is general and is not a substitute for individual diagnosis or treatment. If you try fasting, listen to your body and consult a doctor or pharmacist as needed.</p>
     <p style="margin-bottom:6px">This site uses Google Analytics to understand how visitors use it.</p>
-    <p style="margin-bottom:6px">Flower photos: Shell ginger by David Clode (<a href="https://unsplash.com/photos/a-close-up-of-a-flower-with-a-black-background-XYng6S1Ky30" target="_blank" rel="noopener" style="color:inherit">Unsplash</a>) / Turmeric by Jonas Kakaroto Honorato (<a href="https://commons.wikimedia.org/wiki/File:Turmeric_Flower_Curcuma_Longa_(243825849).jpeg" target="_blank" rel="noopener" style="color:inherit">CC0</a>) / Chomeiso by M108t (<a href="https://commons.wikimedia.org/wiki/File:Compound_umbel_of_Peucedanum_japonicum_in_Ishigaki,_Okinawa.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY 4.0</a>) / Goya by Fahim Shahriyar Rifat (<a href="https://commons.wikimedia.org/wiki/File:Momordica_charantia_(flower).jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>) / Fuchiba (Artemisia flower) by Krzysztof Ziarnek, Kenraiz (<a href="https://commons.wikimedia.org/wiki/File:Artemisia_vulgaris_kz08.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>) / Guava by Joydeep (<a href="https://commons.wikimedia.org/wiki/File:Psidium_guajava_flower_26032014_01.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 3.0</a>) / Mulberry by Suyash Dwivedi (<a href="https://commons.wikimedia.org/wiki/File:Morus_alba_flowers_in_India.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 4.0</a>). Flower photos are cropped into circles.</p>
+    <p style="margin-bottom:6px">Flower photos: Guava by Joydeep (<a href="https://commons.wikimedia.org/wiki/File:Psidium_guajava_flower_26032014_01.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 3.0</a>), Kumquat by KENPEI (<a href="https://commons.wikimedia.org/wiki/File:Citrus_japonica4.jpg" target="_blank" rel="noopener" style="color:inherit">CC BY-SA 3.0</a>). Photos are cropped into circles.</p>
     <p>© 2026 Yuimaru Fasting</p>
   </div>
 </footer>
